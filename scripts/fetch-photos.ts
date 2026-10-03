@@ -6,7 +6,8 @@
  * Sources: The Met (CC0), Wikimedia Commons (CC0 / PD / CC BY / CC BY-SA), and Pexels when
  * PEXELS_API_KEY is set. Photos are resized to WebP in public/photos/<archetype>/ and recorded,
  * with attribution, in src/catalog/photos.json. Keys listed in src/catalog/photo-blocklist.json
- * are never used. Runs in GitHub Actions (.github/workflows/photos.yml) because it needs the
+ * are never used. Photos already approved (src/catalog/photo-approved.json) are kept; new ones
+ * are added for review, and `npm run photos:prune` applies the review. Runs in GitHub Actions (.github/workflows/photos.yml) because it needs the
  * open internet.
  */
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
@@ -20,6 +21,7 @@ import { PHOTO_SOURCES } from "./photo-sources";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MANIFEST = join(ROOT, "src/catalog/photos.json");
 const BLOCKLIST = join(ROOT, "src/catalog/photo-blocklist.json");
+const APPROVED = join(ROOT, "src/catalog/photo-approved.json");
 const UA = "ClothesNeverCome/1.1 (+https://github.com/shankar-sachin/clothesnevercome)";
 const MET_DEPARTMENTS = new Set(["The Costume Institute", "Asian Art", "Islamic Art", "The American Wing"]);
 const OPEN_LICENSE = /^(cc0|cc[- ]zero|public domain|pd\b|pd-|cc[- ]by(-sa)?[- ]\d)/i;
@@ -29,6 +31,8 @@ const arg = (name: string) => {
   return i > -1 ? process.argv[i + 1] : undefined;
 };
 const PER = Number(arg("per") ?? 8);
+/** Only (re)fetch archetypes with fewer than this many approved photos. */
+const THIN = Number(arg("thin") ?? Infinity);
 const ONLY = arg("only")?.split(",").map((s) => s.trim()).filter(Boolean);
 const PEXELS_KEY = process.env.PEXELS_API_KEY;
 
@@ -58,10 +62,22 @@ interface Candidate extends Omit<Photo, "src" | "w" | "h" | "color" | "bg"> {
 
 // ───────── Sources ─────────
 
+let metGone = false;
+
 async function fromMet(q: string, names: string[]): Promise<Candidate[]> {
-  const search = await json<{ objectIDs: number[] | null }>(
-    `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${encodeURIComponent(q)}`,
-  );
+  if (metGone) return [];
+  let search: { objectIDs: number[] | null };
+  try {
+    search = await json(`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${encodeURIComponent(q)}`);
+  } catch (e) {
+    // As of Oct 2026 the Met's public API answers 410 Gone; stop asking after the first one.
+    if (/^Error: 410 /.test(String(e))) {
+      metGone = true;
+      console.warn("  The Met API returned 410 Gone; skipping it for the rest of this run.");
+      return [];
+    }
+    throw e;
+  }
   const out: Candidate[] = [];
   for (const id of (search.objectIDs ?? []).slice(0, 80)) {
     if (out.length >= PER * 2) break;
@@ -140,25 +156,61 @@ async function fromPexels(q: string): Promise<Candidate[]> {
 
 const hex = (r: number, g: number, b: number) => "#" + [r, g, b].map((v) => Math.round(v).toString(16).padStart(2, "0")).join("");
 
-/** Background = average of the border; garment colour = centre pixels that differ most from it. */
+/**
+ * Background = average of the border. Garment colour = the dominant *saturated* hue among centre
+ * pixels that differ from the background, so a red gown next to a white mannequin reads as red,
+ * not as the pinkish-tan average of both. Mostly-unsaturated garments fall back to their mean.
+ */
 export async function analyse(buf: Buffer) {
-  const N = 48;
+  const N = 64;
   const px = await sharp(buf).resize(N, N, { fit: "fill" }).removeAlpha().raw().toBuffer();
   const at = (x: number, y: number) => [px[(y * N + x) * 3], px[(y * N + x) * 3 + 1], px[(y * N + x) * 3 + 2]];
   let bg = [0, 0, 0], n = 0, grey = 0;
   for (let i = 0; i < N; i++) for (const [x, y] of [[i, 0], [i, N - 1], [0, i], [N - 1, i]]) { const c = at(x, y); bg = bg.map((v, k) => v + c[k]); n++; }
   bg = bg.map((v) => v / n);
-  const centre: Array<{ c: number[]; d: number }> = [];
+
+  const hsv = ([r, g, b]: number[]) => {
+    const max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min;
+    const h = d === 0 ? 0 : max === r ? ((g - b) / d + 6) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+    return { h: h * 60, s: max === 0 ? 0 : d / max, v: max / 255 };
+  };
+  const garment: number[][] = [];
   for (let y = 0; y < N; y++)
     for (let x = 0; x < N; x++) {
       const c = at(x, y);
       if (Math.max(...c) - Math.min(...c) < 18) grey++;
-      if (x > N * 0.25 && x < N * 0.75 && y > N * 0.2 && y < N * 0.8) centre.push({ c, d: Math.hypot(c[0] - bg[0], c[1] - bg[1], c[2] - bg[2]) });
+      const inCentre = x > N * 0.2 && x < N * 0.8 && y > N * 0.15 && y < N * 0.85;
+      if (inCentre && Math.hypot(c[0] - bg[0], c[1] - bg[1], c[2] - bg[2]) > 40) garment.push(c);
     }
-  centre.sort((a, b) => b.d - a.d);
-  const top = centre.slice(0, Math.max(20, Math.floor(centre.length * 0.4)));
-  const color = [0, 1, 2].map((k) => top.reduce((s, p) => s + p.c[k], 0) / top.length);
+  const pool = garment.length >= 20 ? garment : [];
+  const saturated = pool.filter((c) => { const v = hsv(c); return v.s > 0.28 && v.v > 0.15; });
+  let color: number[];
+  if (saturated.length >= Math.max(12, pool.length * 0.2)) {
+    const BINS = 12;
+    const weight = new Array(BINS).fill(0);
+    for (const c of saturated) { const v = hsv(c); weight[Math.floor(v.h / (360 / BINS)) % BINS] += v.s; }
+    const top = weight.indexOf(Math.max(...weight));
+    const members = saturated.filter((c) => Math.floor(hsv(c).h / (360 / BINS)) % BINS === top);
+    color = [0, 1, 2].map((k) => members.reduce((sum, c) => sum + c[k], 0) / members.length);
+  } else {
+    const src = pool.length ? pool : [at(N / 2, N / 2)];
+    color = [0, 1, 2].map((k) => src.reduce((sum, c) => sum + c[k], 0) / src.length);
+  }
   return { color: hex(color[0], color[1], color[2]), bg: hex(bg[0], bg[1], bg[2]), greyFraction: grey / (N * N) };
+}
+
+/** Recompute colours for photos already on disk (no network). */
+async function reanalyse() {
+  const manifest: PhotoManifest = JSON.parse(readFileSync(MANIFEST, "utf8"));
+  let n = 0;
+  for (const list of Object.values(manifest))
+    for (const p of list) {
+      const { color, bg } = await analyse(readFileSync(join(ROOT, "public", p.src)));
+      Object.assign(p, { color, bg });
+      n++;
+    }
+  writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1) + "\n");
+  console.log(`Re-analysed ${n} photos.`);
 }
 
 async function processCandidate(c: Candidate, dir: string): Promise<Photo | null> {
@@ -179,17 +231,23 @@ async function processCandidate(c: Candidate, dir: string): Promise<Photo | null
 
 async function main() {
   const archetypes = REGIONS.flatMap((r) => r.categories.flatMap((c) => c.archetypes.map((a) => a.name)));
-  const targets = ONLY ? archetypes.filter((a) => ONLY.includes(a)) : archetypes;
+  const approvedCount = (a: string) => (existsSync(APPROVED) ? (JSON.parse(readFileSync(APPROVED, "utf8"))[a]?.length ?? 0) : 0);
+  const targets = (ONLY ? archetypes.filter((a) => ONLY.includes(a)) : archetypes).filter((a) => approvedCount(a) < THIN);
+  console.log(`Fetching ${targets.length} archetype(s), up to ${PER} photos each.`);
   const blocked = new Set<string>(existsSync(BLOCKLIST) ? JSON.parse(readFileSync(BLOCKLIST, "utf8")) : []);
   const manifest: PhotoManifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, "utf8")) : {};
+  const approved: Record<string, string[]> = existsSync(APPROVED) ? JSON.parse(readFileSync(APPROVED, "utf8")) : {};
   const report: string[] = [];
 
   for (const name of targets) {
     const src = PHOTO_SOURCES[name];
     if (!src) { report.push(`${name}: no sources configured`); continue; }
     const dir = join(ROOT, "public/photos", slug(name));
-    rmSync(dir, { recursive: true, force: true });
     mkdirSync(dir, { recursive: true });
+    // Keep reviewed photos; drop anything unreviewed from a previous run.
+    const ok = new Set(approved[name] ?? []);
+    const keep = (manifest[name] ?? []).filter((p) => ok.has(p.key));
+    for (const p of manifest[name] ?? []) if (!ok.has(p.key)) rmSync(join(ROOT, "public", p.src), { force: true });
 
     const lists = await Promise.all([
       src.met ? fromMet(src.met.q, src.met.names).catch((e) => (console.warn(`  met ${name}: ${e}`), [])) : [],
@@ -198,11 +256,11 @@ async function main() {
     ]);
     // Interleave sources so one archetype isn't all museum or all Commons.
     const queue: Candidate[] = [];
-    const seen = new Set<string>();
+    const seen = new Set<string>(keep.map((p) => p.key));
     for (let i = 0; lists.some((l) => i < l.length); i++)
       for (const l of lists) if (l[i] && !seen.has(l[i].key) && !blocked.has(l[i].key)) { seen.add(l[i].key); queue.push(l[i]); }
 
-    const photos: Photo[] = [];
+    const photos: Photo[] = [...keep];
     for (const c of queue) {
       if (photos.length >= PER) break;
       try {
@@ -214,7 +272,7 @@ async function main() {
     }
     manifest[name] = photos;
     const bySource = photos.reduce<Record<string, number>>((m, p) => ((m[p.source] = (m[p.source] ?? 0) + 1), m), {});
-    const line = `${name}: ${photos.length}/${PER} from ${queue.length} candidates ${JSON.stringify(bySource)}`;
+    const line = `${name}: ${photos.length}/${PER} (${keep.length} approved, ${photos.length - keep.length} new for review) from ${queue.length} candidates ${JSON.stringify(bySource)}`;
     report.push(line);
     console.log(line);
   }
@@ -227,4 +285,4 @@ async function main() {
   if (thin.length) console.log(`Thin coverage (<3):\n  ${thin.join("\n  ")}`);
 }
 
-if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) main();
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) (process.argv.includes("--reanalyse") ? reanalyse() : main());

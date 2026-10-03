@@ -46,9 +46,13 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           ONLY: ${{ inputs.only }}
           PER: ${{ inputs.per }}
+          EVENT: ${{ github.event_name }}
         run: |
+          # Automatic (push) runs only top up archetypes that have fewer than 3 approved photos.
+          if [ "$EVENT" = "push" ]; then PER=10; fi
           args=(--per "${PER:-8}")
           if [ -n "$ONLY" ]; then args+=(--only "$ONLY"); fi
+          if [ "$EVENT" = "push" ]; then args+=(--thin 3); fi
           npx tsx scripts/fetch-photos.ts "${args[@]}" | tee photo-report.txt
       - name: Commit photos to this branch
         env:
