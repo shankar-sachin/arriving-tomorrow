@@ -29,6 +29,8 @@ export type Pattern =
   | "zigzag"
   | "floral";
 
+export type Audience = "women" | "men" | "unisex";
+
 export type SizeKind = "apparel" | "shoes" | "hat" | "free";
 
 export type ColorFamily =
@@ -49,6 +51,8 @@ export interface CardItem {
   region: RegionId;
   category: string;
   archetype: string;
+  audience: Audience;
+  fabric: string;
   silhouette: Silhouette;
   pattern: Pattern;
   /** [primary, secondary (pattern), accent] */
@@ -60,11 +64,13 @@ export interface CardItem {
   rating: number;
   reviews: number;
   badge?: string;
+  /** Real product photo, when one has been sourced for this archetype. */
+  photo?: { src: string; w: number; h: number; bg: string };
 }
 
 export interface CatalogItem extends CardItem {
-  fabric: string;
   motif: string;
+  photoCredit?: Pick<Photo, "title" | "creator" | "license" | "licenseUrl" | "sourceUrl" | "source">;
   blurb: string;
   sizes: string[];
   tags: string[];
