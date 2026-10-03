@@ -91,3 +91,25 @@ export interface CatalogIndex {
   regions: RegionMeta[];
   featured: CardItem[];
 }
+
+/** A real, openly licensed product photo (see scripts/fetch-photos.ts). */
+export interface Photo {
+  /** Stable source id, e.g. "met:12345" or "commons:678". */
+  key: string;
+  /** Path relative to the site root, e.g. "photos/sherwani/met-12345.webp". */
+  src: string;
+  w: number;
+  h: number;
+  /** Measured garment colour and background colour. */
+  color: string;
+  bg: string;
+  source: "met" | "commons" | "pexels";
+  title: string;
+  creator: string;
+  license: string;
+  licenseUrl: string;
+  sourceUrl: string;
+}
+
+/** Archetype name → photos. */
+export type PhotoManifest = Record<string, Photo[]>;
