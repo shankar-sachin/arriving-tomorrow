@@ -9,7 +9,7 @@ export function Footer() {
         <p>A parody store. No real products, payments, or deliveries. Nothing you enter leaves your browser.</p>
       </div>
       <p className="footer-fine">
-        <Link to="/credits">Photo credits</Link> · © 2026 · Shipping policy: no · Returns: nothing to return
+        <Link to="/app">Get the app</Link> · <Link to="/achievements">Achievements</Link> · <Link to="/credits">Photo credits</Link> · © 2026 · Shipping policy: no · Returns: nothing to return
       </p>
     </footer>
   );

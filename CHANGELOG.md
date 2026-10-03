@@ -2,6 +2,15 @@
 
 All notable changes to Clothes Never Come. Releases are published automatically from this file when a `v*` tag is pushed (see `.github/workflows/release.yml`).
 
+## [Unreleased]
+
+### New
+- **Send a package to a friend.** Any order can be turned into a gift link from its tracking page, with their name, your name and a message. Your friend gets their own tracking page for a gift that will never arrive. The whole gift lives in the link: no accounts, no server.
+- **Customer support chat.** Brenda, Senior Delivery Optimist, is one tap away on every page. She's fully scripted (no AI, nothing leaves your browser), and her excuses get more unhinged the longer you talk. Asking for a manager gets you her manager, who is also Brenda.
+- **Achievements.** 16 of them, from "Welcome to the waitlist" to "Spent $10,000 on nothing" and "Yeehaw, m'lady" (a crinoline ball gown and a cowboy hat in one order). They pop up as toasts and live on a new **/achievements** page.
+- **Install it as an app.** A web app manifest and home-screen icons, so "Add to Home Screen" in Safari (or "Install app" in Chrome) gives you a full-screen app. A home-page banner explains how on iPhone, and **/app** has steps for every device. No App Store needed.
+- **Dark mode.** Follows your system by default, with a sun/moon toggle in the header that remembers your choice and applies before the first paint, so there's no white flash.
+
 ## [1.1.0] - 2026-10-03
 
 The "it looks real now (it still won't come)" release.

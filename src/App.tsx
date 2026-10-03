@@ -1,13 +1,19 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig } from "framer-motion";
+import { AchievementToasts } from "./components/AchievementToasts";
 import { BottomNav } from "./components/BottomNav";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { InstallBanner } from "./components/InstallBanner";
+import { SupportChat } from "./components/SupportChat";
+import { Achievements } from "./pages/Achievements";
 import { Cart } from "./pages/Cart";
 import { Checkout } from "./pages/Checkout";
 import { Credits } from "./pages/Credits";
+import { GetApp } from "./pages/GetApp";
+import { Gift } from "./pages/Gift";
 import { Home } from "./pages/Home";
 import { Item } from "./pages/Item";
 import { NotFound } from "./pages/NotFound";
@@ -36,6 +42,9 @@ export function AppRoutes() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/orders/:id" element={<OrderTrack />} />
+        <Route path="/gift" element={<Gift />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/app" element={<GetApp />} />
         <Route path="/credits" element={<Credits />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
@@ -49,9 +58,12 @@ export function App() {
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ErrorBoundary>
           <Header />
+          <InstallBanner />
           <AppRoutes />
           <Footer />
           <BottomNav />
+          <SupportChat />
+          <AchievementToasts />
         </ErrorBoundary>
       </BrowserRouter>
     </MotionConfig>

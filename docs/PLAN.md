@@ -102,11 +102,12 @@ Other later upgrade paths:
 | --- | --- |
 | **v1.0.0** (shipped) | Plan, scaffold, taxonomy + generator (~6k SKUs), SVG art, shop/product/cart/checkout/tracking/orders, CI, unit tests. |
 | **v1.1.0** | **Real product images** (see section 6). |
+| **Next release** | Gift links ("send a package to a friend"), scripted customer-support chat, achievements, installable web app (manifest + home-screen icons), dark mode. |
 | **v1.1.x** | Locally generated AI photos (FLUX.1-schnell on a Mac): one per garment type × colour family, 612 images (see section 6.7). |
 | **v1.2.0** | **A unique AI photo for every product (6,120)**, matching each product's exact colour, fabric and motif (see section 6.8), plus **AR try-on** (see section 7). |
 | #2 | Search upgrades (fuzzy matching, facets), URL-synced filters, skeleton loaders. |
 | #3 | More regions (East Asia, Africa, Latin America, Middle East) via the Wikidata-assisted taxonomy. Target 15k+ SKUs. |
-| #4 | Delight pass: add-to-cart flight animation, sound effects (muted by default), achievement toasts ("Spent $10k on nothing"). |
+| #4 | Delight pass: add-to-cart flight animation, sound effects (muted by default). *(Achievement toasts shipped.)* |
 | #5 | Optional global counters on Cloudflare D1 / Supabase (option C). |
 | #6 | Switch the catalog to in-browser SQLite with FTS5 (option B) once SKU count calls for it. |
 
