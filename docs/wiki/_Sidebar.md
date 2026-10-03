@@ -7,4 +7,4 @@
 - [[Deployment]]
 - [[FAQ]]
 
-[Live site](https://shankar-sachin.github.io/arriving-tomorrow/)
+[Live site](https://arriving-tomorrow.vercel.app)

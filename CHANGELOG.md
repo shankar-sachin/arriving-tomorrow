@@ -6,6 +6,7 @@ All notable changes to arriving tomorrow (formerly Clothes Never Come). Releases
 
 ### Changed
 - **Clothes Never Come is now arriving tomorrow**, styled in lowercase. The hanger-and-infinity logo stays the same. The new name shows up in the header, footer, page title, home-screen app name, README banner and release titles. Saved carts, orders, achievements and theme settings carry over.
+- **Moved to Vercel**: the site now lives at https://arriving-tomorrow.vercel.app, and every pull request gets a preview link. GitHub Pages is retired.
 
 ## [1.1.1] - 2026-10-03
 

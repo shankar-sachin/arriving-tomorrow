@@ -1,8 +1,8 @@
 ![arriving tomorrow](https://raw.githubusercontent.com/shankar-sachin/arriving-tomorrow/main/docs/brand/banner.png)
 
-The online store where you can order anything you want, and none of it ever arrives.
+**arriving tomorrow** (formerly Clothes Never Come) is the online store where you can order anything you want, and none of it ever arrives.
 
-**Live site:** https://shankar-sachin.github.io/arriving-tomorrow/
+**Live site:** https://arriving-tomorrow.vercel.app
 
 Browse 6,120 garments from India, America, and classical Europe, check out for $0.00 with the auto-applied `FREE-CLOTHES` coupon, and track a package that is always arriving *tomorrow*. No accounts, no cards, no clothes.
 
@@ -13,7 +13,7 @@ Browse 6,120 garments from India, America, and classical Europe, check out for $
 | [[Getting Started]] | Run it locally, scripts, project layout |
 | [[Architecture]] | Stack, routes, state, and how the pieces fit |
 | [[Catalog]] | How 6,120 products are generated from a taxonomy, and how to add more |
-| [[Deployment]] | GitHub Pages setup and the deploy workflow |
+| [[Deployment]] | Vercel hosting, previews, and the build |
 | [[FAQ]] | "Will my order arrive?" and other questions with obvious answers |
 
 ## Project links

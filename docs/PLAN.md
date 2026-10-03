@@ -27,7 +27,7 @@ Accessibility: every animation honors `prefers-reduced-motion`; all art has
 - **canvas-confetti** for the coupon moment.
 - **Vitest** for the generator, pricing, and tracking logic.
 - **GitHub Actions CI**: catalog build → typecheck → test → production build on every PR.
-- **Hosting**: any static host (Vercel, Netlify, Cloudflare Pages, GitHub Pages). Recommended: Cloudflare Pages or Vercel with per-PR preview deploys.
+- **Hosting**: any static host (Vercel, Netlify, Cloudflare Pages, GitHub Pages). **Chosen: Vercel**, with per-PR preview deploys (moved from GitHub Pages after v1.1.1).
 
 ## 3. The catalog (the big one)
 
