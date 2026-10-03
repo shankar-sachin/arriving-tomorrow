@@ -49,7 +49,10 @@
   "commons:72886320"
  ],
  "Buckle Shoes": [
-  "commons:30455995"
+  "commons:30455995",
+  "commons:29347765",
+  "commons:30455594",
+  "commons:29350299"
  ],
  "Cargo Pants": [
   "commons:25549559",
@@ -63,7 +66,12 @@
  ],
  "Chiffon Saree": [
   "commons:131174464",
-  "commons:67552326"
+  "commons:67552326",
+  "commons:199640968",
+  "commons:139509697",
+  "commons:88237657",
+  "commons:114128113",
+  "commons:115218779"
  ],
  "Corset Bodice": [
   "commons:118166973",
@@ -130,7 +138,14 @@
   "commons:3762468"
  ],
  "Empire-Waist Dress": [
-  "commons:95706087"
+  "commons:95706087",
+  "commons:59499667",
+  "commons:65221970",
+  "commons:59492091",
+  "commons:59491223",
+  "commons:65221963",
+  "commons:65233353",
+  "commons:59491230"
  ],
  "Flannel Shirt": [
   "commons:82148241",
@@ -180,9 +195,19 @@
  ],
  "Hussar Jacket": [
   "commons:21472421",
-  "commons:59366540"
+  "commons:59366540",
+  "commons:19462029",
+  "commons:67036113",
+  "commons:41003172",
+  "commons:127804187",
+  "commons:41003237",
+  "commons:79184084"
  ],
- "Inverness Cape": [],
+ "Inverness Cape": [
+  "commons:30292701",
+  "commons:64576485",
+  "commons:64576480"
+ ],
  "Kanjeevaram Saree": [
   "commons:58337889",
   "commons:199298217",
@@ -202,9 +227,14 @@
  ],
  "Kurta": [
   "commons:41827963",
-  "commons:97498014"
+  "commons:97498014",
+  "commons:162124336",
+  "commons:180359541",
+  "commons:40301837"
  ],
- "Kurti": [],
+ "Kurti": [
+  "commons:136209190"
+ ],
  "Lehenga Choli": [
   "commons:121812506",
   "commons:150899169",
@@ -248,7 +278,11 @@
   "commons:59501381"
  ],
  "Overalls": [
-  "commons:1144323"
+  "commons:1144323",
+  "commons:87942194",
+  "commons:44974771",
+  "commons:44974850",
+  "commons:58263906"
  ],
  "Pagdi Turban": [
   "commons:189339719",
@@ -274,7 +308,14 @@
  ],
  "Poke Bonnet": [
   "commons:59504634",
-  "commons:59658165"
+  "commons:59658165",
+  "commons:149866390",
+  "commons:59501778",
+  "commons:59493751",
+  "commons:149866389",
+  "commons:59500120",
+  "commons:59488888",
+  "commons:59494794"
  ],
  "Poodle Skirt": [
   "commons:17124083",
@@ -300,7 +341,13 @@
   "commons:59658419"
  ],
  "Regency Gown": [
-  "commons:178590690"
+  "commons:178590690",
+  "commons:59503198",
+  "commons:59503195",
+  "commons:95288564",
+  "commons:59503194",
+  "commons:112697033",
+  "commons:57850949"
  ],
  "Riding Boots": [
   "commons:88136327",
@@ -336,7 +383,9 @@
  ],
  "Sherwani": [
   "commons:32332074",
-  "commons:32331483"
+  "commons:32331483",
+  "commons:162343650",
+  "commons:58320150"
  ],
  "Stays": [
   "commons:59491093",
@@ -347,7 +396,12 @@
   "commons:59501240"
  ],
  "Straight-Leg Jeans": [
-  "commons:153206952"
+  "commons:153206952",
+  "commons:196039959",
+  "commons:158241510",
+  "commons:199985095",
+  "commons:171538524",
+  "commons:27105553"
  ],
  "Swing Dress": [
   "commons:117005041",
