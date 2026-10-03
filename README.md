@@ -83,6 +83,10 @@ The [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki) covers archi
 
 Outside pull requests aren't accepted, but issues are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Everyone is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md). Pushing a `v*` tag publishes a GitHub release with that version's notes.
+
 ## Security
 
 See [SECURITY.md](SECURITY.md). Report vulnerabilities privately.
