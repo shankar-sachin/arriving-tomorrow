@@ -1,6 +1,8 @@
 # Clothes Never Come
 
 [![CI](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml)
+[![Deploy](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/deploy.yml/badge.svg)](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/deploy.yml)
+[![Live site](https://img.shields.io/badge/live-shankar--sachin.github.io-ff3d7f)](https://shankar-sachin.github.io/clothesnevercome/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-ff3d7f.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-7-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=1b1033)](https://react.dev/)
@@ -16,6 +18,8 @@ Check out for **$0.00**: the details fill themselves in and the `FREE-CLOTHES` c
 Then watch a delivery truck that is always arriving *tomorrow*.
 
 No accounts. No credit cards. No clothes.
+
+**Shop now (receive never):** https://shankar-sachin.github.io/clothesnevercome/
 
 ## Features
 
@@ -51,9 +55,17 @@ The catalog is read-only, so it ships as static data instead of living in a data
 
 Want more stuff? Add archetypes to the taxonomy or raise `VARIANTS_PER_ARCHETYPE`. See [docs/PLAN.md](docs/PLAN.md) for the full plan, the database options, and the PR roadmap.
 
+## Deployment
+
+Every push to `main` builds the site and deploys `dist/` to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). In **Settings → Pages**, the source must be set to **GitHub Actions** (not "Deploy from a branch"). More details are in the [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki/Deployment).
+
+## Documentation
+
+The [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki) covers architecture, the catalog generator, deployment, and an FAQ.
+
 ## Contributing
 
-Work happens in pull requests. CI (typecheck → tests → build) must be green before merging.
+Outside pull requests aren't accepted, but issues are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Everyone is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Security
 
