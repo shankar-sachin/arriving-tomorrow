@@ -33,7 +33,7 @@ Real photos come from Wikimedia Commons under open licences (CC0, public domain,
 3. `npm run photos:prune` deletes everything not approved and adds it to `photo-blocklist.json`, so it never comes back.
 4. The build only uses approved photos. An archetype needs at least 3 to use them, and each product's colour name is matched to its photo.
 
-Pushing a change to `photo-sources.ts` or the blocklist automatically re-fetches archetypes that have fewer than 3 approved photos.
+Pushing a change to `photo-sources.ts` automatically re-fetches archetypes that have fewer than 3 approved photos.
 
 ## Adding stuff
 

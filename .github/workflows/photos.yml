@@ -3,14 +3,13 @@ name: Fetch photos
 # Downloads openly licensed product photos (The Met, Wikimedia Commons, optional Pexels)
 # and commits them to the branch this is run on. Run it from the Actions tab or the API.
 on:
-  # Re-fetch automatically when the sources, the fetcher, or the blocklist change on a PR branch.
+  # Re-fetch automatically when the search sources or the fetcher change on a PR branch.
+  # (Not on review commits: approving/blocklisting photos shouldn't start another fetch.)
   push:
     branches-ignore: [main]
     paths:
       - scripts/photo-sources.ts
       - scripts/fetch-photos.ts
-      - src/catalog/photo-blocklist.json
-      - .github/workflows/photos.yml
   workflow_dispatch:
     inputs:
       only:
