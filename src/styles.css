@@ -216,6 +216,11 @@ h1, h2, h3 {
   min-height: 70vh;
 }
 
+.page-enter { animation: page-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(18px); }
+}
+
 .page.center {
   display: flex;
   flex-direction: column;
