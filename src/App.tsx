@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig } from "framer-motion";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Cart } from "./pages/Cart";
@@ -18,17 +19,19 @@ function AppRoutes() {
   useEffect(() => window.scrollTo({ top: 0 }), [location.pathname]);
   return (
     // Keyed so each navigation remounts the page (fresh state + entrance animation).
-    <Routes location={location} key={location.pathname + location.search}>
-      <Route path="/" element={<Home />} />
-      <Route path="/shop/:region/:category?" element={<Shop />} />
-      <Route path="/item/:id" element={<Item />} />
-      <Route path="/search" element={<Search />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/checkout" element={<Checkout />} />
-      <Route path="/orders" element={<Orders />} />
-      <Route path="/orders/:id" element={<OrderTrack />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <ErrorBoundary resetKey={location.pathname + location.search}>
+      <Routes location={location} key={location.pathname + location.search}>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop/:region/:category?" element={<Shop />} />
+        <Route path="/item/:id" element={<Item />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/orders/:id" element={<OrderTrack />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </ErrorBoundary>
   );
 }
 
@@ -36,9 +39,11 @@ export function App() {
   return (
     <MotionConfig reducedMotion="user">
       <BrowserRouter basename={import.meta.env.BASE_URL}>
-        <Header />
-        <AppRoutes />
-        <Footer />
+        <ErrorBoundary>
+          <Header />
+          <AppRoutes />
+          <Footer />
+        </ErrorBoundary>
       </BrowserRouter>
     </MotionConfig>
   );
