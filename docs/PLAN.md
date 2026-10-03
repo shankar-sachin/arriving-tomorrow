@@ -103,7 +103,7 @@ Other later upgrade paths:
 | **v1.0.0** (shipped) | Plan, scaffold, taxonomy + generator (~6k SKUs), SVG art, shop/product/cart/checkout/tracking/orders, CI, unit tests. |
 | **v1.1.0** | **Real product images** (see section 6). |
 | **v1.1.x** | Locally generated AI photos (FLUX.1-schnell on a Mac): one per garment type × colour family, 612 images (see section 6.7). |
-| **v1.2.0** | **A unique AI photo for every product (6,120)**, matching each product's exact colour, fabric and motif (see section 6.8). |
+| **v1.2.0** | **A unique AI photo for every product (6,120)**, matching each product's exact colour, fabric and motif (see section 6.8), plus **AR try-on** (see section 7). |
 | #2 | Search upgrades (fuzzy matching, facets), URL-synced filters, skeleton loaders. |
 | #3 | More regions (East Asia, Africa, Latin America, Middle East) via the Wikidata-assisted taxonomy. Target 15k+ SKUs. |
 | #4 | Delight pass: add-to-cart flight animation, sound effects (muted by default), achievement toasts ("Spent $10k on nothing"). |
@@ -190,3 +190,26 @@ Extend the job list from garment type × colour family to **one job per product 
 - **Storage:** about 6,120 × 60 KB ≈ 370 MB. That's too big for the repo, so v1.2.0 should move photos to object storage (Cloudflare R2 or S3) or Git LFS, and keep only a manifest in git.
 - **Review:** 6,120 images is too many to check one by one. Add automated checks (CLIP-score prompt match, a face detector, and a blank/duplicate detector), then review only the flagged images plus a random sample per garment type.
 - **Product IDs** stay stable as long as the seed and taxonomy don't change, so each image is keyed by product ID.
+
+## 7. v1.2.0: AR try-on ("try it on, it still won't come")
+
+A **Try it on** button on product pages opens the camera and overlays the garment on you live, entirely in the browser.
+
+### Approach
+| Option | Verdict |
+| --- | --- |
+| **A. 2D overlay on live pose tracking** (MediaPipe Pose Landmarker / TF.js MoveNet, in-browser) | **Chosen.** Works on phones and laptops, needs no server, and nothing leaves the device. |
+| B. 3D garments via WebXR / 8th Wall | Needs a 3D model per garment, which isn't realistic for 6,120 products. Maybe later for a few hero items. |
+| C. Diffusion virtual try-on (e.g. IDM-VTON) | Needs a GPU server *and* uploading people's photos. That breaks the "nothing leaves your browser" promise. No. |
+
+### How A works
+1. **Garment cut-outs:** v1.2.0's AI photos are generated on a plain backdrop, so a background-removal pass (`rembg`, or keying out the known studio colour) produces a transparent PNG per product at generation time.
+2. **Anchors per silhouette:** tops, jackets, and coats map to shoulders and hips; dresses, gowns, sarees, and lehengas to shoulders and ankles; trousers and skirts to hips and knees or ankles; hats, turbans, and bonnets to the head; scarves and dupattas to the neck and shoulders. Shoes are skipped (feet tracking is unreliable).
+3. **Render:** each frame, scale, rotate, and lightly mesh-warp the cut-out to the pose landmarks on a `<canvas>` over the camera feed. Add a **snapshot** button (saved locally, with a "Clothes Never Come — it never came" frame) for shareable silliness.
+4. **Privacy:** the camera stream and model run on-device. No uploads and no storage, and the page says so. Without camera permission, or on old devices, fall back to the existing product photo.
+5. **Performance:** lazy-load the pose model (a few MB) only when you tap **Try it on**, target 30 fps on mid-range phones, and respect `prefers-reduced-motion`.
+
+### Done when
+- Try-on works for every non-footwear silhouette on iOS Safari, Android Chrome, and desktop Chrome/Safari.
+- No network requests while the camera is on, apart from the one-time model download.
+- Snapshot sharing works, and the joke lands: the "Add to cart" button inside try-on still says *(it won't come)*.
