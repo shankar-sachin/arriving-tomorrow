@@ -83,22 +83,8 @@
    "src": "photos/anarkali/commons-59490830.webp",
    "w": 456,
    "h": 900,
-   "color": "#e0dbce",
-   "bg": "#b5b3ad"
-  },
-  {
-   "source": "commons",
-   "title": "Anarkali",
-   "creator": "Unknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anarkali.jpg",
-   "key": "commons:920891",
-   "src": "photos/anarkali/commons-920891.webp",
-   "w": 568,
-   "h": 791,
-   "color": "#c2825d",
-   "bg": "#9f734f"
+   "color": "#dfdbcd",
+   "bg": "#b4b3ad"
   },
   {
    "source": "commons",
@@ -111,22 +97,8 @@
    "src": "photos/anarkali/commons-59490835.webp",
    "w": 470,
    "h": 900,
-   "color": "#c6bfaa",
-   "bg": "#aaa8a3"
-  },
-  {
-   "source": "commons",
-   "title": "Prince Salim (the future Jahangir) and his legendary illicit love",
-   "creator": "bazaar art",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prince_Salim_(the_future_Jahangir)_and_his_legendary_illicit_love.jpg",
-   "key": "commons:19174000",
-   "src": "photos/anarkali/commons-19174000.webp",
-   "w": 720,
-   "h": 462,
-   "color": "#c69f59",
-   "bg": "#485639"
+   "color": "#c5bea9",
+   "bg": "#a9a8a3"
   },
   {
    "source": "commons",
@@ -139,50 +111,8 @@
    "src": "photos/anarkali/commons-116182967.webp",
    "w": 535,
    "h": 900,
-   "color": "#816149",
+   "color": "#7f5f48",
    "bg": "#cdc9be"
-  },
-  {
-   "source": "commons",
-   "title": "Mughal e Azam Musical in Delhi",
-   "creator": "Ramesh Lalwani",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mughal_e_Azam_Musical_in_Delhi.jpg",
-   "key": "commons:109422397",
-   "src": "photos/anarkali/commons-109422397.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#b33c4e",
-   "bg": "#94817e"
-  },
-  {
-   "source": "commons",
-   "title": "Anarkali - In the peace talks, the rights of religious minorities must be considered",
-   "creator": "VOA Pashto",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anarkali_-_In_the_peace_talks,_the_rights_of_religious_minorities_must_be_considered.png",
-   "key": "commons:179485329",
-   "src": "photos/anarkali/commons-179485329.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#4f169e",
-   "bg": "#605c5a"
-  },
-  {
-   "source": "commons",
-   "title": "Anarkali tomb, November 2008",
-   "creator": "Muhammad Imran Saeed from Skardu, Pakistan",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anarkali_tomb,_November_2008.jpg",
-   "key": "commons:11464372",
-   "src": "photos/anarkali/commons-11464372.webp",
-   "w": 720,
-   "h": 576,
-   "color": "#33371f",
-   "bg": "#878876"
   }
  ],
  "Banarasi Saree": [
@@ -281,8 +211,8 @@
    "src": "photos/banarasi-saree/commons-61140515.webp",
    "w": 672,
    "h": 900,
-   "color": "#bc6f52",
-   "bg": "#895547"
+   "color": "#bb6e52",
+   "bg": "#875447"
   },
   {
    "source": "cma",
@@ -295,8 +225,8 @@
    "src": "photos/banarasi-saree/cma-108046.webp",
    "w": 720,
    "h": 379,
-   "color": "#a18b71",
-   "bg": "#9ba19c"
+   "color": "#a08a70",
+   "bg": "#9aa09c"
   },
   {
    "source": "commons",
@@ -309,8 +239,8 @@
    "src": "photos/banarasi-saree/commons-7422359.webp",
    "w": 720,
    "h": 518,
-   "color": "#584319",
-   "bg": "#665934"
+   "color": "#4f3d17",
+   "bg": "#665a34"
   },
   {
    "source": "commons",
@@ -323,8 +253,8 @@
    "src": "photos/banarasi-saree/commons-60931442.webp",
    "w": 675,
    "h": 900,
-   "color": "#a05d4c",
-   "bg": "#af948d"
+   "color": "#9f5d4c",
+   "bg": "#b0958d"
   },
   {
    "source": "commons",
@@ -465,8 +395,8 @@
    "src": "photos/bandhani-saree/cma-97425.webp",
    "w": 720,
    "h": 864,
-   "color": "#4d2b39",
-   "bg": "#bab4b6"
+   "color": "#4c2b39",
+   "bg": "#b9b4b6"
   },
   {
    "source": "cma",
@@ -479,8 +409,8 @@
    "src": "photos/bandhani-saree/cma-107887.webp",
    "w": 720,
    "h": 518,
-   "color": "#2f1820",
-   "bg": "#aba7a4"
+   "color": "#2f181f",
+   "bg": "#aba7a5"
   },
   {
    "source": "commons",
@@ -493,8 +423,8 @@
    "src": "photos/bandhani-saree/commons-61140515.webp",
    "w": 672,
    "h": 900,
-   "color": "#bc6f52",
-   "bg": "#895547"
+   "color": "#bb6e52",
+   "bg": "#875447"
   },
   {
    "source": "cma",
@@ -507,8 +437,8 @@
    "src": "photos/bandhani-saree/cma-95468.webp",
    "w": 720,
    "h": 589,
-   "color": "#813b3f",
-   "bg": "#9d8f8b"
+   "color": "#803b3f",
+   "bg": "#9e908c"
   },
   {
    "source": "commons",
@@ -521,8 +451,8 @@
    "src": "photos/bandhani-saree/commons-10708268.webp",
    "w": 720,
    "h": 480,
-   "color": "#3e97b1",
-   "bg": "#319cba"
+   "color": "#3e97af",
+   "bg": "#329cb9"
   }
  ],
  "Bandhgala": [
@@ -656,34 +586,6 @@
   },
   {
    "source": "commons",
-   "title": "Sarah Palin Christmas 2",
-   "creator": "Spc. Paizley Ramsey",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarah_Palin_Christmas_2.jpg",
-   "key": "commons:5501804",
-   "src": "photos/bomber-jacket/commons-5501804.webp",
-   "w": 720,
-   "h": 469,
-   "color": "#5f471a",
-   "bg": "#71533e"
-  },
-  {
-   "source": "commons",
-   "title": "US Navy 090514-N-4133B-356 Vice President, Joe Biden receives a flight jacket from the Commanding Officer of USS Ronald Reagan Capt. Kenneth Norton",
-   "creator": "U.S. Navy photo by Mass Communication Specialist 3rd Class Benjamin Brossard",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_Navy_090514-N-4133B-356_Vice_President,_Joe_Biden_receives_a_flight_jacket_from_the_Commanding_Officer_of_USS_Ronald_Reagan_Capt._Kenneth_Norton.jpg",
-   "key": "commons:8357610",
-   "src": "photos/bomber-jacket/commons-8357610.webp",
-   "w": 720,
-   "h": 496,
-   "color": "#97908d",
-   "bg": "#343231"
-  },
-  {
-   "source": "commons",
    "title": "Alpha Ind CWU 45(N)",
    "creator": "DirkF601",
    "license": "CC BY-SA 4.0",
@@ -693,7 +595,7 @@
    "src": "photos/bomber-jacket/commons-36621655.webp",
    "w": 720,
    "h": 540,
-   "color": "#6f7477",
+   "color": "#6f7377",
    "bg": "#d7d4d3"
   },
   {
@@ -714,104 +616,6 @@
  "Bowling Shirt": [
   {
    "source": "commons",
-   "title": "Camp Mather Tee shirt with old automobile under entrance arch cartoon",
-   "creator": "MikeVdP",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camp_Mather_Tee_shirt_with_old_automobile_under_entrance_arch_cartoon.jpg",
-   "key": "commons:121806137",
-   "src": "photos/bowling-shirt/commons-121806137.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#b7b5b6",
-   "bg": "#675245"
-  },
-  {
-   "source": "commons",
-   "title": "Celebrity Sports Center bowling t-shirt",
-   "creator": "Jason Pock",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Celebrity_Sports_Center_bowling_t-shirt.JPG",
-   "key": "commons:20854209",
-   "src": "photos/bowling-shirt/commons-20854209.webp",
-   "w": 672,
-   "h": 900,
-   "color": "#b74954",
-   "bg": "#a5abb1"
-  },
-  {
-   "source": "commons",
-   "title": "Camp Mather tee shirt",
-   "creator": "MikeVdP",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camp_Mather_tee_shirt.jpg",
-   "key": "commons:121487362",
-   "src": "photos/bowling-shirt/commons-121487362.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#4695c2",
-   "bg": "#554647"
-  },
-  {
-   "source": "commons",
-   "title": "First shirts host dorm bowling event (4063407)",
-   "creator": "U.S. Air Force photo by Airman William Tracy",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_shirts_host_dorm_bowling_event_(4063407).jpg",
-   "key": "commons:172137859",
-   "src": "photos/bowling-shirt/commons-172137859.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#7c6c4c",
-   "bg": "#6b5a43"
-  },
-  {
-   "source": "commons",
-   "title": "Volunteer hacking using a Linux laptop with FOSDEM T-shirt during End Summer Camp 2022",
-   "creator": "cantalupa",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volunteer_hacking_using_a_Linux_laptop_with_FOSDEM_T-shirt_during_End_Summer_Camp_2022.jpg",
-   "key": "commons:122770733",
-   "src": "photos/bowling-shirt/commons-122770733.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#874976",
-   "bg": "#8a797b"
-  },
-  {
-   "source": "commons",
-   "title": "LSU Club Bowling Team, 2009-2010",
-   "creator": "blair leblanc",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:LSU_Club_Bowling_Team,_2009-2010.jpg",
-   "key": "commons:10196650",
-   "src": "photos/bowling-shirt/commons-10196650.webp",
-   "w": 720,
-   "h": 479,
-   "color": "#e4a216",
-   "bg": "#403b2b"
-  },
-  {
-   "source": "commons",
-   "title": "Exemple de t-shirt de camp 2",
-   "creator": "Marchall",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exemple_de_t-shirt_de_camp_2.jpg",
-   "key": "commons:22621705",
-   "src": "photos/bowling-shirt/commons-22621705.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#62889d",
-   "bg": "#a49386"
-  },
-  {
-   "source": "commons",
    "title": "CamisaBolera-50's",
    "creator": "Rafax",
    "license": "CC BY-SA 4.0",
@@ -821,7 +625,7 @@
    "src": "photos/bowling-shirt/commons-161862553.webp",
    "w": 673,
    "h": 900,
-   "color": "#a1a39e",
+   "color": "#a1a29d",
    "bg": "#6c564c"
   },
   {
@@ -837,48 +641,6 @@
    "h": 809,
    "color": "#d83c29",
    "bg": "#171b1e"
-  },
-  {
-   "source": "commons",
-   "title": "Anti-Jack Conway shirt (5138171369)",
-   "creator": "Gage Skidmore from Surprise, AZ, United States of America",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anti-Jack_Conway_shirt_(5138171369).jpg",
-   "key": "commons:105248814",
-   "src": "photos/bowling-shirt/commons-105248814.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#4d4538",
-   "bg": "#625c49"
-  },
-  {
-   "source": "commons",
-   "title": "Tee shirt souvenir camp luloup",
-   "creator": "Bricetofly",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tee_shirt_souvenir_camp_luloup.jpeg",
-   "key": "commons:197145205",
-   "src": "photos/bowling-shirt/commons-197145205.webp",
-   "w": 720,
-   "h": 768,
-   "color": "#638c5a",
-   "bg": "#0e775a"
-  },
-  {
-   "source": "commons",
-   "title": "Exemple de t-shirt de camp",
-   "creator": "Marchall",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exemple_de_t-shirt_de_camp.jpg",
-   "key": "commons:22621706",
-   "src": "photos/bowling-shirt/commons-22621706.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#1a311a",
-   "bg": "#72615e"
   }
  ],
  "Bridal Lehenga": [
@@ -982,34 +744,6 @@
   },
   {
    "source": "commons",
-   "title": "A-store-person-showcases-a-lehenga",
-   "creator": "Siddharth Srivastava",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A-store-person-showcases-a-lehenga.jpg",
-   "key": "commons:974836",
-   "src": "photos/bridal-lehenga/commons-974836.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#1882b8",
-   "bg": "#837a75"
-  },
-  {
-   "source": "commons",
-   "title": "Hasseen2",
-   "creator": "Chemical Engineer",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hasseen2.jpg",
-   "key": "commons:4567019",
-   "src": "photos/bridal-lehenga/commons-4567019.webp",
-   "w": 720,
-   "h": 526,
-   "color": "#2e6d86",
-   "bg": "#475954"
-  },
-  {
-   "source": "commons",
    "title": "Gota Embroidery",
    "creator": "Pebble101",
    "license": "CC BY-SA 3.0",
@@ -1020,35 +754,7 @@
    "w": 501,
    "h": 636,
    "color": "#e98053",
-   "bg": "#b16a4e"
-  },
-  {
-   "source": "commons",
-   "title": "Navratri garba at Ambaji temple",
-   "creator": "anurag agnihotri",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Navratri_garba_at_Ambaji_temple.jpg",
-   "key": "commons:29855989",
-   "src": "photos/bridal-lehenga/commons-29855989.webp",
-   "w": 720,
-   "h": 472,
-   "color": "#87543f",
-   "bg": "#856e64"
-  },
-  {
-   "source": "commons",
-   "title": "Raas garba performarnce",
-   "creator": "jackiembarr",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raas_garba_performarnce.jpg",
-   "key": "commons:29855990",
-   "src": "photos/bridal-lehenga/commons-29855990.webp",
-   "w": 720,
-   "h": 507,
-   "color": "#64263c",
-   "bg": "#82746a"
+   "bg": "#b1694e"
   }
  ],
  "Buckle Shoes": [
@@ -1119,22 +825,8 @@
    "src": "photos/buckle-shoes/cma-113697.webp",
    "w": 720,
    "h": 549,
-   "color": "#b59771",
+   "color": "#b59871",
    "bg": "#b3b7bc"
-  },
-  {
-   "source": "commons",
-   "title": "The Declaration of Lovelabel QS:Len,\"The Declaration of Love\"label QS:Lde,\"Die Liebeserklärung\"label QS:Lfr,\"La Déclaration d'amour\"",
-   "creator": "Jean-François de Troy",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Declarationoflove.jpg",
-   "key": "commons:988164",
-   "src": "photos/buckle-shoes/commons-988164.webp",
-   "w": 720,
-   "h": 562,
-   "color": "#253c46",
-   "bg": "#686556"
   },
   {
    "source": "commons",
@@ -1147,22 +839,8 @@
    "src": "photos/buckle-shoes/commons-59661410.webp",
    "w": 720,
    "h": 368,
-   "color": "#a56652",
+   "color": "#a46451",
    "bg": "#efeff1"
-  },
-  {
-   "source": "cma",
-   "title": "Two Figures Framed by a Jeweled Border, 450–550 CE",
-   "creator": "Byzantine Empire (Egypt)",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/1979.58",
-   "key": "cma:149666",
-   "src": "photos/buckle-shoes/cma-149666.webp",
-   "w": 720,
-   "h": 644,
-   "color": "#6c4128",
-   "bg": "#af9980"
   },
   {
    "source": "commons",
@@ -1175,22 +853,8 @@
    "src": "photos/buckle-shoes/commons-4766501.webp",
    "w": 720,
    "h": 540,
-   "color": "#191a18",
-   "bg": "#4c4c40"
-  },
-  {
-   "source": "commons",
-   "title": "Georgian Shoe Buckle - Back View",
-   "creator": "Michael Applegate, Michael Applegate, 2014-04-25 14:32:38",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Georgian_Shoe_Buckle_-_Back_View_(FindID_613388).jpg",
-   "key": "commons:55303237",
-   "src": "photos/buckle-shoes/commons-55303237.webp",
-   "w": 635,
-   "h": 640,
-   "color": "#565a3c",
-   "bg": "#e6e5e7"
+   "color": "#191a17",
+   "bg": "#4c4d40"
   },
   {
    "source": "commons",
@@ -1217,8 +881,8 @@
    "src": "photos/buckle-shoes/commons-22870929.webp",
    "w": 720,
    "h": 639,
-   "color": "#756764",
-   "bg": "#a79591"
+   "color": "#746764",
+   "bg": "#a79590"
   }
  ],
  "Cargo Pants": [
@@ -1280,104 +944,6 @@
   },
   {
    "source": "commons",
-   "title": "Amy Goodman",
-   "creator": "Gohsuke Takama from Tokyo, Japan",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amy_Goodman.jpg",
-   "key": "commons:3887092",
-   "src": "photos/cargo-pants/commons-3887092.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#5e739b",
-   "bg": "#4e5557"
-  },
-  {
-   "source": "commons",
-   "title": "HK Jockey Club Creative Arts Centre JCCAC Art room b5a",
-   "creator": "SKMCAC",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_Jockey_Club_Creative_Arts_Centre_JCCAC_Art_room_b5a.jpg",
-   "key": "commons:4949539",
-   "src": "photos/cargo-pants/commons-4949539.webp",
-   "w": 720,
-   "h": 501,
-   "color": "#561821",
-   "bg": "#726564"
-  },
-  {
-   "source": "commons",
-   "title": "FlyingCrossChop-Amateur",
-   "creator": "iyoupapa",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:FlyingCrossChop-Amateur.jpg",
-   "key": "commons:8124168",
-   "src": "photos/cargo-pants/commons-8124168.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#8d373f",
-   "bg": "#554e4b"
-  },
-  {
-   "source": "commons",
-   "title": "Bozen 1 (329)",
-   "creator": "User:Mattes",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bozen_1_(329).JPG",
-   "key": "commons:15330820",
-   "src": "photos/cargo-pants/commons-15330820.webp",
-   "w": 720,
-   "h": 641,
-   "color": "#5a5a5b",
-   "bg": "#7b7670"
-  },
-  {
-   "source": "commons",
-   "title": "Former Naked News anchor Christine Kerr, in Toronto (Canada), 2008",
-   "creator": "Dennis G. Jarvis",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Former_Naked_News_anchor_Christine_Kerr,_in_Toronto_(Canada),_2008.jpg",
-   "key": "commons:16097186",
-   "src": "photos/cargo-pants/commons-16097186.webp",
-   "w": 598,
-   "h": 900,
-   "color": "#15aad0",
-   "bg": "#676666"
-  },
-  {
-   "source": "commons",
-   "title": "Flickr - Per Ola Wiberg ~ mostly away - From Viltjouren...are they dancing tango waltz or mazurka^ Or Jenka maybe",
-   "creator": "Per Ola Wiberg from Ekerö, Sweden",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_-_Per_Ola_Wiberg_~_mostly_away_-_From_Viltjouren...are_they_dancing_tango_waltz_or_mazurka%5E_Or_Jenka_maybe.jpg",
-   "key": "commons:22495764",
-   "src": "photos/cargo-pants/commons-22495764.webp",
-   "w": 695,
-   "h": 750,
-   "color": "#49434b",
-   "bg": "#645956"
-  },
-  {
-   "source": "commons",
-   "title": "Huracán Florida",
-   "creator": "Amarinsky",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hurac%C3%A1n_Florida.JPG",
-   "key": "commons:24501189",
-   "src": "photos/cargo-pants/commons-24501189.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#8e6c58",
-   "bg": "#857a70"
-  },
-  {
-   "source": "commons",
    "title": "HK CWB 銅鑼灣 Causeway Bay 波斯富街 Percival Street 駱克道 Lockhart Road clothing shop long pants October 2021 SS2 01",
    "creator": "AHAGO DAOSRM",
    "license": "CC BY-SA 4.0",
@@ -1388,7 +954,7 @@
    "w": 720,
    "h": 540,
    "color": "#7c7570",
-   "bg": "#736966"
+   "bg": "#726965"
   }
  ],
  "Chemise": [
@@ -1431,22 +997,8 @@
    "src": "photos/chemise/commons-61210208.webp",
    "w": 509,
    "h": 900,
-   "color": "#d9d4ca",
+   "color": "#d8d4c9",
    "bg": "#8c8c8c"
-  },
-  {
-   "source": "commons",
-   "title": "Le coucher (mme poupoule in chemise by her bed)",
-   "creator": "Henri de Toulouse-Lautrec",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lautrec_le_coucher_(mme_poupoule_in_chemise_by_her_bed)_1899.jpg",
-   "key": "commons:109480",
-   "src": "photos/chemise/commons-109480.webp",
-   "w": 713,
-   "h": 900,
-   "color": "#c4ac77",
-   "bg": "#5f4238"
   },
   {
    "source": "commons",
@@ -1459,22 +1011,8 @@
    "src": "photos/chemise/commons-59504260.webp",
    "w": 373,
    "h": 900,
-   "color": "#c5c3ba",
-   "bg": "#939291"
-  },
-  {
-   "source": "commons",
-   "title": "Italian: Il bagno delle ninfe Bad der Nymphentitle QS:P1476,it:\"Il bagno delle ninfe \"label QS:Lit,\"Il bagno delle ninfe \"label QS:Lsl,\"Kopel nimf\"label QS:Lpt-br,\"Banho de ninfas\"label QS:Lno,\"Nymfenes bad\"label QS:Lnb,\"Nymfenes bad\"label QS:Lnl,\"Bad der Nymphen\"label QS:Lde,\"Bad der Nymphen\"label QS:Lfr,\"Le Bain des nymphes\"label QS:Len,\"Bad der Nymphen\"label QS:Lhy,\"Հավերժահարսերի լոգանքը\"label QS:Lda,\"Badende nymfer\"",
-   "creator": "Francesco Hayez",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Francesco_Hayez_003.jpg",
-   "key": "commons:152571",
-   "src": "photos/chemise/commons-152571.webp",
-   "w": 720,
-   "h": 878,
-   "color": "#8a6652",
-   "bg": "#473632"
+   "color": "#c5c2ba",
+   "bg": "#939290"
   },
   {
    "source": "commons",
@@ -1487,22 +1025,8 @@
    "src": "photos/chemise/commons-59488798.webp",
    "w": 381,
    "h": 900,
-   "color": "#c1baa8",
-   "bg": "#afadab"
-  },
-  {
-   "source": "commons",
-   "title": "Girl in the Shirt",
-   "creator": "Amedeo Modigliani",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girl_in_the_shirt_(Red-haired_girl)_by_Amedeo_Modigliani.jpg",
-   "key": "commons:155757",
-   "src": "photos/chemise/commons-155757.webp",
-   "w": 613,
-   "h": 900,
-   "color": "#cfa688",
-   "bg": "#999381"
+   "color": "#c2bba9",
+   "bg": "#adaba9"
   },
   {
    "source": "commons",
@@ -1515,22 +1039,8 @@
    "src": "photos/chemise/commons-59503582.webp",
    "w": 368,
    "h": 900,
-   "color": "#8d7f59",
-   "bg": "#adadad"
-  },
-  {
-   "source": "commons",
-   "title": "French: La toilette A Lady at her Toilettitle QS:P1476,fr:\"La toilette \"label QS:Lfr,\"La toilette \"label QS:Lja,\"化粧 (ヴァトーの絵画)\"label QS:Len,\"A Lady at her Toilet\"",
-   "creator": "Jean-Antoine Watteau",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_059.jpg",
-   "key": "commons:160154",
-   "src": "photos/chemise/commons-160154.webp",
-   "w": 720,
-   "h": 869,
-   "color": "#8f6349",
-   "bg": "#342825"
+   "color": "#8e805a",
+   "bg": "#adacac"
   },
   {
    "source": "commons",
@@ -1543,22 +1053,8 @@
    "src": "photos/chemise/commons-59504760.webp",
    "w": 323,
    "h": 900,
-   "color": "#aca591",
-   "bg": "#a6a194"
-  },
-  {
-   "source": "commons",
-   "title": "Corset us188007",
-   "creator": "Unknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corset_us188007.png",
-   "key": "commons:2615607",
-   "src": "photos/chemise/commons-2615607.webp",
-   "w": 594,
-   "h": 900,
-   "color": "#ab9e92",
-   "bg": "#f4f3f0"
+   "color": "#aba590",
+   "bg": "#a6a294"
   }
  ],
  "Chiffon Saree": [
@@ -1671,8 +1167,8 @@
    "src": "photos/chiffon-saree/cma-108046.webp",
    "w": 720,
    "h": 379,
-   "color": "#a18b71",
-   "bg": "#9ba19c"
+   "color": "#a08a70",
+   "bg": "#9aa09c"
   },
   {
    "source": "commons",
@@ -1685,8 +1181,8 @@
    "src": "photos/chiffon-saree/commons-3153047.webp",
    "w": 720,
    "h": 540,
-   "color": "#9d956a",
-   "bg": "#5a5541"
+   "color": "#9b946a",
+   "bg": "#5b5541"
   },
   {
    "source": "commons",
@@ -1699,8 +1195,8 @@
    "src": "photos/chiffon-saree/commons-61140515.webp",
    "w": 672,
    "h": 900,
-   "color": "#bc6f52",
-   "bg": "#895547"
+   "color": "#bb6e52",
+   "bg": "#875447"
   },
   {
    "source": "commons",
@@ -1713,8 +1209,8 @@
    "src": "photos/chiffon-saree/commons-6422297.webp",
    "w": 720,
    "h": 442,
-   "color": "#a4533a",
-   "bg": "#9e756c"
+   "color": "#a35339",
+   "bg": "#9e756b"
   },
   {
    "source": "commons",
@@ -1727,8 +1223,8 @@
    "src": "photos/chiffon-saree/commons-60932368.webp",
    "w": 720,
    "h": 540,
-   "color": "#867650",
-   "bg": "#9f9586"
+   "color": "#857550",
+   "bg": "#9e9485"
   }
  ],
  "Corset Bodice": [
@@ -1790,20 +1286,6 @@
   },
   {
    "source": "commons",
-   "title": "Enseigne d'un comptoir de corsets - Musée des artes et métiers de Lyon (France)",
-   "creator": "Tusco",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enseigne_d%27un_comptoir_de_corsets_-_Mus%C3%A9e_des_artes_et_m%C3%A9tiers_de_Lyon_(France).jpg",
-   "key": "commons:27076848",
-   "src": "photos/corset-bodice/commons-27076848.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#8a4926",
-   "bg": "#7e5a2c"
-  },
-  {
-   "source": "commons",
    "title": "Corset",
    "creator": "Unknown author",
    "license": "CC0",
@@ -1813,22 +1295,8 @@
    "src": "photos/corset-bodice/commons-59488706.webp",
    "w": 502,
    "h": 700,
-   "color": "#a08b6f",
-   "bg": "#6c6d78"
-  },
-  {
-   "source": "commons",
-   "title": "20131208 Istanbul 060",
-   "creator": "Mark Ahsmann",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:20131208_Istanbul_060.jpg",
-   "key": "commons:30247010",
-   "src": "photos/corset-bodice/commons-30247010.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#38271f",
-   "bg": "#59504b"
+   "color": "#9f8b6f",
+   "bg": "#6c6e78"
   },
   {
    "source": "commons",
@@ -1841,8 +1309,8 @@
    "src": "photos/corset-bodice/commons-65091188.webp",
    "w": 720,
    "h": 860,
-   "color": "#c0bcb8",
-   "bg": "#060507"
+   "color": "#c0bcb7",
+   "bg": "#060607"
   },
   {
    "source": "commons",
@@ -1855,8 +1323,8 @@
    "src": "photos/corset-bodice/commons-59660501.webp",
    "w": 720,
    "h": 667,
-   "color": "#d7d1c4",
-   "bg": "#080809"
+   "color": "#d6d1c4",
+   "bg": "#080808"
   },
   {
    "source": "commons",
@@ -1869,8 +1337,8 @@
    "src": "photos/corset-bodice/commons-31745143.webp",
    "w": 600,
    "h": 900,
-   "color": "#9f6944",
-   "bg": "#3e3025"
+   "color": "#9c6743",
+   "bg": "#3d3024"
   },
   {
    "source": "commons",
@@ -1883,8 +1351,8 @@
    "src": "photos/corset-bodice/commons-31745144.webp",
    "w": 600,
    "h": 900,
-   "color": "#815539",
-   "bg": "#2d201c"
+   "color": "#805539",
+   "bg": "#2d211c"
   },
   {
    "source": "commons",
@@ -1898,7 +1366,7 @@
    "w": 720,
    "h": 515,
    "color": "#a05f26",
-   "bg": "#c3c1bd"
+   "bg": "#c4c1be"
   }
  ],
  "Cowboy Boots": [
@@ -1969,8 +1437,8 @@
    "src": "photos/cowboy-boots/commons-6405993.webp",
    "w": 598,
    "h": 900,
-   "color": "#706c67",
-   "bg": "#d5bba3"
+   "color": "#6f6c67",
+   "bg": "#d8bea5"
   },
   {
    "source": "commons",
@@ -1983,7 +1451,7 @@
    "src": "photos/cowboy-boots/commons-10400439.webp",
    "w": 720,
    "h": 540,
-   "color": "#ab4f30",
+   "color": "#a94f30",
    "bg": "#653d2d"
   },
   {
@@ -1997,22 +1465,8 @@
    "src": "photos/cowboy-boots/commons-16004406.webp",
    "w": 720,
    "h": 480,
-   "color": "#9a2c35",
+   "color": "#9d3137",
    "bg": "#3f454b"
-  },
-  {
-   "source": "commons",
-   "title": "Cowboy boots in Santa Fe - stierch",
-   "creator": "User:SarahStierch",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cowboy_boots_in_Santa_Fe_-_stierch.jpeg",
-   "key": "commons:26563424",
-   "src": "photos/cowboy-boots/commons-26563424.webp",
-   "w": 720,
-   "h": 720,
-   "color": "#3c1c38",
-   "bg": "#783e4f"
   },
   {
    "source": "commons",
@@ -2025,7 +1479,7 @@
    "src": "photos/cowboy-boots/commons-89205177.webp",
    "w": 720,
    "h": 762,
-   "color": "#884b3c",
+   "color": "#874b3c",
    "bg": "#8c8575"
   },
   {
@@ -2039,36 +1493,8 @@
    "src": "photos/cowboy-boots/commons-81556302.webp",
    "w": 720,
    "h": 720,
-   "color": "#6e5c40",
-   "bg": "#968a7a"
-  },
-  {
-   "source": "commons",
-   "title": "Charlie Dunn 1977",
-   "creator": "R Ribb",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charlie_Dunn_1977.jpg",
-   "key": "commons:32926064",
-   "src": "photos/cowboy-boots/commons-32926064.webp",
-   "w": 640,
-   "h": 900,
-   "color": "#5d5b4e",
-   "bg": "#4d4e46"
-  },
-  {
-   "source": "commons",
-   "title": "Ollie in Cowboy boots, High Noon",
-   "creator": "Edanwikiboss",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ollie_in_Cowboy_boots,_High_Noon.jpg",
-   "key": "commons:147128877",
-   "src": "photos/cowboy-boots/commons-147128877.webp",
-   "w": 720,
-   "h": 753,
-   "color": "#8c5a44",
-   "bg": "#584232"
+   "color": "#6d5b3f",
+   "bg": "#968a79"
   }
  ],
  "Cowboy Hat": [
@@ -2140,7 +1566,7 @@
    "w": 720,
    "h": 480,
    "color": "#831603",
-   "bg": "#773a11"
+   "bg": "#773a12"
   },
   {
    "source": "commons",
@@ -2153,7 +1579,7 @@
    "src": "photos/cowboy-hat/commons-3916393.webp",
    "w": 720,
    "h": 479,
-   "color": "#6f4739",
+   "color": "#6d4637",
    "bg": "#7d7472"
   },
   {
@@ -2167,7 +1593,7 @@
    "src": "photos/cowboy-hat/commons-7760571.webp",
    "w": 720,
    "h": 540,
-   "color": "#4e1820",
+   "color": "#49587e",
    "bg": "#454648"
   },
   {
@@ -2182,7 +1608,7 @@
    "w": 720,
    "h": 650,
    "color": "#7f817d",
-   "bg": "#dcbda1"
+   "bg": "#dcbda0"
   },
   {
    "source": "commons",
@@ -2195,22 +1621,8 @@
    "src": "photos/cowboy-hat/commons-12183113.webp",
    "w": 720,
    "h": 479,
-   "color": "#955a33",
-   "bg": "#421f0c"
-  },
-  {
-   "source": "commons",
-   "title": "The STETSON Seagrass Hat - Never steal my STETSON - View from the side",
-   "creator": "Lupus in Saxonia",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_STETSON_Seagrass_Hat_-_Never_steal_my_STETSON_-_View_from_the_side.jpg",
-   "key": "commons:135137193",
-   "src": "photos/cowboy-hat/commons-135137193.webp",
-   "w": 720,
-   "h": 476,
-   "color": "#9a7a3f",
-   "bg": "#bdae94"
+   "color": "#945831",
+   "bg": "#421f0b"
   },
   {
    "source": "commons",
@@ -2223,7 +1635,7 @@
    "src": "photos/cowboy-hat/commons-13814008.webp",
    "w": 640,
    "h": 521,
-   "color": "#8c909a",
+   "color": "#8c9099",
    "bg": "#84939b"
   },
   {
@@ -2237,8 +1649,8 @@
    "src": "photos/cowboy-hat/commons-164946609.webp",
    "w": 720,
    "h": 900,
-   "color": "#6a2522",
-   "bg": "#664846"
+   "color": "#67211f",
+   "bg": "#674846"
   }
  ],
  "Cravat": [
@@ -2286,34 +1698,6 @@
   },
   {
    "source": "commons",
-   "title": "Hallwylska museet, kravatt,",
-   "creator": "Axel Pettersson",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hallwylska_museet,_kravatt,.JPG",
-   "key": "commons:19908622",
-   "src": "photos/cravat/commons-19908622.webp",
-   "w": 600,
-   "h": 900,
-   "color": "#976935",
-   "bg": "#63401d"
-  },
-  {
-   "source": "commons",
-   "title": "Cravat end",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cravat_end_MET_DP264218.jpg",
-   "key": "commons:60190974",
-   "src": "photos/cravat/commons-60190974.webp",
-   "w": 720,
-   "h": 496,
-   "color": "#999490",
-   "bg": "#636465"
-  },
-  {
-   "source": "commons",
    "title": "Cravat endtitle QS:P1476,en:\"Cravat end\"label QS:Len,\"Cravat end\"",
    "creator": "Unknown authorUnknown author",
    "license": "Public domain",
@@ -2324,7 +1708,7 @@
    "w": 720,
    "h": 592,
    "color": "#bbb2a7",
-   "bg": "#151412"
+   "bg": "#161413"
   },
   {
    "source": "commons",
@@ -2337,8 +1721,8 @@
    "src": "photos/cravat/commons-24197628.webp",
    "w": 720,
    "h": 614,
-   "color": "#aba494",
-   "bg": "#131315"
+   "color": "#aba595",
+   "bg": "#171617"
   },
   {
    "source": "commons",
@@ -2351,22 +1735,8 @@
    "src": "photos/cravat/commons-59661078.webp",
    "w": 720,
    "h": 870,
-   "color": "#cec7bc",
-   "bg": "#000000"
-  },
-  {
-   "source": "commons",
-   "title": "Cravat endtitle QS:P1476,en:\"Cravat end\"label QS:Len,\"Cravat end\"",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cravat_end_-_Google_Art_Project_(6823794).jpg",
-   "key": "commons:24198152",
-   "src": "photos/cravat/commons-24198152.webp",
-   "w": 720,
-   "h": 555,
-   "color": "#afaba1",
-   "bg": "#100e11"
+   "color": "#ccc6bb",
+   "bg": "#010000"
   },
   {
    "source": "commons",
@@ -2379,7 +1749,7 @@
    "src": "photos/cravat/commons-59660079.webp",
    "w": 375,
    "h": 900,
-   "color": "#e5ccab",
+   "color": "#e5cdae",
    "bg": "#d6c3ae"
   },
   {
@@ -2394,21 +1764,7 @@
    "w": 589,
    "h": 900,
    "color": "#b99b74",
-   "bg": "#d5bfa0"
-  },
-  {
-   "source": "commons",
-   "title": "Cravat endtitle QS:P1476,en:\"Cravat end\"label QS:Len,\"Cravat end\"",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cravat_end_-_Google_Art_Project_(6823830).jpg",
-   "key": "commons:24198439",
-   "src": "photos/cravat/commons-24198439.webp",
-   "w": 720,
-   "h": 564,
-   "color": "#b4aea5",
-   "bg": "#141416"
+   "bg": "#d4bfa0"
   }
  ],
  "Crinoline Ball Gown": [
@@ -2479,50 +1835,8 @@
    "src": "photos/crinoline-ball-gown/commons-95288443.webp",
    "w": 666,
    "h": 900,
-   "color": "#8c7a57",
-   "bg": "#909190"
-  },
-  {
-   "source": "commons",
-   "title": "Evening dress",
-   "creator": "Callot Soeurs",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Evening_dress_MET_1977.303.2_D4.jpg",
-   "key": "commons:61449932",
-   "src": "photos/crinoline-ball-gown/commons-61449932.webp",
-   "w": 720,
-   "h": 858,
-   "color": "#172045",
-   "bg": "#cfc39e"
-  },
-  {
-   "source": "cma",
-   "title": "Woman's Bridal Dress, Tabard, 1800s",
-   "creator": "China, Qing dynasty (1644-1911)",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/2005.135.3",
-   "key": "cma:163635",
-   "src": "photos/crinoline-ball-gown/cma-163635.webp",
-   "w": 658,
-   "h": 893,
-   "color": "#635f5c",
-   "bg": "#bdbdb5"
-  },
-  {
-   "source": "commons",
-   "title": "Carlotta-of-Mexico",
-   "creator": "Photo by J. Malovich, Trieste.",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carlotta-of-Mexico.jpg",
-   "key": "commons:63834",
-   "src": "photos/crinoline-ball-gown/commons-63834.webp",
-   "w": 720,
-   "h": 898,
-   "color": "#d4cab2",
-   "bg": "#a38f72"
+   "color": "#8c7b58",
+   "bg": "#909290"
   },
   {
    "source": "commons",
@@ -2535,8 +1849,8 @@
    "src": "photos/crinoline-ball-gown/commons-59496259.webp",
    "w": 533,
    "h": 900,
-   "color": "#daa27d",
-   "bg": "#c5b6a6"
+   "color": "#daa37d",
+   "bg": "#c4b6a6"
   },
   {
    "source": "commons",
@@ -2550,35 +1864,7 @@
    "w": 362,
    "h": 900,
    "color": "#201f1d",
-   "bg": "#c4c0ba"
-  },
-  {
-   "source": "cma",
-   "title": "Dress, c. 1100–1532",
-   "creator": "Peru, South Highlands or South Coast, Chuquibamba style, 12th-16th century",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/1940.498",
-   "key": "cma:119656",
-   "src": "photos/crinoline-ball-gown/cma-119656.webp",
-   "w": 720,
-   "h": 651,
-   "color": "#60463f",
-   "bg": "#beaf9f"
-  },
-  {
-   "source": "commons",
-   "title": "Erzsebet kiralyne photo Rabending",
-   "creator": "Emil Rabending",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erzsebet_kiralyne_photo_Rabending.jpg",
-   "key": "commons:551104",
-   "src": "photos/crinoline-ball-gown/commons-551104.webp",
-   "w": 720,
-   "h": 576,
-   "color": "#bb9b72",
-   "bg": "#564a41"
+   "bg": "#c5c0bb"
   }
  ],
  "Denim Jacket": [
@@ -2668,34 +1954,6 @@
   },
   {
    "source": "commons",
-   "title": "Peter Doyle (author) 02",
-   "creator": "Joe Mabel",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peter_Doyle_(author)_02.jpg",
-   "key": "commons:10056958",
-   "src": "photos/denim-jacket/commons-10056958.webp",
-   "w": 720,
-   "h": 478,
-   "color": "#ae7264",
-   "bg": "#3d2a2b"
-  },
-  {
-   "source": "commons",
-   "title": "Los Angeles Pride 1988 062",
-   "creator": "Alan Light",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Los_Angeles_Pride_1988_062.jpg",
-   "key": "commons:23164715",
-   "src": "photos/denim-jacket/commons-23164715.webp",
-   "w": 720,
-   "h": 477,
-   "color": "#b48271",
-   "bg": "#b2aea9"
-  },
-  {
-   "source": "commons",
    "title": "Woman's Gold Denim Jacket and Trousers Worn by Bonnie Blake",
    "creator": "Gilman, Diane",
    "license": "Public domain",
@@ -2705,36 +1963,8 @@
    "src": "photos/denim-jacket/commons-157882368.webp",
    "w": 720,
    "h": 480,
-   "color": "#747274",
-   "bg": "#a19f9f"
-  },
-  {
-   "source": "commons",
-   "title": "Jean-Charles de Castelbajac Arche de Noé (Teddy Bear Jacket), Winter 1988-9 2",
-   "creator": "Staff photographer, Rhode Island School of Design Museum of Art",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Charles_de_Castelbajac_Arche_de_No%C3%A9_(Teddy_Bear_Jacket),_Winter_1988-9_2.jpg",
-   "key": "commons:118102306",
-   "src": "photos/denim-jacket/commons-118102306.webp",
-   "w": 720,
-   "h": 720,
-   "color": "#69452a",
-   "bg": "#bababb"
-  },
-  {
-   "source": "commons",
-   "title": "Octopus rice crackers No,1",
-   "creator": "Mti",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Octopus_rice_crackers_No,1.JPG",
-   "key": "commons:25241449",
-   "src": "photos/denim-jacket/commons-25241449.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#684238",
-   "bg": "#ada18f"
+   "color": "#737173",
+   "bg": "#a09f9e"
   },
   {
    "source": "commons",
@@ -2748,7 +1978,7 @@
    "w": 720,
    "h": 480,
    "color": "#bcb095",
-   "bg": "#d5d8e1"
+   "bg": "#d5d9e1"
   }
  ],
  "Denim Skirt": [
@@ -2807,118 +2037,6 @@
    "h": 900,
    "color": "#193266",
    "bg": "#634f5a"
-  },
-  {
-   "source": "commons",
-   "title": "Guy in a Skirt playing a Saxophone",
-   "creator": "Lorri37 on Flickr",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guy_in_a_Skirt_playing_a_Saxophone.jpg",
-   "key": "commons:7513475",
-   "src": "photos/denim-skirt/commons-7513475.webp",
-   "w": 466,
-   "h": 900,
-   "color": "#915f4c",
-   "bg": "#352529"
-  },
-  {
-   "source": "commons",
-   "title": "Robbye Bentley at Porn Star Karaoke 2",
-   "creator": "Photo from www.lukeisback.com",
-   "license": "CC BY-SA 2.5",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robbye_Bentley_at_Porn_Star_Karaoke_2.jpg",
-   "key": "commons:9799319",
-   "src": "photos/denim-skirt/commons-9799319.webp",
-   "w": 550,
-   "h": 900,
-   "color": "#c55d48",
-   "bg": "#45342a"
-  },
-  {
-   "source": "commons",
-   "title": "Botas detalles",
-   "creator": "Incal",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Botas_detalles.JPG",
-   "key": "commons:18153475",
-   "src": "photos/denim-skirt/commons-18153475.webp",
-   "w": 652,
-   "h": 706,
-   "color": "#39495a",
-   "bg": "#737b7f"
-  },
-  {
-   "source": "commons",
-   "title": "Erika Heaven at AVN Adult Entertainment Expo 2008 (11)",
-   "creator": "J Chang from USA",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erika_Heaven_at_AVN_Adult_Entertainment_Expo_2008_(11).jpg",
-   "key": "commons:10938646",
-   "src": "photos/denim-skirt/commons-10938646.webp",
-   "w": 603,
-   "h": 900,
-   "color": "#906259",
-   "bg": "#513c2f"
-  },
-  {
-   "source": "commons",
-   "title": "Taiwan2018GayParade11",
-   "creator": "Pieceofr",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taiwan2018GayParade11.jpg",
-   "key": "commons:73904362",
-   "src": "photos/denim-skirt/commons-73904362.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#946b51",
-   "bg": "#787a6f"
-  },
-  {
-   "source": "commons",
-   "title": "La Fuerza Latina 48",
-   "creator": "MarkScottAustinTX",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Fuerza_Latina_48.jpg",
-   "key": "commons:129181594",
-   "src": "photos/denim-skirt/commons-129181594.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#7d4c3d",
-   "bg": "#8a8081"
-  },
-  {
-   "source": "commons",
-   "title": "Erika Heaven at AVN Adult Entertainment Expo 2008 (9)",
-   "creator": "J Chang from USA",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erika_Heaven_at_AVN_Adult_Entertainment_Expo_2008_(9).jpg",
-   "key": "commons:10938631",
-   "src": "photos/denim-skirt/commons-10938631.webp",
-   "w": 603,
-   "h": 900,
-   "color": "#946751",
-   "bg": "#565141"
-  },
-  {
-   "source": "commons",
-   "title": "La Fuerza Latina 37",
-   "creator": "MarkScottAustinTX",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Fuerza_Latina_37.jpg",
-   "key": "commons:129181575",
-   "src": "photos/denim-skirt/commons-129181575.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#774d3f",
-   "bg": "#8f8994"
   }
  ],
  "Dhoti Pants": [
@@ -2963,132 +2081,6 @@
    "h": 800,
    "color": "#442716",
    "bg": "#605541"
-  },
-  {
-   "source": "commons",
-   "title": "Brahmin boy ritual",
-   "creator": "Abdullah Al Ameriki on Flickr",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brahmin_boy_ritual.jpg",
-   "key": "commons:1552251",
-   "src": "photos/dhoti-pants/commons-1552251.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#784b35",
-   "bg": "#564537"
-  },
-  {
-   "source": "commons",
-   "title": "Dhotis in Delhi",
-   "creator": "Wen-Yan King",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhotis_in_Delhi.jpg",
-   "key": "commons:2181320",
-   "src": "photos/dhoti-pants/commons-2181320.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#e5a41d",
-   "bg": "#8e3006"
-  },
-  {
-   "source": "commons",
-   "title": "Lord Ganesha relishing modakaq - Laddoo",
-   "creator": "anonymous",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ganesha_Basohli_miniature_circa_1730_Dubost_p73.jpg",
-   "key": "commons:3358417",
-   "src": "photos/dhoti-pants/commons-3358417.webp",
-   "w": 660,
-   "h": 900,
-   "color": "#a6543f",
-   "bg": "#bf8431"
-  },
-  {
-   "source": "commons",
-   "title": "Hindu funeral",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hindu_funeral.jpg",
-   "key": "commons:9874419",
-   "src": "photos/dhoti-pants/commons-9874419.webp",
-   "w": 720,
-   "h": 669,
-   "color": "#b59365",
-   "bg": "#b6a883"
-  },
-  {
-   "source": "commons",
-   "title": "Chatwallah",
-   "creator": "sreenivasa ram makineedi",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chatwallah.jpg",
-   "key": "commons:14858598",
-   "src": "photos/dhoti-pants/commons-14858598.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#c1a477",
-   "bg": "#89775b"
-  },
-  {
-   "source": "commons",
-   "title": "File-Sikh pilgrim at the Golden Temple (Harmandir Sahib) in Amritsar, India cropped (man)",
-   "creator": "Sikh_pilgrim_at_the_Golden_Temple_(Harmandir_Sahib)_in_Amritsar,_India.jpg: Paulrudd derivative work: Vearthy (talk)",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:File-Sikh_pilgrim_at_the_Golden_Temple_(Harmandir_Sahib)_in_Amritsar,_India_cropped_(man).jpg",
-   "key": "commons:15095613",
-   "src": "photos/dhoti-pants/commons-15095613.webp",
-   "w": 720,
-   "h": 688,
-   "color": "#a6704f",
-   "bg": "#a6a6a6"
-  },
-  {
-   "source": "commons",
-   "title": "Gandhi 60 years walking to meeting",
-   "creator": "Vdkdaan",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gandhi_60_years_walking_to_meeting.jpg",
-   "key": "commons:16961632",
-   "src": "photos/dhoti-pants/commons-16961632.webp",
-   "w": 652,
-   "h": 900,
-   "color": "#70747c",
-   "bg": "#3d2e33"
-  },
-  {
-   "source": "commons",
-   "title": "Opaque watercolour painting of a Maratha wearing a dhoti with an angavastra (shawl) across his chest",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opaque_watercolour_painting_of_a_Maratha_wearing_a_dhoti_with_an_angavastra_(shawl)_across_his_chest.jpg",
-   "key": "commons:22271917",
-   "src": "photos/dhoti-pants/commons-22271917.webp",
-   "w": 623,
-   "h": 900,
-   "color": "#91959c",
-   "bg": "#6f6b63"
-  },
-  {
-   "source": "commons",
-   "title": "Fishermen of Kerala (1892)",
-   "creator": "Clain and Perl studio, Madras. Copyright by mission 21 / Basel Mission",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fishermen_of_Kerala_(1892).jpg",
-   "key": "commons:20372678",
-   "src": "photos/dhoti-pants/commons-20372678.webp",
-   "w": 720,
-   "h": 493,
-   "color": "#9e9491",
-   "bg": "#a9a19c"
   }
  ],
  "Doublet": [
@@ -3201,22 +2193,8 @@
    "src": "photos/doublet/commons-57103439.webp",
    "w": 720,
    "h": 900,
-   "color": "#ad915f",
-   "bg": "#030308"
-  },
-  {
-   "source": "commons",
-   "title": "Slag om Grolle 2008-2 - Musketiers in Spaanse dienst",
-   "creator": "Kweniston",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slag_om_Grolle_2008-2_-_Musketiers_in_Spaanse_dienst.jpg",
-   "key": "commons:5022141",
-   "src": "photos/doublet/commons-5022141.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#a0894f",
-   "bg": "#989986"
+   "color": "#ac915f",
+   "bg": "#020308"
   },
   {
    "source": "commons",
@@ -3243,8 +2221,8 @@
    "src": "photos/doublet/commons-24846842.webp",
    "w": 571,
    "h": 900,
-   "color": "#5a232c",
-   "bg": "#ada9ad"
+   "color": "#5a232b",
+   "bg": "#ada9ac"
   },
   {
    "source": "commons",
@@ -3257,8 +2235,8 @@
    "src": "photos/doublet/commons-26135059.webp",
    "w": 504,
    "h": 661,
-   "color": "#cdae7d",
-   "bg": "#05080b"
+   "color": "#cbae7c",
+   "bg": "#05090b"
   }
  ],
  "Dupatta": [
@@ -3357,78 +2335,8 @@
    "src": "photos/dupatta/cma-107887.webp",
    "w": 720,
    "h": 518,
-   "color": "#2f1820",
-   "bg": "#aba7a4"
-  },
-  {
-   "source": "commons",
-   "title": "GI walks down the runway during a fashion show dressed in a colorful, traditional Afghan dress. The March 3, 2008",
-   "creator": "Melissa M. Escobar",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:GI_walks_down_the_runway_during_a_fashion_show_dressed_in_a_colorful,_traditional_Afghan_dress._The_March_3,_2008.jpg",
-   "key": "commons:11118647",
-   "src": "photos/dupatta/commons-11118647.webp",
-   "w": 544,
-   "h": 900,
-   "color": "#c8431e",
-   "bg": "#633f2c"
-  },
-  {
-   "source": "commons",
-   "title": "Celebrities at Manish Malhotra - Lilavati Save & Empower Girl Child show (11)",
-   "creator": "Bollywood Hungama",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Celebrities_at_Manish_Malhotra_-_Lilavati_Save_%26_Empower_Girl_Child_show_(11).jpg",
-   "key": "commons:19094946",
-   "src": "photos/dupatta/commons-19094946.webp",
-   "w": 585,
-   "h": 881,
-   "color": "#d5b152",
-   "bg": "#633e20"
-  },
-  {
-   "source": "commons",
-   "title": "Celebrities at Manish Malhotra - Lilavati Save & Empower Girl Child show (24)",
-   "creator": "Bollywood Hungama",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Celebrities_at_Manish_Malhotra_-_Lilavati_Save_%26_Empower_Girl_Child_show_(24).jpg",
-   "key": "commons:19094998",
-   "src": "photos/dupatta/commons-19094998.webp",
-   "w": 585,
-   "h": 881,
-   "color": "#3697bb",
-   "bg": "#72665d"
-  },
-  {
-   "source": "commons",
-   "title": "Gracy singh dangerous ishq",
-   "creator": "Bollywood Hungama",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gracy_singh_dangerous_ishq.jpg",
-   "key": "commons:19676313",
-   "src": "photos/dupatta/commons-19676313.webp",
-   "w": 585,
-   "h": 877,
-   "color": "#a09e9c",
-   "bg": "#83888a"
-  },
-  {
-   "source": "commons",
-   "title": "Ghagra Choli",
-   "creator": "Janavi",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghagra_Choli.jpg",
-   "key": "commons:30626853",
-   "src": "photos/dupatta/commons-30626853.webp",
-   "w": 476,
-   "h": 900,
-   "color": "#7b3c26",
-   "bg": "#695655"
+   "color": "#2f181f",
+   "bg": "#aba7a5"
   }
  ],
  "Empire-Waist Dress": [
@@ -3543,62 +2451,6 @@
    "h": 900,
    "color": "#cfbc77",
    "bg": "#b4a58f"
-  },
-  {
-   "source": "commons",
-   "title": "Dinner dress",
-   "creator": "Alice M. Dunstan",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinner_dress_MET_DT9316.jpg",
-   "key": "commons:59495994",
-   "src": "photos/empire-waist-dress/commons-59495994.webp",
-   "w": 720,
-   "h": 900,
-   "color": "#5f5351",
-   "bg": "#31333e"
-  },
-  {
-   "source": "commons",
-   "title": "Portrait of Grand Duchess Maria Pavlovna of Russia (1786–1859)label QS:Lru,\"Портрет великой княжны Марии Павловны\"label QS:Len,\"Portrait of Grand Duchess Maria Pavlovna of Russia (1786–1859)\"",
-   "creator": "Vladimir Borovikovsky",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maria_Pavlovna_of_Russia_by_V.Borovikovskiy_(1804,_Gatchina).jpg",
-   "key": "commons:307114",
-   "src": "photos/empire-waist-dress/commons-307114.webp",
-   "w": 720,
-   "h": 878,
-   "color": "#a18b69",
-   "bg": "#322e2d"
-  },
-  {
-   "source": "commons",
-   "title": "Dinner dress",
-   "creator": "Alice M. Dunstan",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinner_dress_MET_DT9318.jpg",
-   "key": "commons:59496012",
-   "src": "photos/empire-waist-dress/commons-59496012.webp",
-   "w": 720,
-   "h": 576,
-   "color": "#482f27",
-   "bg": "#484751"
-  },
-  {
-   "source": "commons",
-   "title": "Dinner dress",
-   "creator": "Alice M. Dunstan",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinner_dress_MET_DT9315.jpg",
-   "key": "commons:59495990",
-   "src": "photos/empire-waist-dress/commons-59495990.webp",
-   "w": 720,
-   "h": 900,
-   "color": "#98908d",
-   "bg": "#7a7a83"
   }
  ],
  "Flannel Shirt": [
@@ -3674,76 +2526,6 @@
   },
   {
    "source": "commons",
-   "title": "Lederhose",
-   "creator": "Pfadilederhosentom at German Wikipedia (Original text: Pfadilederhosentom)",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lederhose.jpg",
-   "key": "commons:2031399",
-   "src": "photos/flannel-shirt/commons-2031399.webp",
-   "w": 720,
-   "h": 864,
-   "color": "#843c26",
-   "bg": "#909242"
-  },
-  {
-   "source": "commons",
-   "title": "Flannel mania 1",
-   "creator": "melody hansen",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flannel_mania_1.jpg",
-   "key": "commons:15153882",
-   "src": "photos/flannel-shirt/commons-15153882.webp",
-   "w": 616,
-   "h": 621,
-   "color": "#809253",
-   "bg": "#04050b"
-  },
-  {
-   "source": "commons",
-   "title": "Accidental Shirt",
-   "creator": "kelly",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Accidental_Shirt.jpg",
-   "key": "commons:15153916",
-   "src": "photos/flannel-shirt/commons-15153916.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#7d838d",
-   "bg": "#c19883"
-  },
-  {
-   "source": "commons",
-   "title": "ANN SCHINDLER OF GRYGLA AT HOME WITH HER DOG MANHASSET",
-   "creator": "Jonas Dovydenas",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:ANN_SCHINDLER_OF_GRYGLA_AT_HOME_WITH_HER_DOG_MANHASSET_-_NARA_-_554193.jpg",
-   "key": "commons:17161747",
-   "src": "photos/flannel-shirt/commons-17161747.webp",
-   "w": 607,
-   "h": 900,
-   "color": "#8d675b",
-   "bg": "#2c2421"
-  },
-  {
-   "source": "commons",
-   "title": "ANN SCHINDLER STANDS IN THE DOORWAY OF HER HOUSE IN GRYGLA",
-   "creator": "Jonas Dovydenas",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:ANN_SCHINDLER_STANDS_IN_THE_DOORWAY_OF_HER_HOUSE_IN_GRYGLA_-_NARA_-_554194.jpg",
-   "key": "commons:17161749",
-   "src": "photos/flannel-shirt/commons-17161749.webp",
-   "w": 720,
-   "h": 486,
-   "color": "#a38e8d",
-   "bg": "#68574d"
-  },
-  {
-   "source": "commons",
    "title": "Bias yoke flannel shirt back",
    "creator": "kellyhogaboom",
    "license": "CC BY-SA 2.0",
@@ -3753,22 +2535,8 @@
    "src": "photos/flannel-shirt/commons-22778238.webp",
    "w": 720,
    "h": 540,
-   "color": "#4c4c4d",
+   "color": "#4b4c4d",
    "bg": "#e1e5e4"
-  },
-  {
-   "source": "commons",
-   "title": "Madelyn Marie AVN 2011 2",
-   "creator": "Gary",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Madelyn_Marie_AVN_2011_2.jpg",
-   "key": "commons:17475419",
-   "src": "photos/flannel-shirt/commons-17475419.webp",
-   "w": 596,
-   "h": 900,
-   "color": "#936655",
-   "bg": "#7384a6"
   }
  ],
  "Fringe Jacket": [
@@ -3799,146 +2567,6 @@
    "h": 480,
    "color": "#3b2b16",
    "bg": "#554f44"
-  },
-  {
-   "source": "commons",
-   "title": "Warm Brown Corduroy Shorts, Dark Floral Top, Leather Jacket, Wayfarers, and Brown Pointed Flats (22632580867)",
-   "creator": "Jamie",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warm_Brown_Corduroy_Shorts,_Dark_Floral_Top,_Leather_Jacket,_Wayfarers,_and_Brown_Pointed_Flats_(22632580867).jpg",
-   "key": "commons:57818077",
-   "src": "photos/fringe-jacket/commons-57818077.webp",
-   "w": 650,
-   "h": 900,
-   "color": "#7f4534",
-   "bg": "#808480"
-  },
-  {
-   "source": "commons",
-   "title": "Denim Jacket and Black Floral Romper From the Back (17151965225)",
-   "creator": "Jamie",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Denim_Jacket_and_Black_Floral_Romper_From_the_Back_(17151965225).jpg",
-   "key": "commons:57818786",
-   "src": "photos/fringe-jacket/commons-57818786.webp",
-   "w": 600,
-   "h": 900,
-   "color": "#643b2f",
-   "bg": "#94846b"
-  },
-  {
-   "source": "commons",
-   "title": "William F. \"Buffalo Bill\" Cody studio portrait with western gear, cabinet card, circa 1880-1899",
-   "creator": "Brisbois, Alfred; Mosher, Charles D",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_F._%22Buffalo_Bill%22_Cody_studio_portrait_with_western_gear,_cabinet_card,_circa_1880-1899_-_DPLA_-_be4a9c5a1973fe04952a25a6d01c61ab.jpg",
-   "key": "commons:125003805",
-   "src": "photos/fringe-jacket/commons-125003805.webp",
-   "w": 594,
-   "h": 900,
-   "color": "#b09f87",
-   "bg": "#4e4a41"
-  },
-  {
-   "source": "commons",
-   "title": "Faux Leather Burgundy Jacket, Dark Floral Print Dress, and Polka Dot Tights (22346015259)",
-   "creator": "Jamie",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Faux_Leather_Burgundy_Jacket,_Dark_Floral_Print_Dress,_and_Polka_Dot_Tights_(22346015259).jpg",
-   "key": "commons:57818126",
-   "src": "photos/fringe-jacket/commons-57818126.webp",
-   "w": 600,
-   "h": 900,
-   "color": "#6b3543",
-   "bg": "#928c73"
-  },
-  {
-   "source": "commons",
-   "title": "William F. \"Buffalo Bill\" Cody studio protrait in western gear, cabinet card, circa 1880-1899",
-   "creator": "Brisbois, Alfred; Mosher, Charles D",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_F._%22Buffalo_Bill%22_Cody_studio_protrait_in_western_gear,_cabinet_card,_circa_1880-1899_-_DPLA_-_78b9fec5aeee043cf3450f3dbf8cbc03_(page_2).jpg",
-   "key": "commons:125004581",
-   "src": "photos/fringe-jacket/commons-125004581.webp",
-   "w": 720,
-   "h": 470,
-   "color": "#d9d5d6",
-   "bg": "#676861"
-  },
-  {
-   "source": "commons",
-   "title": "Faux Leather Moto Jacket with a Comfy Floral Dress and Dotted Tights (22344901130)",
-   "creator": "Jamie",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Faux_Leather_Moto_Jacket_with_a_Comfy_Floral_Dress_and_Dotted_Tights_(22344901130).jpg",
-   "key": "commons:57818136",
-   "src": "photos/fringe-jacket/commons-57818136.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#804155",
-   "bg": "#6e8073"
-  },
-  {
-   "source": "commons",
-   "title": "William F. \"Buffalo Bill\" Cody studio protrait in western gear, cabinet card, circa 1880-1899",
-   "creator": "Brisbois, Alfred; Mosher, Charles D",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_F._%22Buffalo_Bill%22_Cody_studio_protrait_in_western_gear,_cabinet_card,_circa_1880-1899_-_DPLA_-_78b9fec5aeee043cf3450f3dbf8cbc03_(page_1).jpg",
-   "key": "commons:125004580",
-   "src": "photos/fringe-jacket/commons-125004580.webp",
-   "w": 589,
-   "h": 900,
-   "color": "#9e8c70",
-   "bg": "#595244"
-  },
-  {
-   "source": "commons",
-   "title": "Different Ways to Wear a Colored Leather Jacket (22856504669)",
-   "creator": "Jamie",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Different_Ways_to_Wear_a_Colored_Leather_Jacket_(22856504669).jpg",
-   "key": "commons:57818007",
-   "src": "photos/fringe-jacket/commons-57818007.webp",
-   "w": 720,
-   "h": 563,
-   "color": "#79713a",
-   "bg": "#a8a690"
-  },
-  {
-   "source": "commons",
-   "title": "William F. \"Buffalo Bill\" Cody studio portrait in western gear, cabinet card, circa 1880-1899",
-   "creator": "Brisbois, Alfred; Mosher, Charles D",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_F._%22Buffalo_Bill%22_Cody_studio_portrait_in_western_gear,_cabinet_card,_circa_1880-1899_-_DPLA_-_bcb2ac86cb91693735bc223d5c0a6bb1.jpg",
-   "key": "commons:125003818",
-   "src": "photos/fringe-jacket/commons-125003818.webp",
-   "w": 586,
-   "h": 900,
-   "color": "#b5a48e",
-   "bg": "#666157"
-  },
-  {
-   "source": "commons",
-   "title": "Maroon Leather Jacket from Forever 21 worn different ways (22830306467)",
-   "creator": "Jamie",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maroon_Leather_Jacket_from_Forever_21_worn_different_ways_(22830306467).jpg",
-   "key": "commons:57818006",
-   "src": "photos/fringe-jacket/commons-57818006.webp",
-   "w": 720,
-   "h": 563,
-   "color": "#565926",
-   "bg": "#918975"
   }
  ],
  "Frock Coat": [
@@ -4009,8 +2637,8 @@
    "src": "photos/frock-coat/commons-59498989.webp",
    "w": 576,
    "h": 900,
-   "color": "#c6a574",
-   "bg": "#d5cbbf"
+   "color": "#c9a978",
+   "bg": "#d5cbbe"
   },
   {
    "source": "commons",
@@ -4037,22 +2665,8 @@
    "src": "photos/frock-coat/commons-59664919.webp",
    "w": 720,
    "h": 884,
-   "color": "#dfd7ca",
+   "color": "#e0d7cb",
    "bg": "#b2b1b1"
-  },
-  {
-   "source": "commons",
-   "title": "1904 Winston S. Churchill as MP",
-   "creator": "Ernest Herbert Mills",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1904_Winston_S._Churchill_as_MP.jpg",
-   "key": "commons:3636966",
-   "src": "photos/frock-coat/commons-3636966.webp",
-   "w": 590,
-   "h": 895,
-   "color": "#5f5e48",
-   "bg": "#444431"
   },
   {
    "source": "commons",
@@ -4065,7 +2679,7 @@
    "src": "photos/frock-coat/commons-59498996.webp",
    "w": 629,
    "h": 900,
-   "color": "#f6deb4",
+   "color": "#f5dfb4",
    "bg": "#d4cabe"
   },
   {
@@ -4084,20 +2698,6 @@
   },
   {
    "source": "commons",
-   "title": "Frock coat",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frock_coat_MET_C.I.46.95.49_d.jpg",
-   "key": "commons:59498998",
-   "src": "photos/frock-coat/commons-59498998.webp",
-   "w": 720,
-   "h": 410,
-   "color": "#be9a63",
-   "bg": "#e0d1ac"
-  },
-  {
-   "source": "commons",
    "title": "Morning frock coat",
    "creator": "Unknown author",
    "license": "CC0",
@@ -4107,8 +2707,8 @@
    "src": "photos/frock-coat/commons-59662256.webp",
    "w": 522,
    "h": 900,
-   "color": "#9d6c52",
-   "bg": "#93938e"
+   "color": "#9c6d52",
+   "bg": "#93938d"
   }
  ],
  "Ghagra": [
@@ -4184,48 +2784,6 @@
   },
   {
    "source": "cma",
-   "title": "Part of a Skirt (Ghaghara), early 1800s",
-   "creator": "Western India, Gujarat, possibly Kutch",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/1925.794",
-   "key": "cma:108172",
-   "src": "photos/ghagra/cma-108172.webp",
-   "w": 426,
-   "h": 900,
-   "color": "#6a4d39",
-   "bg": "#010101"
-  },
-  {
-   "source": "commons",
-   "title": "Ghagra River upstream (2)",
-   "creator": "Anup Sadi",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghagra_River_upstream_(2).jpg",
-   "key": "commons:180051599",
-   "src": "photos/ghagra/commons-180051599.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#555d64",
-   "bg": "#5d6366"
-  },
-  {
-   "source": "commons",
-   "title": "Ghagra River upstream (1)",
-   "creator": "Anup Sadi",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghagra_River_upstream_(1).jpg",
-   "key": "commons:180051601",
-   "src": "photos/ghagra/commons-180051601.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#4a5455",
-   "bg": "#6a726e"
-  },
-  {
-   "source": "cma",
    "title": "Part of a Skirt (Ghagra), 1800s–early 1900s",
    "creator": "Western India, Gujarat, Kachchh",
    "license": "CC0 1.0",
@@ -4235,36 +2793,8 @@
    "src": "photos/ghagra/cma-107890.webp",
    "w": 720,
    "h": 459,
-   "color": "#8c4634",
-   "bg": "#222d31"
-  },
-  {
-   "source": "commons",
-   "title": "Ghagra River downstream (2)",
-   "creator": "Anup Sadi",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghagra_River_downstream_(2).jpg",
-   "key": "commons:180051787",
-   "src": "photos/ghagra/commons-180051787.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#3c4e5a",
-   "bg": "#4b5754"
-  },
-  {
-   "source": "commons",
-   "title": "Ghagra River downstream (3)",
-   "creator": "Anup Sadi",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghagra_River_downstream_(3).jpg",
-   "key": "commons:180051788",
-   "src": "photos/ghagra/commons-180051788.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#88968a",
-   "bg": "#6d776e"
+   "color": "#8c4633",
+   "bg": "#1f2e31"
   },
   {
    "source": "cma",
@@ -4277,8 +2807,8 @@
    "src": "photos/ghagra/cma-108061.webp",
    "w": 720,
    "h": 609,
-   "color": "#a95a43",
-   "bg": "#232a26"
+   "color": "#aa5b44",
+   "bg": "#1e2a25"
   }
  ],
  "Hawaiian Shirt": [
@@ -4368,34 +2898,6 @@
   },
   {
    "source": "commons",
-   "title": "Ena Pa 2000-Coimbra-30032007-800x",
-   "creator": "Ana Ribeiro",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ena_Pa_2000-Coimbra-30032007-800x.jpg",
-   "key": "commons:1924403",
-   "src": "photos/hawaiian-shirt/commons-1924403.webp",
-   "w": 720,
-   "h": 516,
-   "color": "#b48266",
-   "bg": "#5f4f40"
-  },
-  {
-   "source": "commons",
-   "title": "BruceJohnston",
-   "creator": "Brian Peters",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:BruceJohnston.jpg",
-   "key": "commons:2657448",
-   "src": "photos/hawaiian-shirt/commons-2657448.webp",
-   "w": 720,
-   "h": 479,
-   "color": "#a0705d",
-   "bg": "#291a20"
-  },
-  {
-   "source": "commons",
    "title": "Fabric shop Hilo, Hawaii",
    "creator": "rjones0856",
    "license": "CC BY 2.0",
@@ -4405,50 +2907,8 @@
    "src": "photos/hawaiian-shirt/commons-4900318.webp",
    "w": 720,
    "h": 480,
-   "color": "#9f7f45",
-   "bg": "#433e35"
-  },
-  {
-   "source": "commons",
-   "title": "Bruce Johnston & Mike Love 2006 Birmingham 170152337",
-   "creator": "Brian Peters",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruce_Johnston_%26_Mike_Love_2006_Birmingham_170152337.jpg",
-   "key": "commons:7663215",
-   "src": "photos/hawaiian-shirt/commons-7663215.webp",
-   "w": 720,
-   "h": 479,
-   "color": "#80543e",
-   "bg": "#181513"
-  },
-  {
-   "source": "commons",
-   "title": "David Miscavige is a Suppressive Person",
-   "creator": "Anonymous9000",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Miscavige_is_a_Suppressive_Person.jpg",
-   "key": "commons:10372347",
-   "src": "photos/hawaiian-shirt/commons-10372347.webp",
-   "w": 603,
-   "h": 900,
-   "color": "#0f5e68",
-   "bg": "#55656a"
-  },
-  {
-   "source": "commons",
-   "title": "Buddy Wolfe",
-   "creator": "shstrng",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buddy_Wolfe.jpg",
-   "key": "commons:14692654",
-   "src": "photos/hawaiian-shirt/commons-14692654.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#6e5142",
-   "bg": "#34312e"
+   "color": "#a48245",
+   "bg": "#423e35"
   }
  ],
  "High-Top Sneakers": [
@@ -4524,20 +2984,6 @@
   },
   {
    "source": "commons",
-   "title": "Paar witte sneakers, merk Nike, met klittenbandsluiting en roze accenten, objectnr 90325-3.A-B",
-   "creator": "Nike",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paar_witte_sneakers,_merk_Nike,_met_klittenbandsluiting_en_roze_accenten,_objectnr_90325-3.A-B.JPG",
-   "key": "commons:88269959",
-   "src": "photos/high-top-sneakers/commons-88269959.webp",
-   "w": 720,
-   "h": 478,
-   "color": "#9a9086",
-   "bg": "#050505"
-  },
-  {
-   "source": "commons",
    "title": "Vans classic",
    "creator": "Marcel Klinger",
    "license": "CC BY-SA 3.0",
@@ -4547,36 +2993,8 @@
    "src": "photos/high-top-sneakers/commons-737194.webp",
    "w": 720,
    "h": 540,
-   "color": "#3d2b1e",
-   "bg": "#6d5435"
-  },
-  {
-   "source": "commons",
-   "title": "Paar sneakers, merk Nike, maat niet meer leesbaar, kleuren overwegend roze en zwart, met groene veters, objectnr 86497-1-2",
-   "creator": "Nike",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paar_sneakers,_merk_Nike,_maat_niet_meer_leesbaar,_kleuren_overwegend_roze_en_zwart,_met_groene_veters,_objectnr_86497-1-2.JPG",
-   "key": "commons:88153062",
-   "src": "photos/high-top-sneakers/commons-88153062.webp",
-   "w": 720,
-   "h": 482,
-   "color": "#6d854b",
-   "bg": "#bebbba"
-  },
-  {
-   "source": "commons",
-   "title": "Paar sneakers, Nike, wit met roze, objectnr 91309-1-2",
-   "creator": "Nike",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paar_sneakers,_Nike,_wit_met_roze,_objectnr_91309-1-2.JPG",
-   "key": "commons:88329823",
-   "src": "photos/high-top-sneakers/commons-88329823.webp",
-   "w": 720,
-   "h": 503,
-   "color": "#ab9891",
-   "bg": "#030303"
+   "color": "#3e2b1d",
+   "bg": "#6d5434"
   },
   {
    "source": "commons",
@@ -4589,7 +3007,7 @@
    "src": "photos/high-top-sneakers/commons-68665384.webp",
    "w": 576,
    "h": 586,
-   "color": "#a19797",
+   "color": "#a49a9b",
    "bg": "#ffffff"
   },
   {
@@ -4603,7 +3021,7 @@
    "src": "photos/high-top-sneakers/commons-68665385.webp",
    "w": 576,
    "h": 586,
-   "color": "#c1b6b6",
+   "color": "#c1b6b5",
    "bg": "#ffffff"
   },
   {
@@ -4617,8 +3035,8 @@
    "src": "photos/high-top-sneakers/commons-126564650.webp",
    "w": 720,
    "h": 830,
-   "color": "#9e968a",
-   "bg": "#77614d"
+   "color": "#9e968b",
+   "bg": "#77624c"
   }
  ],
  "Hoodie": [
@@ -4691,104 +3109,6 @@
    "h": 900,
    "color": "#ad193e",
    "bg": "#837d78"
-  },
-  {
-   "source": "commons",
-   "title": "BookCrossingBefore",
-   "creator": "User BookCrossingBefore on en.wikipedia",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:BookCrossingBefore.JPG",
-   "key": "commons:1151842",
-   "src": "photos/hoodie/commons-1151842.webp",
-   "w": 711,
-   "h": 900,
-   "color": "#60403d",
-   "bg": "#958686"
-  },
-  {
-   "source": "commons",
-   "title": "ChristopherDrazan",
-   "creator": "Shuriikn",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChristopherDrazan.JPG",
-   "key": "commons:5227005",
-   "src": "photos/hoodie/commons-5227005.webp",
-   "w": 648,
-   "h": 900,
-   "color": "#724833",
-   "bg": "#afb6ae"
-  },
-  {
-   "source": "commons",
-   "title": "Da Lat 09-49-1",
-   "creator": "Phat Nguyen",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Da_Lat_09-49-1.jpg",
-   "key": "commons:9108409",
-   "src": "photos/hoodie/commons-9108409.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#495b2d",
-   "bg": "#777b6c"
-  },
-  {
-   "source": "commons",
-   "title": "Broombeck Press Photo-7",
-   "creator": "Eelec",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broombeck_Press_Photo-7.jpg",
-   "key": "commons:9443777",
-   "src": "photos/hoodie/commons-9443777.webp",
-   "w": 720,
-   "h": 394,
-   "color": "#0a7097",
-   "bg": "#262625"
-  },
-  {
-   "source": "commons",
-   "title": "Foto0039 (2)",
-   "creator": "Granerino",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foto0039_(2).jpg",
-   "key": "commons:15169029",
-   "src": "photos/hoodie/commons-15169029.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#1f3046",
-   "bg": "#807f81"
-  },
-  {
-   "source": "commons",
-   "title": "Boemfloef in the morning",
-   "creator": "Boemfloef",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boemfloef_in_the_morning.jpg",
-   "key": "commons:20850317",
-   "src": "photos/hoodie/commons-20850317.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#7b5a52",
-   "bg": "#bdbebf"
-  },
-  {
-   "source": "commons",
-   "title": "David Purdy",
-   "creator": "Christopherparent1",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Purdy.jpg",
-   "key": "commons:25843797",
-   "src": "photos/hoodie/commons-25843797.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#97695b",
-   "bg": "#988f94"
   }
  ],
  "Hussar Jacket": [
@@ -4903,62 +3223,6 @@
    "h": 900,
    "color": "#583f36",
    "bg": "#6c655a"
-  },
-  {
-   "source": "commons",
-   "title": "Tschako der k.u.k. Husaren-Regimenter 2, 3, 9 und 12",
-   "creator": "Steinbeisser",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tschako_der_k.u.k._Husaren-Regimenter_2,_3,_9_und_12.png",
-   "key": "commons:23747801",
-   "src": "photos/hussar-jacket/commons-23747801.webp",
-   "w": 500,
-   "h": 876,
-   "color": "#926a48",
-   "bg": "#c0c0c0"
-  },
-  {
-   "source": "commons",
-   "title": "Dolman",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dolman_MET_1979.346.96_d.jpg",
-   "key": "commons:59502043",
-   "src": "photos/hussar-jacket/commons-59502043.webp",
-   "w": 720,
-   "h": 357,
-   "color": "#978565",
-   "bg": "#707567"
-  },
-  {
-   "source": "commons",
-   "title": "Tschako der k.u.k. Husaren-Regimenter 6, 11, 15 und 16",
-   "creator": "Steinbeisser",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tschako_der_k.u.k._Husaren-Regimenter_6,_11,_15_und_16.png",
-   "key": "commons:23747904",
-   "src": "photos/hussar-jacket/commons-23747904.webp",
-   "w": 500,
-   "h": 876,
-   "color": "#8e6646",
-   "bg": "#c1c1c1"
-  },
-  {
-   "source": "commons",
-   "title": "Tschako der k.u.k. Husaren-Regimenter 7 und 10",
-   "creator": "Steinbeisser",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tschako_der_k.u.k._Husaren-Regimenter_7_und_10.png",
-   "key": "commons:23747958",
-   "src": "photos/hussar-jacket/commons-23747958.webp",
-   "w": 500,
-   "h": 876,
-   "color": "#274f9a",
-   "bg": "#c1c1c1"
   }
  ],
  "Inverness Cape": [
@@ -5006,34 +3270,6 @@
   },
   {
    "source": "commons",
-   "title": "Statue Of Sherlock Holmes-Marylebone Road",
-   "creator": "Lonpicman",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Statue_Of_Sherlock_Holmes-Marylebone_Road.jpg",
-   "key": "commons:9945575",
-   "src": "photos/inverness-cape/commons-9945575.webp",
-   "w": 650,
-   "h": 800,
-   "color": "#6e7c4a",
-   "bg": "#87908e"
-  },
-  {
-   "source": "commons",
-   "title": "Heinrich Zille Im Scheunenviertel",
-   "creator": "Heinrich Zille",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heinrich_Zille_Im_Scheunenviertel.jpg",
-   "key": "commons:15294867",
-   "src": "photos/inverness-cape/commons-15294867.webp",
-   "w": 720,
-   "h": 818,
-   "color": "#60553f",
-   "bg": "#e2dcc3"
-  },
-  {
-   "source": "commons",
    "title": "Jacket",
    "creator": "Unknown author",
    "license": "CC BY 4.0",
@@ -5043,7 +3279,7 @@
    "src": "photos/inverness-cape/commons-65757428.webp",
    "w": 600,
    "h": 900,
-   "color": "#736046",
+   "color": "#736145",
    "bg": "#c5beb6"
   },
   {
@@ -5057,78 +3293,8 @@
    "src": "photos/inverness-cape/commons-64576503.webp",
    "w": 720,
    "h": 480,
-   "color": "#6e6f5e",
-   "bg": "#e6e4e6"
-  },
-  {
-   "source": "commons",
-   "title": "Jacket",
-   "creator": "Unknown author",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacket_(AM_1982.137-7).jpg",
-   "key": "commons:65757435",
-   "src": "photos/inverness-cape/commons-65757435.webp",
-   "w": 571,
-   "h": 900,
-   "color": "#6d5c44",
-   "bg": "#aea8a3"
-  },
-  {
-   "source": "commons",
-   "title": "Dunbars Hospital - Inverness (7302019192)",
-   "creator": "summonedbyfells",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunbars_Hospital_-_Inverness_(7302019192).jpg",
-   "key": "commons:28038913",
-   "src": "photos/inverness-cape/commons-28038913.webp",
-   "w": 720,
-   "h": 539,
-   "color": "#ada5a2",
-   "bg": "#40454b"
-  },
-  {
-   "source": "commons",
-   "title": "French: Bonaparte franchissant les Alpes au Grand-Saint-Bernard Napoleon Crossing the Alpstitle QS:P1476,fr:\"Bonaparte franchissant les Alpes au Grand-Saint-Bernard \"label QS:Lfr,\"Bonaparte franchissant les Alpes au Grand-Saint-Bernard \"label QS:Les,\"Napoleón cruzando los Alpes\"label QS:Lde,\"Bonaparte beim Überschreiten der Alpen am Großen Sankt Bernhard\"label QS:Len,\"Napoleon Crossing the Alps\"label QS:Lit,\"Napoleone attraversa il passo del Gran San Bernardo\"label QS:Lnl,\"Napoleon Bonaparte steekt de Alpen over op de Grand Saint Bernard\"",
-   "creator": "Jacques-Louis David",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg",
-   "key": "commons:283006",
-   "src": "photos/inverness-cape/commons-283006.webp",
-   "w": 720,
-   "h": 844,
-   "color": "#633d29",
-   "bg": "#5e5d4d"
-  },
-  {
-   "source": "commons",
-   "title": "Jacket",
-   "creator": "Unknown author",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacket_(AM_1982.137-16).jpg",
-   "key": "commons:65757516",
-   "src": "photos/inverness-cape/commons-65757516.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#8e847b",
-   "bg": "#63584e"
-  },
-  {
-   "source": "commons",
-   "title": "Cloak, infants",
-   "creator": "Unknown author",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cloak,_infants_(AM_1994.201-3).jpg",
-   "key": "commons:82898209",
-   "src": "photos/inverness-cape/commons-82898209.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#676461",
-   "bg": "#828b9e"
+   "color": "#6d6d5c",
+   "bg": "#e6e4e7"
   }
  ],
  "Kanjeevaram Saree": [
@@ -5213,8 +3379,8 @@
    "src": "photos/kanjeevaram-saree/commons-61140515.webp",
    "w": 672,
    "h": 900,
-   "color": "#bc6f52",
-   "bg": "#895547"
+   "color": "#bb6e52",
+   "bg": "#875447"
   },
   {
    "source": "cma",
@@ -5227,22 +3393,8 @@
    "src": "photos/kanjeevaram-saree/cma-108046.webp",
    "w": 720,
    "h": 379,
-   "color": "#a18b71",
-   "bg": "#9ba19c"
-  },
-  {
-   "source": "commons",
-   "title": "Colours of India - Silk yarn waiting to be made into saris",
-   "creator": "McKay Savage",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colours_of_India_-_Silk_yarn_waiting_to_be_made_into_saris.jpg",
-   "key": "commons:7838913",
-   "src": "photos/kanjeevaram-saree/commons-7838913.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#03698d",
-   "bg": "#6d6958"
+   "color": "#a08a70",
+   "bg": "#9aa09c"
   },
   {
    "source": "commons",
@@ -5255,22 +3407,8 @@
    "src": "photos/kanjeevaram-saree/commons-60931442.webp",
    "w": 675,
    "h": 900,
-   "color": "#a05d4c",
-   "bg": "#af948d"
-  },
-  {
-   "source": "commons",
-   "title": "Silk Sari Weaving at Kanchipuram, Tamil Nadu",
-   "creator": "McKay Savage",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silk_Sari_Weaving_at_Kanchipuram,_Tamil_Nadu.jpg",
-   "key": "commons:7838951",
-   "src": "photos/kanjeevaram-saree/commons-7838951.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#9e2139",
-   "bg": "#796662"
+   "color": "#9f5d4c",
+   "bg": "#b0958d"
   },
   {
    "source": "commons",
@@ -5283,22 +3421,8 @@
    "src": "photos/kanjeevaram-saree/commons-60932368.webp",
    "w": 720,
    "h": 540,
-   "color": "#867650",
-   "bg": "#9f9586"
-  },
-  {
-   "source": "commons",
-   "title": "Complicated hand-loom for silk weaving, Kanchipuram, Tamil Nadu",
-   "creator": "McKay Savage",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Complicated_hand-loom_for_silk_weaving,_Kanchipuram,_Tamil_Nadu.jpg",
-   "key": "commons:7838969",
-   "src": "photos/kanjeevaram-saree/commons-7838969.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#726541",
-   "bg": "#625e5c"
+   "color": "#857550",
+   "bg": "#9e9485"
   }
  ],
  "Kolhapuri Chappal": [
@@ -5416,20 +3540,6 @@
   },
   {
    "source": "commons",
-   "title": "Kolhapure footware shop in Madina building (Madina market) Hyderabad, India",
-   "creator": "Melissa",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kolhapure_footware_shop_in_Madina_building_(Madina_market)_Hyderabad,_India.jpg",
-   "key": "commons:58151329",
-   "src": "photos/kolhapuri-chappal/commons-58151329.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#654334",
-   "bg": "#c7bec0"
-  },
-  {
-   "source": "commons",
    "title": "Indian chappal, Kolhapur, late 20th century - Bata Shoe Museum - DSC00445",
    "creator": "Daderot",
    "license": "CC0",
@@ -5439,8 +3549,8 @@
    "src": "photos/kolhapuri-chappal/commons-30486957.webp",
    "w": 720,
    "h": 805,
-   "color": "#6d3730",
-   "bg": "#f3ede8"
+   "color": "#6c3730",
+   "bg": "#f3eee9"
   },
   {
    "source": "commons",
@@ -5453,7 +3563,7 @@
    "src": "photos/kolhapuri-chappal/commons-30486964.webp",
    "w": 720,
    "h": 833,
-   "color": "#824234",
+   "color": "#804234",
    "bg": "#f2d0d5"
   },
   {
@@ -5467,8 +3577,8 @@
    "src": "photos/kolhapuri-chappal/commons-30486959.webp",
    "w": 720,
    "h": 736,
-   "color": "#8c431c",
-   "bg": "#e8e2de"
+   "color": "#8c441c",
+   "bg": "#e8e3de"
   }
  ],
  "Kurta": [
@@ -5553,8 +3663,8 @@
    "src": "photos/kurta/commons-116182642.webp",
    "w": 425,
    "h": 900,
-   "color": "#624433",
-   "bg": "#dad9ce"
+   "color": "#624432",
+   "bg": "#dad9cf"
   },
   {
    "source": "commons",
@@ -5567,8 +3677,8 @@
    "src": "photos/kurta/commons-116182662.webp",
    "w": 529,
    "h": 900,
-   "color": "#a06b2e",
-   "bg": "#d1cec1"
+   "color": "#9f6b2d",
+   "bg": "#d0cdc1"
   },
   {
    "source": "commons",
@@ -5581,64 +3691,8 @@
    "src": "photos/kurta/commons-116182775.webp",
    "w": 560,
    "h": 900,
-   "color": "#5b5f2a",
-   "bg": "#d8d6cc"
-  },
-  {
-   "source": "commons",
-   "title": "Kecskemétistrasse 1, Relief, 2024 Belváros-Lipótváros",
-   "creator": "Globetrotter19",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kecskem%C3%A9tistrasse_1,_Relief,_2024_Belv%C3%A1ros-Lip%C3%B3tv%C3%A1ros.jpg",
-   "key": "commons:148888250",
-   "src": "photos/kurta/commons-148888250.webp",
-   "w": 511,
-   "h": 900,
-   "color": "#908681",
-   "bg": "#b9bbab"
-  },
-  {
-   "source": "commons",
-   "title": "Nico Gomez Lovestream-Pyjama-Konzert Köln (2)",
-   "creator": "CHR!S",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nico_Gomez_Lovestream-Pyjama-Konzert_K%C3%B6ln_(2).jpeg",
-   "key": "commons:155227989",
-   "src": "photos/kurta/commons-155227989.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#2f3778",
-   "bg": "#504e8d"
-  },
-  {
-   "source": "commons",
-   "title": "Kurta churidar nehru vest",
-   "creator": "Fowler&amp;fowler at English Wikipedia",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kurta_churidar_nehru_vest.jpg",
-   "key": "commons:11947584",
-   "src": "photos/kurta/commons-11947584.webp",
-   "w": 512,
-   "h": 900,
-   "color": "#99948d",
-   "bg": "#6b6764"
-  },
-  {
-   "source": "commons",
-   "title": "Medical Clinic in Tema ground-breaking 071120-N-8933S-132",
-   "creator": "U.S. Navy photo by Mass Communication Specialist 2nd Class RJ Stratchko (Released)",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Medical_Clinic_in_Tema_ground-breaking_071120-N-8933S-132.jpg",
-   "key": "commons:5639691",
-   "src": "photos/kurta/commons-5639691.webp",
-   "w": 720,
-   "h": 593,
-   "color": "#a68b5d",
-   "bg": "#b5a78e"
+   "color": "#5a5f2a",
+   "bg": "#d7d5cb"
   }
  ],
  "Kurti": [
@@ -5655,62 +3709,6 @@
    "h": 720,
    "color": "#38235c",
    "bg": "#68852d"
-  },
-  {
-   "source": "commons",
-   "title": "Irma Kurti",
-   "creator": "Francy23 at Italian Wikipedia",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irma_Kurti.jpg",
-   "key": "commons:48156179",
-   "src": "photos/kurti/commons-48156179.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#86bdd8",
-   "bg": "#6f8ca5"
-  },
-  {
-   "source": "commons",
-   "title": "Irma Kurti Switzerland",
-   "creator": "Mimimerkuri",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irma_Kurti_Switzerland.jpg",
-   "key": "commons:71613894",
-   "src": "photos/kurti/commons-71613894.webp",
-   "w": 674,
-   "h": 900,
-   "color": "#805a46",
-   "bg": "#434a39"
-  },
-  {
-   "source": "commons",
-   "title": "Irma Kurti jpg 2019",
-   "creator": "Gatuso1950",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irma_Kurti_jpg_2019.JPG",
-   "key": "commons:92844895",
-   "src": "photos/kurti/commons-92844895.webp",
-   "w": 636,
-   "h": 900,
-   "color": "#c49676",
-   "bg": "#bab6b0"
-  },
-  {
-   "source": "commons",
-   "title": "The delegation of Sanjak of Shkodra in the League of Prizren",
-   "creator": "Pietro Marubi",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_delegation_of_Sanjak_of_Shkodra_in_the_League_of_Prizren.jpg",
-   "key": "commons:37972508",
-   "src": "photos/kurti/commons-37972508.webp",
-   "w": 720,
-   "h": 449,
-   "color": "#a59a8a",
-   "bg": "#958975"
   }
  ],
  "Lehenga Choli": [
@@ -5786,34 +3784,6 @@
   },
   {
    "source": "commons",
-   "title": "A-store-person-showcases-a-lehenga",
-   "creator": "Siddharth Srivastava",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A-store-person-showcases-a-lehenga.jpg",
-   "key": "commons:974836",
-   "src": "photos/lehenga-choli/commons-974836.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#1882b8",
-   "bg": "#837a75"
-  },
-  {
-   "source": "commons",
-   "title": "Hasseen2",
-   "creator": "Chemical Engineer",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hasseen2.jpg",
-   "key": "commons:4567019",
-   "src": "photos/lehenga-choli/commons-4567019.webp",
-   "w": 720,
-   "h": 526,
-   "color": "#2e6d86",
-   "bg": "#475954"
-  },
-  {
-   "source": "commons",
    "title": "Gota Embroidery",
    "creator": "Pebble101",
    "license": "CC BY-SA 3.0",
@@ -5824,63 +3794,7 @@
    "w": 501,
    "h": 636,
    "color": "#e98053",
-   "bg": "#b16a4e"
-  },
-  {
-   "source": "commons",
-   "title": "Navratri garba at Ambaji temple",
-   "creator": "anurag agnihotri",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Navratri_garba_at_Ambaji_temple.jpg",
-   "key": "commons:29855989",
-   "src": "photos/lehenga-choli/commons-29855989.webp",
-   "w": 720,
-   "h": 472,
-   "color": "#87543f",
-   "bg": "#856e64"
-  },
-  {
-   "source": "commons",
-   "title": "Raas garba performarnce",
-   "creator": "jackiembarr",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raas_garba_performarnce.jpg",
-   "key": "commons:29855990",
-   "src": "photos/lehenga-choli/commons-29855990.webp",
-   "w": 720,
-   "h": 507,
-   "color": "#64263c",
-   "bg": "#82746a"
-  },
-  {
-   "source": "commons",
-   "title": "Varanasi 680 bridal shop display (33909135571)",
-   "creator": "juggadery",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varanasi_680_bridal_shop_display_(33909135571).jpg",
-   "key": "commons:58848409",
-   "src": "photos/lehenga-choli/commons-58848409.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#c9694b",
-   "bg": "#423f2f"
-  },
-  {
-   "source": "commons",
-   "title": "Chaniya Choli at Law Garden",
-   "creator": "Dhruvdhakan",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaniya_Choli_at_Law_Garden.jpg",
-   "key": "commons:17893225",
-   "src": "photos/lehenga-choli/commons-17893225.webp",
-   "w": 720,
-   "h": 478,
-   "color": "#2973a5",
-   "bg": "#64534a"
+   "bg": "#b1694e"
   }
  ],
  "Letterman Sweater": [
@@ -6014,20 +3928,6 @@
   },
   {
    "source": "commons",
-   "title": "Päls m1870 manskap",
-   "creator": "Armémuseum",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:P%C3%A4ls_m1870_manskap.jpg",
-   "key": "commons:21472421",
-   "src": "photos/military-pelisse/commons-21472421.webp",
-   "w": 720,
-   "h": 892,
-   "color": "#8a7048",
-   "bg": "#e2c1a6"
-  },
-  {
-   "source": "commons",
    "title": "Pelisse",
    "creator": "Unknown author",
    "license": "CC0",
@@ -6037,36 +3937,8 @@
    "src": "photos/military-pelisse/commons-59490482.webp",
    "w": 720,
    "h": 473,
-   "color": "#aa8046",
+   "color": "#a98045",
    "bg": "#c1b9ac"
-  },
-  {
-   "source": "commons",
-   "title": "Pelisse",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelisse_MET_2002.249_d.jpg",
-   "key": "commons:59496617",
-   "src": "photos/military-pelisse/commons-59496617.webp",
-   "w": 720,
-   "h": 515,
-   "color": "#a59f8d",
-   "bg": "#6f6a59"
-  },
-  {
-   "source": "commons",
-   "title": "Pelisse",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelisse_MET_1986.106.7a_d.jpg",
-   "key": "commons:59503818",
-   "src": "photos/military-pelisse/commons-59503818.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#9a6f4e",
-   "bg": "#ab8666"
   },
   {
    "source": "commons",
@@ -6080,7 +3952,7 @@
    "w": 527,
    "h": 900,
    "color": "#d8cbad",
-   "bg": "#b2a696"
+   "bg": "#b1a696"
   }
  ],
  "Mojari": [
@@ -6207,7 +4079,7 @@
    "src": "photos/mojari/commons-2611230.webp",
    "w": 576,
    "h": 578,
-   "color": "#74655b",
+   "color": "#74665c",
    "bg": "#48423b"
   },
   {
@@ -6221,22 +4093,8 @@
    "src": "photos/mojari/commons-109987248.webp",
    "w": 675,
    "h": 900,
-   "color": "#927e5c",
+   "color": "#8f7a59",
    "bg": "#d3d4d1"
-  },
-  {
-   "source": "commons",
-   "title": "ਜੁੱਤੀ ਦਾ ਮਾਡਲ",
-   "creator": "Mulkh Singh",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E0%A8%9C%E0%A9%81%E0%A9%B1%E0%A8%A4%E0%A9%80_%E0%A8%A6%E0%A8%BE_%E0%A8%AE%E0%A8%BE%E0%A8%A1%E0%A8%B2.jpg",
-   "key": "commons:131620699",
-   "src": "photos/mojari/commons-131620699.webp",
-   "w": 720,
-   "h": 720,
-   "color": "#513730",
-   "bg": "#8b8884"
   },
   {
    "source": "commons",
@@ -6249,8 +4107,8 @@
    "src": "photos/mojari/commons-30455591.webp",
    "w": 720,
    "h": 460,
-   "color": "#6e4538",
-   "bg": "#e6c783"
+   "color": "#6d4437",
+   "bg": "#e6c782"
   }
  ],
  "Nehru Jacket": [
@@ -6281,146 +4139,6 @@
    "h": 900,
    "color": "#98948c",
    "bg": "#6a6663"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Garden 11",
-   "creator": "Arpourabedin",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Garden_11.jpg",
-   "key": "commons:113211640",
-   "src": "photos/nehru-jacket/commons-113211640.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#6c5938",
-   "bg": "#1f1612"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Garden 8",
-   "creator": "Arpourabedin",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Garden_8.jpg",
-   "key": "commons:113211585",
-   "src": "photos/nehru-jacket/commons-113211585.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#8c5c3b",
-   "bg": "#61402e"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Garden 4",
-   "creator": "Arpourabedin",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Garden_4.jpg",
-   "key": "commons:113211505",
-   "src": "photos/nehru-jacket/commons-113211505.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#614e35",
-   "bg": "#140e0d"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri garden",
-   "creator": "Bahareh24",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_garden.jpg",
-   "key": "commons:112215260",
-   "src": "photos/nehru-jacket/commons-112215260.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#323920",
-   "bg": "#a3a094"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Caravansarai2018",
-   "creator": "Hossein Shahbodaghi",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Caravansarai2018.jpg",
-   "key": "commons:102560268",
-   "src": "photos/nehru-jacket/commons-102560268.webp",
-   "w": 720,
-   "h": 501,
-   "color": "#765942",
-   "bg": "#807e7b"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Garden 2",
-   "creator": "Arpourabedin",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Garden_2.jpg",
-   "key": "commons:113211425",
-   "src": "photos/nehru-jacket/commons-113211425.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#785842",
-   "bg": "#140e11"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Garden 9",
-   "creator": "Arpourabedin",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Garden_9.jpg",
-   "key": "commons:113211604",
-   "src": "photos/nehru-jacket/commons-113211604.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#80603b",
-   "bg": "#634d3b"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri (Namir) Garden and Building - Taft, Yazd, Iran",
-   "creator": "Aviow",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_(Namir)_Garden_and_Building_-_Taft,_Yazd,_Iran.jpg",
-   "key": "commons:34967742",
-   "src": "photos/nehru-jacket/commons-34967742.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#5a5957",
-   "bg": "#70737b"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Garden 5",
-   "creator": "Arpourabedin",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Garden_5.jpg",
-   "key": "commons:113211517",
-   "src": "photos/nehru-jacket/commons-113211517.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#796043",
-   "bg": "#120e10"
-  },
-  {
-   "source": "commons",
-   "title": "Sadri Caravansarai2018 10",
-   "creator": "Hossein Shahbodaghi",
-   "license": "CC BY 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sadri_Caravansarai2018_10.jpg",
-   "key": "commons:102560341",
-   "src": "photos/nehru-jacket/commons-102560341.webp",
-   "w": 720,
-   "h": 501,
-   "color": "#6a5446",
-   "bg": "#868686"
   }
  ],
  "Opera Cloak": [
@@ -6510,20 +4228,6 @@
   },
   {
    "source": "commons",
-   "title": "Opera cloak",
-   "creator": "Émile Pingat",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opera_cloak_MET_CI60.42.13_label.jpg",
-   "key": "commons:59494146",
-   "src": "photos/opera-cloak/commons-59494146.webp",
-   "w": 720,
-   "h": 354,
-   "color": "#a8adb1",
-   "bg": "#afa598"
-  },
-  {
-   "source": "commons",
    "title": "Camp - Notes on Fashion at the Met - Burberry rainbow cape (73854)",
    "creator": "Rhododendrites",
    "license": "CC BY-SA 4.0",
@@ -6533,22 +4237,8 @@
    "src": "photos/opera-cloak/commons-81962273.webp",
    "w": 623,
    "h": 900,
-   "color": "#fdc725",
-   "bg": "#63a3b0"
-  },
-  {
-   "source": "commons",
-   "title": "StaedtischeBuehnenMuenster5",
-   "creator": "No machine-readable author provided. Managementboy assumed (based on copyright claims).",
-   "license": "CC BY 2.5",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:StaedtischeBuehnenMuenster5.jpg",
-   "key": "commons:326672",
-   "src": "photos/opera-cloak/commons-326672.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#4e3e22",
-   "bg": "#22201a"
+   "color": "#fcc726",
+   "bg": "#62a3b0"
   },
   {
    "source": "commons",
@@ -6561,8 +4251,8 @@
    "src": "photos/opera-cloak/commons-59501378.webp",
    "w": 491,
    "h": 900,
-   "color": "#7c4e3d",
-   "bg": "#cdc5bc"
+   "color": "#7a4d3d",
+   "bg": "#cdc5bb"
   },
   {
    "source": "commons",
@@ -6576,21 +4266,7 @@
    "w": 594,
    "h": 900,
    "color": "#bca67b",
-   "bg": "#c8cbcc"
-  },
-  {
-   "source": "commons",
-   "title": "Zicht op fort vanaf het strand met meisje met bananenschaal op haar hoofd op de voorgrond - Cape Coast - 20373090 - RCE",
-   "creator": "Loek Tangel",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zicht_op_fort_vanaf_het_strand_met_meisje_met_bananenschaal_op_haar_hoofd_op_de_voorgrond_-_Cape_Coast_-_20373090_-_RCE.jpg",
-   "key": "commons:24058187",
-   "src": "photos/opera-cloak/commons-24058187.webp",
-   "w": 720,
-   "h": 470,
-   "color": "#848683",
-   "bg": "#53657e"
+   "bg": "#c7cbcb"
   }
  ],
  "Overalls": [
@@ -6663,104 +4339,6 @@
    "h": 900,
    "color": "#9b6c51",
    "bg": "#605a4e"
-  },
-  {
-   "source": "commons",
-   "title": "[Painter in Paint-spattered Overalls with Brushes and Paint Can]",
-   "creator": "Unknown authorUnknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-Painter_in_Paint-spattered_Overalls_with_Brushes_and_Paint_Can-_MET_DP700355.jpg",
-   "key": "commons:60500488",
-   "src": "photos/overalls/commons-60500488.webp",
-   "w": 636,
-   "h": 900,
-   "color": "#221715",
-   "bg": "#c4bfbe"
-  },
-  {
-   "source": "commons",
-   "title": "Buterkarnavalo en Jalutorovsko 08",
-   "creator": "RG72",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buterkarnavalo_en_Jalutorovsko_08.jpg",
-   "key": "commons:129268203",
-   "src": "photos/overalls/commons-129268203.webp",
-   "w": 405,
-   "h": 900,
-   "color": "#096555",
-   "bg": "#d7d9de"
-  },
-  {
-   "source": "commons",
-   "title": "[Two Plasterers in Overalls Leaning on a Rustic Fence]",
-   "creator": "Unknown authorUnknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-Two_Plasterers_in_Overalls_Leaning_on_a_Rustic_Fence-_MET_DP700373.jpg",
-   "key": "commons:60500685",
-   "src": "photos/overalls/commons-60500685.webp",
-   "w": 678,
-   "h": 900,
-   "color": "#2a180c",
-   "bg": "#c9c5c4"
-  },
-  {
-   "source": "commons",
-   "title": "Arkeologia muzeo ĉe lago Andrejevskoje (Tjumeno) 09",
-   "creator": "RG72",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arkeologia_muzeo_%C4%89e_lago_Andrejevskoje_(Tjumeno)_09.jpg",
-   "key": "commons:145229785",
-   "src": "photos/overalls/commons-145229785.webp",
-   "w": 405,
-   "h": 900,
-   "color": "#5d7599",
-   "bg": "#a0abbe"
-  },
-  {
-   "source": "commons",
-   "title": "[Two Plasterers in Overalls Leaning on a Rustic Fence]",
-   "creator": "Unknown authorUnknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-Two_Plasterers_in_Overalls_Leaning_on_a_Rustic_Fence-_MET_DP700372.jpg",
-   "key": "commons:60500678",
-   "src": "photos/overalls/commons-60500678.webp",
-   "w": 662,
-   "h": 900,
-   "color": "#42342d",
-   "bg": "#c8c4c3"
-  },
-  {
-   "source": "commons",
-   "title": "Arkeologia muzeo ĉe lago Andrejevskoje (Tjumeno) 19",
-   "creator": "RG72",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arkeologia_muzeo_%C4%89e_lago_Andrejevskoje_(Tjumeno)_19.jpg",
-   "key": "commons:145229814",
-   "src": "photos/overalls/commons-145229814.webp",
-   "w": 405,
-   "h": 900,
-   "color": "#293d5a",
-   "bg": "#737780"
-  },
-  {
-   "source": "commons",
-   "title": "[Painter in Paint-spattered Overalls with Brushes and Paint Can]",
-   "creator": "Unknown authorUnknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-Painter_in_Paint-spattered_Overalls_with_Brushes_and_Paint_Can-_MET_DP700354.jpg",
-   "key": "commons:60500487",
-   "src": "photos/overalls/commons-60500487.webp",
-   "w": 631,
-   "h": 900,
-   "color": "#746551",
-   "bg": "#c4bfbe"
   }
  ],
  "Pagdi Turban": [
@@ -6805,132 +4383,6 @@
    "h": 762,
    "color": "#810a20",
    "bg": "#a6a7a7"
-  },
-  {
-   "source": "commons",
-   "title": "Turban Helmet",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turban_Helmet_MET_DP147136.jpg",
-   "key": "commons:58747162",
-   "src": "photos/pagdi-turban/commons-58747162.webp",
-   "w": 720,
-   "h": 721,
-   "color": "#846d47",
-   "bg": "#9a9a9a"
-  },
-  {
-   "source": "commons",
-   "title": "(1) A Seapoy in the Native Attire; (2) A Hindoo Soldier; (3) A Brigbasi",
-   "creator": "Frederic Shoberl",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:(1)_A_Seapoy_in_the_Native_Attire;_(2)_A_Hindoo_Soldier;_(3)_A_Brigbasi.jpg",
-   "key": "commons:635673",
-   "src": "photos/pagdi-turban/commons-635673.webp",
-   "w": 550,
-   "h": 620,
-   "color": "#83744e",
-   "bg": "#eae1b3"
-  },
-  {
-   "source": "commons",
-   "title": "Indian village musicians",
-   "creator": "Sukanto Debnath",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_village_musicians.jpg",
-   "key": "commons:2743612",
-   "src": "photos/pagdi-turban/commons-2743612.webp",
-   "w": 720,
-   "h": 542,
-   "color": "#774e35",
-   "bg": "#47443e"
-  },
-  {
-   "source": "commons",
-   "title": "Turban Helmet",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turban_Helmet_MET_04.3.211_014mar2014.jpg",
-   "key": "commons:58747290",
-   "src": "photos/pagdi-turban/commons-58747290.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#908882",
-   "bg": "#605855"
-  },
-  {
-   "source": "commons",
-   "title": "Inde muria 0510",
-   "creator": "Yves Picq http://veton.picq.fr/",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inde_muria_0510.jpg",
-   "key": "commons:2857293",
-   "src": "photos/pagdi-turban/commons-2857293.webp",
-   "w": 600,
-   "h": 900,
-   "color": "#8d5649",
-   "bg": "#433624"
-  },
-  {
-   "source": "commons",
-   "title": "Turban Helmet",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turban_Helmet_MET_36.25.109_006mar2014.jpg",
-   "key": "commons:58754185",
-   "src": "photos/pagdi-turban/commons-58754185.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#877e78",
-   "bg": "#756a64"
-  },
-  {
-   "source": "commons",
-   "title": "IndianArmyMGCrewFlanders1914-15",
-   "creator": "Indian Army photograph.",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:IndianArmyMGCrewFlanders1914-15.jpg",
-   "key": "commons:3487637",
-   "src": "photos/pagdi-turban/commons-3487637.webp",
-   "w": 720,
-   "h": 522,
-   "color": "#514632",
-   "bg": "#796f5c"
-  },
-  {
-   "source": "commons",
-   "title": "An old man in traditional Rajasthani dress in Mehrangarh Fort Museum",
-   "creator": "Schwiki",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_old_man_in_traditional_Rajasthani_dress_in_Mehrangarh_Fort_Museum.jpg",
-   "key": "commons:32362880",
-   "src": "photos/pagdi-turban/commons-32362880.webp",
-   "w": 720,
-   "h": 482,
-   "color": "#814d41",
-   "bg": "#b1a7a6"
-  },
-  {
-   "source": "commons",
-   "title": "TURBANS OF RAJASTHAN 06",
-   "creator": "DEBA PRASAD ROY",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:TURBANS_OF_RAJASTHAN_06.jpg",
-   "key": "commons:160247753",
-   "src": "photos/pagdi-turban/commons-160247753.webp",
-   "w": 720,
-   "h": 477,
-   "color": "#7a432e",
-   "bg": "#8c6759"
   }
  ],
  "Paithani Saree": [
@@ -6987,8 +4439,8 @@
    "src": "photos/paithani-saree/commons-60931442.webp",
    "w": 675,
    "h": 900,
-   "color": "#a05d4c",
-   "bg": "#af948d"
+   "color": "#9f5d4c",
+   "bg": "#b0958d"
   },
   {
    "source": "cma",
@@ -7001,36 +4453,8 @@
    "src": "photos/paithani-saree/cma-108046.webp",
    "w": 720,
    "h": 379,
-   "color": "#a18b71",
-   "bg": "#9ba19c"
-  },
-  {
-   "source": "commons",
-   "title": "IMG-20200110-WA0001",
-   "creator": "Rawat praveen 619",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMG-20200110-WA0001.jpg",
-   "key": "commons:86733847",
-   "src": "photos/paithani-saree/commons-86733847.webp",
-   "w": 720,
-   "h": 463,
-   "color": "#6c613f",
-   "bg": "#8a9987"
-  },
-  {
-   "source": "commons",
-   "title": "Paithani,Ancient Lord Shiva Temple,Protected Monuments",
-   "creator": "Trulyindian6",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paithani,Ancient_Lord_Shiva_Temple,Protected_Monuments.jpg",
-   "key": "commons:38425690",
-   "src": "photos/paithani-saree/commons-38425690.webp",
-   "w": 720,
-   "h": 823,
-   "color": "#8e705b",
-   "bg": "#646f7a"
+   "color": "#a08a70",
+   "bg": "#9aa09c"
   },
   {
    "source": "commons",
@@ -7043,22 +4467,8 @@
    "src": "photos/paithani-saree/commons-60931564.webp",
    "w": 675,
    "h": 900,
-   "color": "#ae6d5a",
+   "color": "#af735f",
    "bg": "#9a5f4e"
-  },
-  {
-   "source": "commons",
-   "title": "Paithani Rahu temple",
-   "creator": "Rohit Gosain",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paithani_Rahu_temple.jpg",
-   "key": "commons:71336878",
-   "src": "photos/paithani-saree/commons-71336878.webp",
-   "w": 720,
-   "h": 515,
-   "color": "#60523b",
-   "bg": "#7b7f7c"
   },
   {
    "source": "commons",
@@ -7071,7 +4481,7 @@
    "src": "photos/paithani-saree/commons-60909523.webp",
    "w": 720,
    "h": 540,
-   "color": "#88634a",
+   "color": "#87634a",
    "bg": "#a49a8d"
   },
   {
@@ -7085,194 +4495,11 @@
    "src": "photos/paithani-saree/cma-95468.webp",
    "w": 720,
    "h": 589,
-   "color": "#813b3f",
-   "bg": "#9d8f8b"
-  },
-  {
-   "source": "commons",
-   "title": "Rahu mandir, Paithani, Pauri",
-   "creator": "Rajeshbahuguna.in",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rahu_mandir,_Paithani,_Pauri.jpg",
-   "key": "commons:73122820",
-   "src": "photos/paithani-saree/commons-73122820.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#6a6b66",
-   "bg": "#a2aaac"
+   "color": "#803b3f",
+   "bg": "#9e908c"
   }
  ],
- "Pathani Suit": [
-  {
-   "source": "commons",
-   "title": "Clothes line",
-   "creator": "John Pannell",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clothes_line.jpg",
-   "key": "commons:1804858",
-   "src": "photos/pathani-suit/commons-1804858.webp",
-   "w": 720,
-   "h": 478,
-   "color": "#55939c",
-   "bg": "#666365"
-  },
-  {
-   "source": "commons",
-   "title": "Women of Puducherry",
-   "creator": "Bernard Gagnon",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Women_of_Puducherry.jpg",
-   "key": "commons:10905753",
-   "src": "photos/pathani-suit/commons-10905753.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#91233b",
-   "bg": "#7a8485"
-  },
-  {
-   "source": "commons",
-   "title": "Cricket in salwar",
-   "creator": "meg and rahul",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cricket_in_salwar.jpg",
-   "key": "commons:2695153",
-   "src": "photos/pathani-suit/commons-2695153.webp",
-   "w": 720,
-   "h": 534,
-   "color": "#a04b50",
-   "bg": "#9b8d86"
-  },
-  {
-   "source": "commons",
-   "title": "Shalwar kameez Colours",
-   "creator": "https://www.flickr.com/people/etobicokesouth/",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shalwar_kameez_Colours.jpg",
-   "key": "commons:12361491",
-   "src": "photos/pathani-suit/commons-12361491.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#f2650f",
-   "bg": "#b05763"
-  },
-  {
-   "source": "commons",
-   "title": "Afghan Schoolchildren in Kabul",
-   "creator": "Robert Romano, US Army",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afghan_Schoolchildren_in_Kabul.jpg",
-   "key": "commons:6125885",
-   "src": "photos/pathani-suit/commons-6125885.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#935d48",
-   "bg": "#8a7f70"
-  },
-  {
-   "source": "commons",
-   "title": "GI walks down the runway during a fashion show dressed in a colorful, traditional Afghan dress. The March 3, 2008",
-   "creator": "Melissa M. Escobar",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:GI_walks_down_the_runway_during_a_fashion_show_dressed_in_a_colorful,_traditional_Afghan_dress._The_March_3,_2008.jpg",
-   "key": "commons:11118647",
-   "src": "photos/pathani-suit/commons-11118647.webp",
-   "w": 544,
-   "h": 900,
-   "color": "#c8431e",
-   "bg": "#633f2c"
-  },
-  {
-   "source": "commons",
-   "title": "2010 Children's Day in Afghanistan",
-   "creator": "ISAF Headquarters Public Affairs Office from Kabul, Afghanistan",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Children%27s_Day_in_Afghanistan.jpg",
-   "key": "commons:14959281",
-   "src": "photos/pathani-suit/commons-14959281.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#944e37",
-   "bg": "#8b7e6f"
-  },
-  {
-   "source": "commons",
-   "title": "Taraji P. Henson in Naeem Khan 1",
-   "creator": "The Heart Truth",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taraji_P._Henson_in_Naeem_Khan_1.jpg",
-   "key": "commons:14525589",
-   "src": "photos/pathani-suit/commons-14525589.webp",
-   "w": 600,
-   "h": 900,
-   "color": "#9a3729",
-   "bg": "#4f1925"
-  },
-  {
-   "source": "commons",
-   "title": "First look launch of Rowdy Rathore, Bollywood film (18)",
-   "creator": "Bollywood Hungama",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_look_launch_of_Rowdy_Rathore,_Bollywood_film_(18).jpg",
-   "key": "commons:18994767",
-   "src": "photos/pathani-suit/commons-18994767.webp",
-   "w": 585,
-   "h": 881,
-   "color": "#d87a55",
-   "bg": "#e89979"
-  },
-  {
-   "source": "commons",
-   "title": "A Loyal Afghan",
-   "creator": "Unknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Loyal_Afghan_WDL11457.png",
-   "key": "commons:31378934",
-   "src": "photos/pathani-suit/commons-31378934.webp",
-   "w": 644,
-   "h": 900,
-   "color": "#8a7360",
-   "bg": "#d7c3a7"
-  },
-  {
-   "source": "commons",
-   "title": "Soha Ali Khan still10a",
-   "creator": "Bollywood Hungama",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soha_Ali_Khan_still10a.jpg",
-   "key": "commons:16857607",
-   "src": "photos/pathani-suit/commons-16857607.webp",
-   "w": 600,
-   "h": 541,
-   "color": "#bd8a6a",
-   "bg": "#a19f9c"
-  },
-  {
-   "source": "commons",
-   "title": "Путешественник Виктор Пинчук (Кабул, Афганистан)",
-   "creator": "Виктор Пинчук, фотографировал себя сам, со штатива.",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%9F%D0%B8%D0%BD%D1%87%D1%83%D0%BA_(%D0%9A%D0%B0%D0%B1%D1%83%D0%BB,_%D0%90%D1%84%D0%B3%D0%B0%D0%BD%D0%B8%D1%81%D1%82%D0%B0%D0%BD).jpg",
-   "key": "commons:88560616",
-   "src": "photos/pathani-suit/commons-88560616.webp",
-   "w": 609,
-   "h": 900,
-   "color": "#94725d",
-   "bg": "#969791"
-  }
- ],
+ "Pathani Suit": [],
  "Pearl-Snap Shirt": [
   {
    "source": "commons",
@@ -7327,22 +4554,8 @@
    "src": "photos/pearl-snap-shirt/commons-78595584.webp",
    "w": 720,
    "h": 720,
-   "color": "#d11f27",
+   "color": "#d11f26",
    "bg": "#5c4842"
-  },
-  {
-   "source": "commons",
-   "title": "Snap fastener male (inner) side components",
-   "creator": "Nate Wessel",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snap_fastener_male_(inner)_side_components.jpg",
-   "key": "commons:37373961",
-   "src": "photos/pearl-snap-shirt/commons-37373961.webp",
-   "w": 720,
-   "h": 435,
-   "color": "#5c4f2d",
-   "bg": "#968662"
   },
   {
    "source": "commons",
@@ -7355,92 +4568,8 @@
    "src": "photos/pearl-snap-shirt/commons-78595583.webp",
    "w": 720,
    "h": 540,
-   "color": "#561a13",
-   "bg": "#915b4d"
-  },
-  {
-   "source": "commons",
-   "title": "S spring snap",
-   "creator": "Ploytubtum",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:S_spring_snap.jpg",
-   "key": "commons:70547092",
-   "src": "photos/pearl-snap-shirt/commons-70547092.webp",
-   "w": 720,
-   "h": 558,
-   "color": "#c6c3b9",
-   "bg": "#b1a89b"
-  },
-  {
-   "source": "commons",
-   "title": "Rivet snap parts",
-   "creator": "Nate Wessel",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rivet_snap_parts.jpg",
-   "key": "commons:37373849",
-   "src": "photos/pearl-snap-shirt/commons-37373849.webp",
-   "w": 720,
-   "h": 497,
-   "color": "#9f8c54",
-   "bg": "#e7d5aa"
-  },
-  {
-   "source": "commons",
-   "title": "Western Wear Float (623164441)",
-   "creator": "Richie Diesterheft from Chicago, IL, USA",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Western_Wear_Float_(623164441).jpg",
-   "key": "commons:22985459",
-   "src": "photos/pearl-snap-shirt/commons-22985459.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#2a9f44",
-   "bg": "#8e887b"
-  },
-  {
-   "source": "commons",
-   "title": "Alter Pelz-Klipverschluss",
-   "creator": "Fahnenstich, i. o.",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alter_Pelz-Klipverschluss.jpg",
-   "key": "commons:82915972",
-   "src": "photos/pearl-snap-shirt/commons-82915972.webp",
-   "w": 506,
-   "h": 900,
-   "color": "#403029",
-   "bg": "#9a9896"
-  },
-  {
-   "source": "commons",
-   "title": "Solidor Druckknopf 2",
-   "creator": "Eici45",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidor_Druckknopf_2.JPG",
-   "key": "commons:45686852",
-   "src": "photos/pearl-snap-shirt/commons-45686852.webp",
-   "w": 720,
-   "h": 583,
-   "color": "#346d7a",
-   "bg": "#918c8c"
-  },
-  {
-   "source": "commons",
-   "title": "Free Travel-Shirt in Warsaw 2010 (4)",
-   "creator": "Alina Zienowicz Ala z",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Free_Travel-Shirt_in_Warsaw_2010_(4).JPG",
-   "key": "commons:9064413",
-   "src": "photos/pearl-snap-shirt/commons-9064413.webp",
-   "w": 634,
-   "h": 900,
-   "color": "#72a0cf",
-   "bg": "#5f7ea0"
+   "color": "#561a12",
+   "bg": "#915b4c"
   }
  ],
  "Pleated Skirt": [
@@ -7502,34 +4631,6 @@
   },
   {
    "source": "commons",
-   "title": "ChristianIX e eduardo de york",
-   "creator": "Alexandra of Denmark (died 1925)",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChristianIX_e_eduardo_de_york.jpg",
-   "key": "commons:5550957",
-   "src": "photos/pleated-skirt/commons-5550957.webp",
-   "w": 619,
-   "h": 900,
-   "color": "#837767",
-   "bg": "#90816c"
-  },
-  {
-   "source": "commons",
-   "title": "School uniforms of Izuo High School 20090308",
-   "creator": "fukuhen",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:School_uniforms_of_Izuo_High_School_20090308.jpg",
-   "key": "commons:6146490",
-   "src": "photos/pleated-skirt/commons-6146490.webp",
-   "w": 600,
-   "h": 800,
-   "color": "#21263f",
-   "bg": "#99998d"
-  },
-  {
-   "source": "commons",
    "title": "Culotte skirt",
    "creator": "Lumi iori",
    "license": "CC BY-SA 4.0",
@@ -7544,34 +4645,6 @@
   },
   {
    "source": "commons",
-   "title": "Culotte skirt inner",
-   "creator": "Lumi iori",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Culotte_skirt_inner.jpg",
-   "key": "commons:40005752",
-   "src": "photos/pleated-skirt/commons-40005752.webp",
-   "w": 500,
-   "h": 750,
-   "color": "#636362",
-   "bg": "#6d706d"
-  },
-  {
-   "source": "commons",
-   "title": "Pleated skirt detail, White Hmong, Northern Thailand, collected in 1986 - Ethnological Museum, Berlin - DSC01377",
-   "creator": "Daderot",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pleated_skirt_detail,_White_Hmong,_Northern_Thailand,_collected_in_1986_-_Ethnological_Museum,_Berlin_-_DSC01377.JPG",
-   "key": "commons:45178887",
-   "src": "photos/pleated-skirt/commons-45178887.webp",
-   "w": 720,
-   "h": 460,
-   "color": "#e0c289",
-   "bg": "#373939"
-  },
-  {
-   "source": "commons",
    "title": "Culotte skirt and interior view",
    "creator": "User:Lumi iori, files merged by User:Mabalu",
    "license": "CC BY-SA 4.0",
@@ -7582,21 +4655,7 @@
    "w": 650,
    "h": 800,
    "color": "#878685",
-   "bg": "#605f58"
-  },
-  {
-   "source": "commons",
-   "title": "1950s 'Prep Talk' wool plaid skirt suit by Bobbie Brooks (9088329477)",
-   "creator": "Bess Georgette",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1950s_%27Prep_Talk%27_wool_plaid_skirt_suit_by_Bobbie_Brooks_(9088329477).jpg",
-   "key": "commons:48452151",
-   "src": "photos/pleated-skirt/commons-48452151.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#817f7f",
-   "bg": "#f2f1f2"
+   "bg": "#605f57"
   },
   {
    "source": "commons",
@@ -7609,8 +4668,8 @@
    "src": "photos/pleated-skirt/commons-94990732.webp",
    "w": 720,
    "h": 480,
-   "color": "#c58981",
-   "bg": "#a2978f"
+   "color": "#c68981",
+   "bg": "#a0958c"
   }
  ],
  "Poke Bonnet": [
@@ -7739,48 +4798,6 @@
    "h": 728,
    "color": "#a2814d",
    "bg": "#cac3a9"
-  },
-  {
-   "source": "commons",
-   "title": "L'Homme au bonnet de coton",
-   "creator": "Paul Cézanne",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27Homme_au_bonnet_de_coton,_par_Paul_C%C3%A9zanne,_MET_DT1408.jpg",
-   "key": "commons:57398351",
-   "src": "photos/poke-bonnet/commons-57398351.webp",
-   "w": 720,
-   "h": 884,
-   "color": "#a08c69",
-   "bg": "#352b22"
-  },
-  {
-   "source": "cma",
-   "title": "Bonnet, early 1900s",
-   "creator": "Germany, Early 20th Century",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/1953.713",
-   "key": "cma:131115",
-   "src": "photos/poke-bonnet/cma-131115.webp",
-   "w": 720,
-   "h": 809,
-   "color": "#66645f",
-   "bg": "#b5b8b9"
-  },
-  {
-   "source": "cma",
-   "title": "Lace Bonnet Veil, 1760–99",
-   "creator": "France, Alençon",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/1936.179",
-   "key": "cma:115393",
-   "src": "photos/poke-bonnet/cma-115393.webp",
-   "w": 720,
-   "h": 462,
-   "color": "#5e564c",
-   "bg": "#0b0c11"
   }
  ],
  "Poodle Skirt": [
@@ -7856,62 +4873,6 @@
   },
   {
    "source": "commons",
-   "title": "Manisharora1",
-   "creator": "Rebecca Cotton from London, UK",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manisharora1.jpg",
-   "key": "commons:3086400",
-   "src": "photos/poodle-skirt/commons-3086400.webp",
-   "w": 712,
-   "h": 900,
-   "color": "#987b3a",
-   "bg": "#83725a"
-  },
-  {
-   "source": "commons",
-   "title": "Cancan en l'air",
-   "creator": "EricaLakehurst",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cancan_en_l%27air.jpg",
-   "key": "commons:47576065",
-   "src": "photos/poodle-skirt/commons-47576065.webp",
-   "w": 720,
-   "h": 850,
-   "color": "#7dc8ee",
-   "bg": "#2c0201"
-  },
-  {
-   "source": "commons",
-   "title": "Rare By Circle Men Skirt '19",
-   "creator": "Badislavius",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rare_By_Circle_Men_Skirt_%2719.jpg",
-   "key": "commons:170942717",
-   "src": "photos/poodle-skirt/commons-170942717.webp",
-   "w": 720,
-   "h": 864,
-   "color": "#916e55",
-   "bg": "#847e77"
-  },
-  {
-   "source": "commons",
-   "title": "Circle of Life Tree Skirt 2 (21633913999)",
-   "creator": "Forest Service Alaska Region, USDA",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circle_of_Life_Tree_Skirt_2_(21633913999).jpg",
-   "key": "commons:184538541",
-   "src": "photos/poodle-skirt/commons-184538541.webp",
-   "w": 720,
-   "h": 521,
-   "color": "#905c4d",
-   "bg": "#77883b"
-  },
-  {
-   "source": "commons",
    "title": "Circle of Life Tree Skirt 1 (21199559533)",
    "creator": "Forest Service Alaska Region, USDA",
    "license": "Public domain",
@@ -7921,36 +4882,8 @@
    "src": "photos/poodle-skirt/commons-184538573.webp",
    "w": 720,
    "h": 480,
-   "color": "#b74332",
-   "bg": "#493e3a"
-  },
-  {
-   "source": "commons",
-   "title": "Juli Lynne Charlot (1922-2024) portrait",
-   "creator": "AnonymousUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Juli_Lynne_Charlot_(1922-2024)_portrait.webp",
-   "key": "commons:146081710",
-   "src": "photos/poodle-skirt/commons-146081710.webp",
-   "w": 717,
-   "h": 900,
-   "color": "#837e73",
-   "bg": "#656057"
-  },
-  {
-   "source": "commons",
-   "title": "Track skirting Runway turning circle - Manchester Airport - geograph.org.uk - 2366099",
-   "creator": "Anthony O'Neil",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Track_skirting_Runway_turning_circle_-_Manchester_Airport_-_geograph.org.uk_-_2366099.jpg",
-   "key": "commons:107727911",
-   "src": "photos/poodle-skirt/commons-107727911.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#566631",
-   "bg": "#3f5347"
+   "color": "#b54432",
+   "bg": "#473c38"
   }
  ],
  "Prairie Dress": [
@@ -8049,7 +4982,7 @@
    "src": "photos/prairie-dress/commons-64360548.webp",
    "w": 600,
    "h": 900,
-   "color": "#866753",
+   "color": "#846652",
    "bg": "#e2e0e4"
   },
   {
@@ -8091,7 +5024,7 @@
    "src": "photos/prairie-dress/commons-120536303.webp",
    "w": 480,
    "h": 900,
-   "color": "#9e8967",
+   "color": "#9e8a67",
    "bg": "#d0c9ba"
   },
   {
@@ -8105,22 +5038,8 @@
    "src": "photos/prairie-dress/commons-64360611.webp",
    "w": 720,
    "h": 480,
-   "color": "#9a755e",
-   "bg": "#ccc8cc"
-  },
-  {
-   "source": "commons",
-   "title": "Sarah Brown and a replica \"prairie schooner\"",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarah_Brown_and_a_replica_%22prairie_schooner%22.jpg",
-   "key": "commons:118025183",
-   "src": "photos/prairie-dress/commons-118025183.webp",
-   "w": 553,
-   "h": 900,
-   "color": "#67665f",
-   "bg": "#aaa392"
+   "color": "#9a765f",
+   "bg": "#ccc9cc"
   }
  ],
  "Redingote": [
@@ -8219,8 +5138,8 @@
    "src": "photos/redingote/commons-60298206.webp",
    "w": 438,
    "h": 900,
-   "color": "#463d30",
-   "bg": "#d2d1d4"
+   "color": "#463d2f",
+   "bg": "#d1d1d4"
   },
   {
    "source": "commons",
@@ -8233,8 +5152,8 @@
    "src": "photos/redingote/commons-60298210.webp",
    "w": 433,
    "h": 900,
-   "color": "#4b4132",
-   "bg": "#d9d9db"
+   "color": "#4b4131",
+   "bg": "#d8d9da"
   },
   {
    "source": "commons",
@@ -8247,22 +5166,8 @@
    "src": "photos/redingote/commons-27295038.webp",
    "w": 592,
    "h": 900,
-   "color": "#687a7a",
+   "color": "#697c7c",
    "bg": "#032b25"
-  },
-  {
-   "source": "commons",
-   "title": "Redingote",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Redingote_MET_DP-1000-001.jpg",
-   "key": "commons:60298226",
-   "src": "photos/redingote/commons-60298226.webp",
-   "w": 720,
-   "h": 600,
-   "color": "#a4864c",
-   "bg": "#6a5b40"
   },
   {
    "source": "commons",
@@ -8275,8 +5180,8 @@
    "src": "photos/redingote/commons-60298211.webp",
    "w": 720,
    "h": 753,
-   "color": "#7e6a4c",
-   "bg": "#8f8982"
+   "color": "#816e4e",
+   "bg": "#8f8981"
   },
   {
    "source": "commons",
@@ -8289,8 +5194,8 @@
    "src": "photos/redingote/commons-59658418.webp",
    "w": 423,
    "h": 900,
-   "color": "#72654c",
-   "bg": "#53595d"
+   "color": "#6d6048",
+   "bg": "#53595c"
   }
  ],
  "Regency Gown": [
@@ -8391,76 +5296,6 @@
    "h": 900,
    "color": "#777f8c",
    "bg": "#2a262d"
-  },
-  {
-   "source": "commons",
-   "title": "Dinner dress",
-   "creator": "Alice M. Dunstan",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinner_dress_MET_DT9316.jpg",
-   "key": "commons:59495994",
-   "src": "photos/regency-gown/commons-59495994.webp",
-   "w": 720,
-   "h": 900,
-   "color": "#5f5351",
-   "bg": "#31333e"
-  },
-  {
-   "source": "commons",
-   "title": "Dinner dress",
-   "creator": "Alice M. Dunstan",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinner_dress_MET_DT9318.jpg",
-   "key": "commons:59496012",
-   "src": "photos/regency-gown/commons-59496012.webp",
-   "w": 720,
-   "h": 576,
-   "color": "#482f27",
-   "bg": "#484751"
-  },
-  {
-   "source": "commons",
-   "title": "The Country Wedding",
-   "creator": "John Lewis Krimmel",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1820-Country-Wedding-John-Lewis-Krimmel.jpg",
-   "key": "commons:701970",
-   "src": "photos/regency-gown/commons-701970.webp",
-   "w": 720,
-   "h": 517,
-   "color": "#946d20",
-   "bg": "#46270c"
-  },
-  {
-   "source": "commons",
-   "title": "Dinner dress",
-   "creator": "Alice M. Dunstan",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinner_dress_MET_DT9315.jpg",
-   "key": "commons:59495990",
-   "src": "photos/regency-gown/commons-59495990.webp",
-   "w": 720,
-   "h": 900,
-   "color": "#98908d",
-   "bg": "#7a7a83"
-  },
-  {
-   "source": "commons",
-   "title": "Independence Day Celebration in Centre Square, Philadelphia",
-   "creator": "John Lewis Krimmel",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:4th-of-July-1819-Philadelphia-John-Lewis-Krimmel.JPG",
-   "key": "commons:883323",
-   "src": "photos/regency-gown/commons-883323.webp",
-   "w": 720,
-   "h": 415,
-   "color": "#8f6453",
-   "bg": "#b89a74"
   }
  ],
  "Riding Boots": [
@@ -8536,20 +5371,6 @@
   },
   {
    "source": "commons",
-   "title": "Boots",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boots_MET_43.129.8_S.jpg",
-   "key": "commons:59489825",
-   "src": "photos/riding-boots/commons-59489825.webp",
-   "w": 720,
-   "h": 662,
-   "color": "#cac4b0",
-   "bg": "#bab49c"
-  },
-  {
-   "source": "commons",
    "title": "Jodhpur boots",
    "creator": "Horlicks",
    "license": "Public domain",
@@ -8559,22 +5380,8 @@
    "src": "photos/riding-boots/commons-2947183.webp",
    "w": 720,
    "h": 540,
-   "color": "#8b733a",
+   "color": "#897139",
    "bg": "#e8ce7a"
-  },
-  {
-   "source": "commons",
-   "title": "Boots",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boots_MET_43.129.7_S.jpg",
-   "key": "commons:59498755",
-   "src": "photos/riding-boots/commons-59498755.webp",
-   "w": 720,
-   "h": 728,
-   "color": "#c7c1a8",
-   "bg": "#b3ab8f"
   },
   {
    "source": "commons",
@@ -8587,50 +5394,8 @@
    "src": "photos/riding-boots/commons-59664085.webp",
    "w": 720,
    "h": 578,
-   "color": "#3f3a3b",
-   "bg": "#dad8d9"
-  },
-  {
-   "source": "commons",
-   "title": "Hounds - geograph.org.uk - 693889",
-   "creator": "Christine Westerback",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hounds_-_geograph.org.uk_-_693889.jpg",
-   "key": "commons:8425864",
-   "src": "photos/riding-boots/commons-8425864.webp",
-   "w": 640,
-   "h": 591,
-   "color": "#846d4c",
-   "bg": "#a7a088"
-  },
-  {
-   "source": "commons",
-   "title": "Boots",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boots_MET_37.144.24_S.jpg",
-   "key": "commons:59499353",
-   "src": "photos/riding-boots/commons-59499353.webp",
-   "w": 720,
-   "h": 624,
-   "color": "#837757",
-   "bg": "#b6b096"
-  },
-  {
-   "source": "commons",
-   "title": "Equestrian portrait of Stanislaus II Augustus.",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Equestrian_portrait_of_Stanislaus_II_Augustus.jpg",
-   "key": "commons:149511832",
-   "src": "photos/riding-boots/commons-149511832.webp",
-   "w": 686,
-   "h": 800,
-   "color": "#5f3b29",
-   "bg": "#868179"
+   "color": "#3f3a3a",
+   "bg": "#dad9da"
   }
  ],
  "Robe à la Française": [
@@ -8771,7 +5536,7 @@
    "src": "photos/robe-a-la-francaise/commons-5960640.webp",
    "w": 675,
    "h": 900,
-   "color": "#806f55",
+   "color": "#807056",
    "bg": "#2c3438"
   },
   {
@@ -8799,7 +5564,7 @@
    "src": "photos/robe-a-la-francaise/commons-84028074.webp",
    "w": 675,
    "h": 900,
-   "color": "#b5ad9c",
+   "color": "#b4ac9b",
    "bg": "#979797"
   }
  ],
@@ -8871,8 +5636,8 @@
    "src": "photos/rugby-shirt/commons-190012151.webp",
    "w": 720,
    "h": 537,
-   "color": "#d59129",
-   "bg": "#352924"
+   "color": "#d49128",
+   "bg": "#342923"
   },
   {
    "source": "commons",
@@ -8885,22 +5650,8 @@
    "src": "photos/rugby-shirt/commons-163678574.webp",
    "w": 600,
    "h": 900,
-   "color": "#293b53",
+   "color": "#23344c",
    "bg": "#f7f7f7"
-  },
-  {
-   "source": "commons",
-   "title": "Rugby League shirt pull",
-   "creator": "Jack86mkII",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rugby_League_shirt_pull.jpg",
-   "key": "commons:82168350",
-   "src": "photos/rugby-shirt/commons-82168350.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#94aa4c",
-   "bg": "#7d8154"
   },
   {
    "source": "commons",
@@ -8913,7 +5664,7 @@
    "src": "photos/rugby-shirt/commons-65598806.webp",
    "w": 720,
    "h": 480,
-   "color": "#222d5b",
+   "color": "#232e5b",
    "bg": "#aaacb7"
   },
   {
@@ -8927,7 +5678,7 @@
    "src": "photos/rugby-shirt/commons-65598791.webp",
    "w": 720,
    "h": 727,
-   "color": "#202a53",
+   "color": "#212a53",
    "bg": "#eae9ec"
   },
   {
@@ -8941,8 +5692,8 @@
    "src": "photos/rugby-shirt/commons-65598777.webp",
    "w": 720,
    "h": 480,
-   "color": "#273360",
-   "bg": "#a0a3ae"
+   "color": "#283461",
+   "bg": "#a1a3af"
   },
   {
    "source": "commons",
@@ -8955,22 +5706,8 @@
    "src": "photos/rugby-shirt/commons-65598768.webp",
    "w": 720,
    "h": 657,
-   "color": "#1b2550",
-   "bg": "#e8e7eb"
-  },
-  {
-   "source": "commons",
-   "title": "Docomo Rugby(2)",
-   "creator": "Mr.ちゅらさん",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Docomo_Rugby(2).JPG",
-   "key": "commons:44771012",
-   "src": "photos/rugby-shirt/commons-44771012.webp",
-   "w": 720,
-   "h": 405,
-   "color": "#91191e",
-   "bg": "#b5a189"
+   "color": "#1d2651",
+   "bg": "#e9e7eb"
   }
  ],
  "Salwar Kameez": [
@@ -9032,90 +5769,6 @@
   },
   {
    "source": "commons",
-   "title": "Clothes line",
-   "creator": "John Pannell",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clothes_line.jpg",
-   "key": "commons:1804858",
-   "src": "photos/salwar-kameez/commons-1804858.webp",
-   "w": 720,
-   "h": 478,
-   "color": "#55939c",
-   "bg": "#666365"
-  },
-  {
-   "source": "commons",
-   "title": "Cricket in salwar",
-   "creator": "meg and rahul",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cricket_in_salwar.jpg",
-   "key": "commons:2695153",
-   "src": "photos/salwar-kameez/commons-2695153.webp",
-   "w": 720,
-   "h": 534,
-   "color": "#a04b50",
-   "bg": "#9b8d86"
-  },
-  {
-   "source": "commons",
-   "title": "Afghan Schoolchildren in Kabul",
-   "creator": "Robert Romano, US Army",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afghan_Schoolchildren_in_Kabul.jpg",
-   "key": "commons:6125885",
-   "src": "photos/salwar-kameez/commons-6125885.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#935d48",
-   "bg": "#8a7f70"
-  },
-  {
-   "source": "commons",
-   "title": "GI walks down the runway during a fashion show dressed in a colorful, traditional Afghan dress. The March 3, 2008",
-   "creator": "Melissa M. Escobar",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:GI_walks_down_the_runway_during_a_fashion_show_dressed_in_a_colorful,_traditional_Afghan_dress._The_March_3,_2008.jpg",
-   "key": "commons:11118647",
-   "src": "photos/salwar-kameez/commons-11118647.webp",
-   "w": 544,
-   "h": 900,
-   "color": "#c8431e",
-   "bg": "#633f2c"
-  },
-  {
-   "source": "commons",
-   "title": "2010 Children's Day in Afghanistan",
-   "creator": "ISAF Headquarters Public Affairs Office from Kabul, Afghanistan",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Children%27s_Day_in_Afghanistan.jpg",
-   "key": "commons:14959281",
-   "src": "photos/salwar-kameez/commons-14959281.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#944e37",
-   "bg": "#8b7e6f"
-  },
-  {
-   "source": "commons",
-   "title": "First look launch of Rowdy Rathore, Bollywood film (18)",
-   "creator": "Bollywood Hungama",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_look_launch_of_Rowdy_Rathore,_Bollywood_film_(18).jpg",
-   "key": "commons:18994767",
-   "src": "photos/salwar-kameez/commons-18994767.webp",
-   "w": 585,
-   "h": 881,
-   "color": "#d87a55",
-   "bg": "#e89979"
-  },
-  {
-   "source": "commons",
    "title": "Shivani rajput in salwar",
    "creator": "Shivani rajput",
    "license": "CC BY-SA 4.0",
@@ -9125,22 +5778,8 @@
    "src": "photos/salwar-kameez/commons-68477162.webp",
    "w": 600,
    "h": 900,
-   "color": "#e07850",
-   "bg": "#d9ccbc"
-  },
-  {
-   "source": "commons",
-   "title": "Afghan boys in shalwar kameez in Badakshan",
-   "creator": "Official Photo by Petty Officer 1st Class Ryan Tabios, ISAF HQ Public Affairs.",
-   "license": "CC BY 2.5",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Afghan_boys_in_shalwar_kameez_in_Badakshan.jpg",
-   "key": "commons:78027344",
-   "src": "photos/salwar-kameez/commons-78027344.webp",
-   "w": 720,
-   "h": 478,
-   "color": "#705441",
-   "bg": "#9a9389"
+   "color": "#df7952",
+   "bg": "#d9ccbd"
   }
  ],
  "Sharara Set": [
@@ -9157,90 +5796,6 @@
    "h": 900,
    "color": "#5e356f",
    "bg": "#6b4a38"
-  },
-  {
-   "source": "commons",
-   "title": "A Dupatta Store in Aziz Super Market, Dhaka 07-01-2019",
-   "creator": "Shahidul Hasan Roman",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Dupatta_Store_in_Aziz_Super_Market,_Dhaka_07-01-2019.jpg",
-   "key": "commons:75681287",
-   "src": "photos/sharara-set/commons-75681287.webp",
-   "w": 554,
-   "h": 900,
-   "color": "#2074a7",
-   "bg": "#443437"
-  },
-  {
-   "source": "commons",
-   "title": "Eli Yishai2 (cropped)",
-   "creator": "Hagay Sharara (חגי שררה)",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eli_Yishai2_(cropped).JPG",
-   "key": "commons:46224837",
-   "src": "photos/sharara-set/commons-46224837.webp",
-   "w": 665,
-   "h": 804,
-   "color": "#d8824c",
-   "bg": "#ceaa88"
-  },
-  {
-   "source": "commons",
-   "title": "El Saharara oil field, Libya",
-   "creator": "Javier Blas",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Saharara_oil_field,_Libya.jpg",
-   "key": "commons:1804216",
-   "src": "photos/sharara-set/commons-1804216.webp",
-   "w": 720,
-   "h": 540,
-   "color": "#a38b6b",
-   "bg": "#7b6553"
-  },
-  {
-   "source": "commons",
-   "title": "-rpTEN - Tag 2 (26728459211)",
-   "creator": "re:publica from Germany",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-rpTEN_-_Tag_2_(26728459211).jpg",
-   "key": "commons:62496116",
-   "src": "photos/sharara-set/commons-62496116.webp",
-   "w": 720,
-   "h": 462,
-   "color": "#313e82",
-   "bg": "#3a4887"
-  },
-  {
-   "source": "commons",
-   "title": "-rpTEN - Tag 2 (26795287895)",
-   "creator": "re:publica from Germany",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-rpTEN_-_Tag_2_(26795287895).jpg",
-   "key": "commons:62496117",
-   "src": "photos/sharara-set/commons-62496117.webp",
-   "w": 720,
-   "h": 511,
-   "color": "#707fc6",
-   "bg": "#182249"
-  },
-  {
-   "source": "commons",
-   "title": "The Vow (reduction)label QS:Len,\"The Vow (reduction)\"label QS:Lfr,\"Le Voeu\"",
-   "creator": "William-Adolphe Bouguereau",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bouguereau_-_Le_Voeu_-_The_Vow_(reduction).jpg",
-   "key": "commons:131743787",
-   "src": "photos/sharara-set/commons-131743787.webp",
-   "w": 647,
-   "h": 900,
-   "color": "#8c7856",
-   "bg": "#4c3726"
   }
  ],
  "Sherwani": [
@@ -9311,8 +5866,8 @@
    "src": "photos/sherwani/commons-60898284.webp",
    "w": 598,
    "h": 900,
-   "color": "#8c6e5c",
-   "bg": "#232323"
+   "color": "#8c6f5d",
+   "bg": "#242424"
   },
   {
    "source": "commons",
@@ -9325,50 +5880,8 @@
    "src": "photos/sherwani/commons-25760524.webp",
    "w": 585,
    "h": 881,
-   "color": "#6e4733",
+   "color": "#754b35",
    "bg": "#584236"
-  },
-  {
-   "source": "commons",
-   "title": "[Jama Masjid Mosque, Delhi]",
-   "creator": "Unknown authorUnknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-Jama_Masjid_Mosque,_Delhi-_MET_DP147410.jpg",
-   "key": "commons:60501953",
-   "src": "photos/sherwani/commons-60501953.webp",
-   "w": 720,
-   "h": 546,
-   "color": "#c2ab97",
-   "bg": "#ede4d8"
-  },
-  {
-   "source": "commons",
-   "title": "A Hindu boy in holiday attire, India, ca. 1906 (IMP-CSCNWW33-OS14-12)",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Hindu_boy_in_holiday_attire,_India,_ca._1906_(IMP-CSCNWW33-OS14-12).jpg",
-   "key": "commons:30895458",
-   "src": "photos/sherwani/commons-30895458.webp",
-   "w": 720,
-   "h": 887,
-   "color": "#a2a398",
-   "bg": "#414039"
-  },
-  {
-   "source": "commons",
-   "title": "[Jama Masjid Mosque, Delhi]",
-   "creator": "Unknown authorUnknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detail_-Jama_Masjid_Mosque,_Delhi-_MET_DP147410_(cropped).jpg",
-   "key": "commons:84604668",
-   "src": "photos/sherwani/commons-84604668.webp",
-   "w": 720,
-   "h": 500,
-   "color": "#d6c2ad",
-   "bg": "#ceb59d"
   },
   {
    "source": "commons",
@@ -9381,36 +5894,8 @@
    "src": "photos/sherwani/commons-60898285.webp",
    "w": 473,
    "h": 900,
-   "color": "#b2543a",
-   "bg": "#b37059"
-  },
-  {
-   "source": "commons",
-   "title": "Man's Robe (Jama) with Poppies",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Man%27s_Robe_(Jama)_with_Poppies_MET_AR122.jpg",
-   "key": "commons:60898279",
-   "src": "photos/sherwani/commons-60898279.webp",
-   "w": 512,
-   "h": 768,
-   "color": "#ae6e6b",
-   "bg": "#787979"
-  },
-  {
-   "source": "commons",
-   "title": "Man's Robe (Jama) with Poppies",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Man%27s_Robe_(Jama)_with_Poppies_MET_TP314A.jpg",
-   "key": "commons:60898286",
-   "src": "photos/sherwani/commons-60898286.webp",
-   "w": 567,
-   "h": 723,
-   "color": "#d09686",
-   "bg": "#b4735e"
+   "color": "#b15339",
+   "bg": "#b26f58"
   }
  ],
  "Stays": [
@@ -9509,22 +5994,8 @@
    "src": "photos/stays/commons-59498490.webp",
    "w": 720,
    "h": 764,
-   "color": "#b5913b",
-   "bg": "#cecabe"
-  },
-  {
-   "source": "cma",
-   "title": "Time (from Chateau de Chaumont set), 1512–15",
-   "creator": "France, Lyon(?), early 16th century",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/1960.176.3",
-   "key": "cma:136291",
-   "src": "photos/stays/cma-136291.webp",
-   "w": 720,
-   "h": 551,
-   "color": "#a68c68",
-   "bg": "#323937"
+   "color": "#b5913c",
+   "bg": "#cdc9bd"
   },
   {
    "source": "commons",
@@ -9537,7 +6008,7 @@
    "src": "photos/stays/commons-59498487.webp",
    "w": 720,
    "h": 753,
-   "color": "#bb9131",
+   "color": "#bb9231",
    "bg": "#dfdbcf"
   },
   {
@@ -9551,22 +6022,8 @@
    "src": "photos/stays/commons-59658914.webp",
    "w": 720,
    "h": 770,
-   "color": "#93aea5",
+   "color": "#93aea4",
    "bg": "#090909"
-  },
-  {
-   "source": "commons",
-   "title": "Stays",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stays_MET_13.49.1_d.jpg",
-   "key": "commons:59490181",
-   "src": "photos/stays/commons-59490181.webp",
-   "w": 600,
-   "h": 900,
-   "color": "#bc7854",
-   "bg": "#90623f"
   },
   {
    "source": "commons",
@@ -9579,7 +6036,7 @@
    "src": "photos/stays/commons-59659514.webp",
    "w": 720,
    "h": 739,
-   "color": "#e0d4c0",
+   "color": "#dfd4bf",
    "bg": "#070707"
   }
  ],
@@ -9679,22 +6136,8 @@
    "src": "photos/straight-leg-jeans/commons-88153561.webp",
    "w": 603,
    "h": 900,
-   "color": "#3e4e61",
+   "color": "#3d4e61",
    "bg": "#64605d"
-  },
-  {
-   "source": "commons",
-   "title": "Boge 03",
-   "creator": "Sigismund von Dobschütz",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boge_03.JPG",
-   "key": "commons:15773892",
-   "src": "photos/straight-leg-jeans/commons-15773892.webp",
-   "w": 720,
-   "h": 509,
-   "color": "#859e61",
-   "bg": "#677454"
   },
   {
    "source": "commons",
@@ -9707,8 +6150,8 @@
    "src": "photos/straight-leg-jeans/commons-88152487.webp",
    "w": 603,
    "h": 900,
-   "color": "#1e2f4d",
-   "bg": "#888883"
+   "color": "#1e304d",
+   "bg": "#888882"
   },
   {
    "source": "commons",
@@ -9721,7 +6164,7 @@
    "src": "photos/straight-leg-jeans/commons-22024871.webp",
    "w": 720,
    "h": 477,
-   "color": "#51514f",
+   "color": "#51514e",
    "bg": "#715044"
   },
   {
@@ -9736,21 +6179,7 @@
    "w": 603,
    "h": 900,
    "color": "#385170",
-   "bg": "#151413"
-  },
-  {
-   "source": "commons",
-   "title": "3D Crinkle on Dummy",
-   "creator": "Fahad Faisal",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:3D_Crinkle_on_Dummy.jpg",
-   "key": "commons:38295261",
-   "src": "photos/straight-leg-jeans/commons-38295261.webp",
-   "w": 720,
-   "h": 481,
-   "color": "#5a94aa",
-   "bg": "#90897b"
+   "bg": "#151312"
   }
  ],
  "Swing Dress": [
@@ -9816,68 +6245,12 @@
    "creator": "Ceil Chapman",
    "license": "CC0",
    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cocktail_dress_MET_2000.366.1a_label.jpg",
-   "key": "commons:59497036",
-   "src": "photos/swing-dress/commons-59497036.webp",
-   "w": 720,
-   "h": 250,
-   "color": "#68645a",
-   "bg": "#230e0e"
-  },
-  {
-   "source": "commons",
-   "title": "1955Dress",
-   "creator": "Deceased family member of Infrogmation",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1955Dress.jpg",
-   "key": "commons:1824382",
-   "src": "photos/swing-dress/commons-1824382.webp",
-   "w": 720,
-   "h": 542,
-   "color": "#512e20",
-   "bg": "#57382a"
-  },
-  {
-   "source": "commons",
-   "title": "Cocktail dress",
-   "creator": "Ceil Chapman",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cocktail_dress_MET_1979.424.4_label.jpg",
-   "key": "commons:59497351",
-   "src": "photos/swing-dress/commons-59497351.webp",
-   "w": 720,
-   "h": 523,
-   "color": "#e2ddd0",
-   "bg": "#302c47"
-  },
-  {
-   "source": "commons",
-   "title": "BRStateMuseumJuly08QueenHiacyntians1955",
-   "creator": "Infrogmation of New Orleans",
-   "license": "CC BY 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:BRStateMuseumJuly08QueenHiacyntians1955.jpg",
-   "key": "commons:4434899",
-   "src": "photos/swing-dress/commons-4434899.webp",
-   "w": 620,
-   "h": 900,
-   "color": "#867c6d",
-   "bg": "#2a2727"
-  },
-  {
-   "source": "commons",
-   "title": "Cocktail dress",
-   "creator": "Ceil Chapman",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cocktail_dress_MET_1979.424.1_F.jpg",
    "key": "commons:59499145",
    "src": "photos/swing-dress/commons-59499145.webp",
    "w": 290,
    "h": 900,
-   "color": "#2a2825",
+   "color": "#2a2925",
    "bg": "#d9d9d6"
   },
   {
@@ -9891,7 +6264,7 @@
    "src": "photos/swing-dress/commons-7966999.webp",
    "w": 658,
    "h": 885,
-   "color": "#bcbbc2",
+   "color": "#bcbbc1",
    "bg": "#0c0b0f"
   },
   {
@@ -9906,21 +6279,7 @@
    "w": 321,
    "h": 900,
    "color": "#243574",
-   "bg": "#c3beb8"
-  },
-  {
-   "source": "commons",
-   "title": "50er.jahre.look",
-   "creator": "Osnafotos",
-   "license": "CC BY-SA 2.0 de",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:50er.jahre.look.jpg",
-   "key": "commons:11500471",
-   "src": "photos/swing-dress/commons-11500471.webp",
-   "w": 613,
-   "h": 588,
-   "color": "#8c4246",
-   "bg": "#616263"
+   "bg": "#c3bfb8"
   }
  ],
  "Tailcoat": [
@@ -9991,8 +6350,8 @@
    "src": "photos/tailcoat/commons-60286234.webp",
    "w": 720,
    "h": 746,
-   "color": "#3b3935",
-   "bg": "#ede4d0"
+   "color": "#383531",
+   "bg": "#ece4d0"
   },
   {
    "source": "commons",
@@ -10005,22 +6364,8 @@
    "src": "photos/tailcoat/commons-60286240.webp",
    "w": 720,
    "h": 864,
-   "color": "#373532",
+   "color": "#33312e",
    "bg": "#ebe1c9"
-  },
-  {
-   "source": "commons",
-   "title": "Lars Jacob & Roxanne Russell 1973",
-   "creator": "Lars Jacob Prod assistant on assignment",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lars_Jacob_%26_Roxanne_Russell_1973.jpg",
-   "key": "commons:5495235",
-   "src": "photos/tailcoat/commons-5495235.webp",
-   "w": 697,
-   "h": 900,
-   "color": "#1b233b",
-   "bg": "#592921"
   },
   {
    "source": "commons",
@@ -10033,22 +6378,8 @@
    "src": "photos/tailcoat/commons-60286236.webp",
    "w": 720,
    "h": 740,
-   "color": "#343232",
-   "bg": "#e9dfcb"
-  },
-  {
-   "source": "commons",
-   "title": "Steve Vigil & Lars Jacob 1974",
-   "creator": "LJP assistant on assignment",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steve_Vigil_%26_Lars_Jacob_1974.jpg",
-   "key": "commons:5495707",
-   "src": "photos/tailcoat/commons-5495707.webp",
-   "w": 616,
-   "h": 694,
-   "color": "#b5bac4",
-   "bg": "#3e393b"
+   "color": "#2a2929",
+   "bg": "#e9dfca"
   },
   {
    "source": "commons",
@@ -10061,8 +6392,8 @@
    "src": "photos/tailcoat/commons-60286238.webp",
    "w": 720,
    "h": 787,
-   "color": "#4e4b47",
-   "bg": "#e6dcc3"
+   "color": "#393734",
+   "bg": "#e5dbc2"
   },
   {
    "source": "commons",
@@ -10076,7 +6407,7 @@
    "w": 543,
    "h": 900,
    "color": "#7a3f2e",
-   "bg": "#343232"
+   "bg": "#333231"
   },
   {
    "source": "commons",
@@ -10089,8 +6420,8 @@
    "src": "photos/tailcoat/commons-12769246.webp",
    "w": 605,
    "h": 900,
-   "color": "#3f2c1d",
-   "bg": "#483c2e"
+   "color": "#655742",
+   "bg": "#483c2d"
   }
  ],
  "Top Hat": [
@@ -10152,20 +6483,6 @@
   },
   {
    "source": "commons",
-   "title": "Top hat",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_hat_MET_1990.41a_label.jpg",
-   "key": "commons:59492994",
-   "src": "photos/top-hat/commons-59492994.webp",
-   "w": 720,
-   "h": 534,
-   "color": "#b5904f",
-   "bg": "#97692f"
-  },
-  {
-   "source": "commons",
    "title": "Beaver-felt-hat-ftl",
    "creator": "Themightyquill",
    "license": "CC BY 3.0",
@@ -10176,7 +6493,7 @@
    "w": 720,
    "h": 540,
    "color": "#26293a",
-   "bg": "#4f4953"
+   "bg": "#4f4952"
   },
   {
    "source": "commons",
@@ -10189,7 +6506,7 @@
    "src": "photos/top-hat/commons-59501983.webp",
    "w": 720,
    "h": 757,
-   "color": "#623d1c",
+   "color": "#603c1b",
    "bg": "#d4cbb9"
   },
   {
@@ -10203,64 +6520,8 @@
    "src": "photos/top-hat/commons-5564017.webp",
    "w": 610,
    "h": 900,
-   "color": "#4c4748",
+   "color": "#4d4848",
    "bg": "#aaa699"
-  },
-  {
-   "source": "commons",
-   "title": "Top hat",
-   "creator": "Unknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_hat_MET_1972.139.1_label.jpg",
-   "key": "commons:59501987",
-   "src": "photos/top-hat/commons-59501987.webp",
-   "w": 563,
-   "h": 900,
-   "color": "#73726e",
-   "bg": "#a5a09a"
-  },
-  {
-   "source": "commons",
-   "title": "Kärwe Kutscher",
-   "creator": "Schorle",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:K%C3%A4rwe_Kutscher.JPG",
-   "key": "commons:11399093",
-   "src": "photos/top-hat/commons-11399093.webp",
-   "w": 720,
-   "h": 480,
-   "color": "#5e3b2d",
-   "bg": "#736c65"
-  },
-  {
-   "source": "commons",
-   "title": "[Older Man Wearing Top Hat]",
-   "creator": "Unknown authorUnknown author",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:-Older_Man_Wearing_Top_Hat-_MET_DP700111.jpg",
-   "key": "commons:60498150",
-   "src": "photos/top-hat/commons-60498150.webp",
-   "w": 720,
-   "h": 777,
-   "color": "#503739",
-   "bg": "#c0b9b9"
-  },
-  {
-   "source": "commons",
-   "title": "Man's silk and wool twill frock coat c. 1820",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Man%27s_silk_and_wool_twill_frock_coat_c._1820.jpg",
-   "key": "commons:14853925",
-   "src": "photos/top-hat/commons-14853925.webp",
-   "w": 554,
-   "h": 900,
-   "color": "#2b3e40",
-   "bg": "#6c6b68"
   }
  ],
  "Tricorne Hat": [
@@ -10322,48 +6583,6 @@
   },
   {
    "source": "commons",
-   "title": "Studiekop Studiekop, bepruikt en met tricorne, RP-T-1967-42",
-   "creator": "Rijksmuseum",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Studiekop_Studiekop,_bepruikt_en_met_tricorne,_RP-T-1967-42.jpg",
-   "key": "commons:83459529",
-   "src": "photos/tricorne-hat/commons-83459529.webp",
-   "w": 720,
-   "h": 873,
-   "color": "#9a9283",
-   "bg": "#d2cda0"
-  },
-  {
-   "source": "commons",
-   "title": "Self-Portrait in a Cocked Hat",
-   "creator": "Francisco Goya",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Self-Portrait_in_a_Cocked_Hat_MET_DP359044.jpg",
-   "key": "commons:60940858",
-   "src": "photos/tricorne-hat/commons-60940858.webp",
-   "w": 720,
-   "h": 848,
-   "color": "#caa77e",
-   "bg": "#f3eed0"
-  },
-  {
-   "source": "commons",
-   "title": "Delphinium tricorne Kentucky",
-   "creator": "Mason Brock (Masebrock)",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delphinium_tricorne_Kentucky.jpg",
-   "key": "commons:20780662",
-   "src": "photos/tricorne-hat/commons-20780662.webp",
-   "w": 720,
-   "h": 898,
-   "color": "#695bd1",
-   "bg": "#677269"
-  },
-  {
-   "source": "commons",
    "title": "Tricorne",
    "creator": "Unknown author",
    "license": "CC0",
@@ -10373,36 +6592,8 @@
    "src": "photos/tricorne-hat/commons-59488977.webp",
    "w": 720,
    "h": 515,
-   "color": "#7b714b",
+   "color": "#766d48",
    "bg": "#ccc7a8"
-  },
-  {
-   "source": "commons",
-   "title": "Self-Portrait in a Cocked Hat",
-   "creator": "Francisco Goya",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Self-Portrait_in_a_Cocked_Hat_MET_DT3432.jpg",
-   "key": "commons:60940853",
-   "src": "photos/tricorne-hat/commons-60940853.webp",
-   "w": 720,
-   "h": 854,
-   "color": "#bf9b6f",
-   "bg": "#ddd0ba"
-  },
-  {
-   "source": "commons",
-   "title": "DelphiniumWild",
-   "creator": "Amos Oliver Doyle",
-   "license": "CC BY-SA 3.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:DelphiniumWild.jpg",
-   "key": "commons:24852074",
-   "src": "photos/tricorne-hat/commons-24852074.webp",
-   "w": 643,
-   "h": 900,
-   "color": "#7a843d",
-   "bg": "#4b5223"
   },
   {
    "source": "commons",
@@ -10415,22 +6606,8 @@
    "src": "photos/tricorne-hat/commons-59502718.webp",
    "w": 720,
    "h": 495,
-   "color": "#8c7c45",
-   "bg": "#ccc8b0"
-  },
-  {
-   "source": "commons",
-   "title": "Dwarf larkspur purple flower delphinium tricorne",
-   "creator": "Ryan Hagerty",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dwarf_larkspur_purple_flower_delphinium_tricorne.jpg",
-   "key": "commons:24905002",
-   "src": "photos/tricorne-hat/commons-24905002.webp",
-   "w": 593,
-   "h": 900,
-   "color": "#3b316b",
-   "bg": "#4c5b57"
+   "color": "#8d7e47",
+   "bg": "#cdc9b0"
   }
  ],
  "Varsity Jacket": [
@@ -10475,132 +6652,6 @@
    "h": 900,
    "color": "#683928",
    "bg": "#a28064"
-  },
-  {
-   "source": "commons",
-   "title": "Varsity Letter",
-   "creator": "Alton",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Varsity_Letter.png",
-   "key": "commons:2324590",
-   "src": "photos/varsity-jacket/commons-2324590.webp",
-   "w": 720,
-   "h": 536,
-   "color": "#6b6365",
-   "bg": "#3d343c"
-  },
-  {
-   "source": "commons",
-   "title": "ValorHighSchool V",
-   "creator": "Baylit",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:ValorHighSchool_V.PNG",
-   "key": "commons:4651748",
-   "src": "photos/varsity-jacket/commons-4651748.webp",
-   "w": 585,
-   "h": 692,
-   "color": "#323265",
-   "bg": "#fcfdfe"
-  },
-  {
-   "source": "commons",
-   "title": "Dave Tressel (6253244942)",
-   "creator": "Erik Drost",
-   "license": "CC BY 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dave_Tressel_(6253244942).jpg",
-   "key": "commons:63324585",
-   "src": "photos/varsity-jacket/commons-63324585.webp",
-   "w": 675,
-   "h": 900,
-   "color": "#6c7265",
-   "bg": "#638a67"
-  },
-  {
-   "source": "commons",
-   "title": "YorktownTigersY",
-   "creator": "Ty Hill",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:YorktownTigersY.png",
-   "key": "commons:7640116",
-   "src": "photos/varsity-jacket/commons-7640116.webp",
-   "w": 714,
-   "h": 795,
-   "color": "#a5b7a6",
-   "bg": "#022b03"
-  },
-  {
-   "source": "commons",
-   "title": "Walther LHS green varsity letters",
-   "creator": "Walther Lutheran",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walther_LHS_green_varsity_letters.jpg",
-   "key": "commons:11289985",
-   "src": "photos/varsity-jacket/commons-11289985.webp",
-   "w": 720,
-   "h": 620,
-   "color": "#196935",
-   "bg": "#ffffff"
-  },
-  {
-   "source": "commons",
-   "title": "Washington Commanders Reveal (51858955283)",
-   "creator": "All-Pro Reels from District of Columbia, USA",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washington_Commanders_Reveal_(51858955283).jpg",
-   "key": "commons:114971868",
-   "src": "photos/varsity-jacket/commons-114971868.webp",
-   "w": 649,
-   "h": 900,
-   "color": "#40121e",
-   "bg": "#816b58"
-  },
-  {
-   "source": "commons",
-   "title": "1941 - Central Jr High School Varsity Athletic Letters - Allentown PA",
-   "creator": "Unknown authorUnknown author",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:1941_-_Central_Jr_High_School_Varsity_Athletic_Letters_-_Allentown_PA.jpg",
-   "key": "commons:55755230",
-   "src": "photos/varsity-jacket/commons-55755230.webp",
-   "w": 720,
-   "h": 750,
-   "color": "#96252d",
-   "bg": "#000000"
-  },
-  {
-   "source": "commons",
-   "title": "Odey Paulo aka MANPAULO",
-   "creator": "Mymanpaulo",
-   "license": "CC BY-SA 4.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odey_Paulo_aka_MANPAULO.jpg",
-   "key": "commons:122342543",
-   "src": "photos/varsity-jacket/commons-122342543.webp",
-   "w": 601,
-   "h": 900,
-   "color": "#ec4d58",
-   "bg": "#31303a"
-  },
-  {
-   "source": "commons",
-   "title": "Washington Commanders Reveal (51857915557)",
-   "creator": "All-Pro Reels from District of Columbia, USA",
-   "license": "CC BY-SA 2.0",
-   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washington_Commanders_Reveal_(51857915557).jpg",
-   "key": "commons:114971904",
-   "src": "photos/varsity-jacket/commons-114971904.webp",
-   "w": 720,
-   "h": 491,
-   "color": "#6e4a3e",
-   "bg": "#9d8d84"
   }
  ],
  "Victorian Bustle Gown": [
@@ -10699,36 +6750,8 @@
    "src": "photos/victorian-bustle-gown/commons-59501668.webp",
    "w": 555,
    "h": 900,
-   "color": "#333666",
-   "bg": "#ada59e"
-  },
-  {
-   "source": "commons",
-   "title": "Visiting dress",
-   "creator": "Émile Pingat",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visiting_dress_MET_25.200b_d2.jpg",
-   "key": "commons:59498017",
-   "src": "photos/victorian-bustle-gown/commons-59498017.webp",
-   "w": 720,
-   "h": 564,
-   "color": "#482519",
-   "bg": "#956852"
-  },
-  {
-   "source": "commons",
-   "title": "Evening dress",
-   "creator": "Callot Soeurs",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Evening_dress_MET_1977.303.2_D4.jpg",
-   "key": "commons:61449932",
-   "src": "photos/victorian-bustle-gown/commons-61449932.webp",
-   "w": 720,
-   "h": 858,
-   "color": "#172045",
-   "bg": "#cfc39e"
+   "color": "#323666",
+   "bg": "#aea79f"
   },
   {
    "source": "commons",
@@ -10741,7 +6764,7 @@
    "src": "photos/victorian-bustle-gown/commons-59489166.webp",
    "w": 720,
    "h": 869,
-   "color": "#a57f3d",
+   "color": "#a37e3c",
    "bg": "#d5d3d7"
   },
   {
@@ -10755,22 +6778,8 @@
    "src": "photos/victorian-bustle-gown/commons-59497867.webp",
    "w": 578,
    "h": 900,
-   "color": "#4d322f",
+   "color": "#4c322e",
    "bg": "#d9d8dd"
-  },
-  {
-   "source": "commons",
-   "title": "Evening dress",
-   "creator": "Lanvin / Jeanne Lanvin",
-   "license": "CC0",
-   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Evening_dress_MET_1973.199.2ab_F.jpg",
-   "key": "commons:59497883",
-   "src": "photos/victorian-bustle-gown/commons-59497883.webp",
-   "w": 362,
-   "h": 900,
-   "color": "#201f1d",
-   "bg": "#c4c0ba"
   }
  ],
  "Waistcoat": [
@@ -10869,8 +6878,8 @@
    "src": "photos/waistcoat/commons-57103429.webp",
    "w": 508,
    "h": 900,
-   "color": "#b2a06d",
-   "bg": "#d3cbbd"
+   "color": "#b2a06e",
+   "bg": "#d2cbbd"
   },
   {
    "source": "commons",
@@ -10883,36 +6892,8 @@
    "src": "photos/waistcoat/commons-83452721.webp",
    "w": 720,
    "h": 877,
-   "color": "#272a30",
-   "bg": "#c1c2c1"
-  },
-  {
-   "source": "cma",
-   "title": "Man's Morning Coat, 1700–1750",
-   "creator": "India, Mughal",
-   "license": "CC0 1.0",
-   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "sourceUrl": "https://clevelandart.org/art/1936.443",
-   "key": "cma:115730",
-   "src": "photos/waistcoat/cma-115730.webp",
-   "w": 720,
-   "h": 648,
-   "color": "#ae8274",
-   "bg": "#858585"
-  },
-  {
-   "source": "commons",
-   "title": "Cameroon sheep waistcoat frontside",
-   "creator": "--Kürschner (talk) 09:54, 31 August 2008 (UTC)",
-   "license": "Public domain",
-   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
-   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cameroon_sheep_waistcoat_frontside.jpg",
-   "key": "commons:4666265",
-   "src": "photos/waistcoat/commons-4666265.webp",
-   "w": 662,
-   "h": 900,
-   "color": "#9e908a",
-   "bg": "#2e302b"
+   "color": "#262930",
+   "bg": "#c1c2c2"
   },
   {
    "source": "commons",
@@ -10925,7 +6906,7 @@
    "src": "photos/waistcoat/commons-59491756.webp",
    "w": 568,
    "h": 900,
-   "color": "#9d6750",
+   "color": "#9d6850",
    "bg": "#f6f4ed"
   },
   {
@@ -10939,8 +6920,8 @@
    "src": "photos/waistcoat/commons-142475261.webp",
    "w": 549,
    "h": 900,
-   "color": "#e0d7cd",
-   "bg": "#c4c4c4"
+   "color": "#ded7cb",
+   "bg": "#c5c5c5"
   }
  ]
 }
