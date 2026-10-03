@@ -5,6 +5,7 @@
 <p align="center"><b><a href="https://arriving-tomorrow.vercel.app">arriving-tomorrow.vercel.app</a></b></p>
 
 [![CI](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml)
+[![Vercel](https://img.shields.io/github/deployments/shankar-sachin/arriving-tomorrow/Production?label=Vercel&logo=vercel&logoColor=white)](https://github.com/shankar-sachin/arriving-tomorrow/deployments)
 [![Live site](https://img.shields.io/badge/live-arriving--tomorrow.vercel.app-ff3d7f)](https://arriving-tomorrow.vercel.app)
 [![License: MIT](https://img.shields.io/badge/license-MIT-ff3d7f.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-7-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
