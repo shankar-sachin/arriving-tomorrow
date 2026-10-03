@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence, MotionConfig } from "framer-motion";
+import { MotionConfig } from "framer-motion";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Cart } from "./pages/Cart";
@@ -13,11 +14,12 @@ import { Orders } from "./pages/Orders";
 import { Search } from "./pages/Search";
 import { Shop } from "./pages/Shop";
 
-function AnimatedRoutes() {
+function AppRoutes() {
   const location = useLocation();
   useEffect(() => window.scrollTo({ top: 0 }), [location.pathname]);
   return (
-    <AnimatePresence mode="wait">
+    // Keyed so each navigation remounts the page (fresh state + entrance animation).
+    <ErrorBoundary resetKey={location.pathname + location.search}>
       <Routes location={location} key={location.pathname + location.search}>
         <Route path="/" element={<Home />} />
         <Route path="/shop/:region/:category?" element={<Shop />} />
@@ -29,7 +31,7 @@ function AnimatedRoutes() {
         <Route path="/orders/:id" element={<OrderTrack />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </AnimatePresence>
+    </ErrorBoundary>
   );
 }
 
@@ -37,9 +39,11 @@ export function App() {
   return (
     <MotionConfig reducedMotion="user">
       <BrowserRouter basename={import.meta.env.BASE_URL}>
-        <Header />
-        <AnimatedRoutes />
-        <Footer />
+        <ErrorBoundary>
+          <Header />
+          <AppRoutes />
+          <Footer />
+        </ErrorBoundary>
       </BrowserRouter>
     </MotionConfig>
   );
