@@ -112,6 +112,10 @@ Every PR runs CI (catalog → typecheck → tests → build). Merge once it's gr
 
 ## 6. v1.1.0: Real product images
 
+> **Status (Oct 2026): shipped with curated, openly licensed photos.** In the end we used
+> real photographs from Wikimedia Commons rather than AI generation. See section 6.6 for what
+> was built. Sections 6.1–6.5 are the original plan, kept for context.
+
 ### 6.1 Why v1 uses drawings
 
 Every product is invented by the generator, so no photo of, say, a "Moonlit
@@ -158,3 +162,11 @@ garment, colour, and fabric**.
 - **Image generation provider and budget.** About 2,040 images, plus re-rolls for rejects.
 - **Object storage account** (R2 or S3), and whether to put a custom domain in front of it.
 - **Who signs off on cultural accuracy** for each region's contact sheets.
+
+### 6.6 What shipped
+
+- **Sources.** Wikimedia Commons, keeping only CC0, public domain, CC BY, and CC BY-SA, and skipping files tagged with personality rights. The Met's Open Access API was the first choice (CC0 costume objects), but it now returns `410 Gone`. Pexels works too if a `PEXELS_API_KEY` secret is added.
+- **Pipeline.** `scripts/fetch-photos.ts` runs in GitHub Actions (`photos.yml`) because the dev sandbox has no open internet. It downloads, resizes to WebP, measures the garment's dominant saturated colour, and commits the photos plus an attribution manifest back to the PR branch.
+- **Human review.** Every photo is checked on contact sheets. `photo-approved.json` is the allowlist, `npm run photos:prune` deletes and blocklists everything else, and the build only ever uses approved photos. The first pass approved 263 of 517 (rejects included wrong items, illustrations, brand logos, public figures, and one Nazi-uniform illustration).
+- **Catalog.** An archetype needs at least 3 approved photos to use them; each SKU's colour name is re-matched to its photo. Archetypes below the bar keep the SVG drawings.
+- **UI.** Photos fill the cards (cover, 4:5), the product page shows the whole photo over a blurred backdrop, every product page credits its photo, and `/credits` lists them all.
