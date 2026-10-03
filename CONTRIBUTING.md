@@ -8,11 +8,11 @@ Any pull request from outside the project will be closed without review. Sorry. 
 
 Issues are welcome and actually get read.
 
-- **Found a bug?** [Open an issue](https://github.com/shankar-sachin/clothesnevercome/issues/new) with what you did, what you expected, what happened instead, and your browser and device.
+- **Found a bug?** [Open an issue](https://github.com/shankar-sachin/arriving-tomorrow/issues/new) with what you did, what you expected, what happened instead, and your browser and device.
 - **Have an idea?** New regions, garments, excuses for the delivery truck, animations: open an issue and describe it.
 - **Spotted a mistake in a garment name or description?** Open an issue. We want the catalog to be accurate and respectful of the cultures it draws from.
 
-Before opening one, please search [existing issues](https://github.com/shankar-sachin/clothesnevercome/issues) to avoid duplicates.
+Before opening one, please search [existing issues](https://github.com/shankar-sachin/arriving-tomorrow/issues) to avoid duplicates.
 
 ## Security issues
 

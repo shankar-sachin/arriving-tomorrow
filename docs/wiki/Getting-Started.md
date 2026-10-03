@@ -8,8 +8,8 @@
 ## Run it
 
 ```bash
-git clone https://github.com/shankar-sachin/clothesnevercome.git
-cd clothesnevercome
+git clone https://github.com/shankar-sachin/arriving-tomorrow.git
+cd arriving-tomorrow
 npm install
 npm run dev
 ```

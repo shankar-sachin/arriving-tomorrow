@@ -2,9 +2,9 @@
   <img src="docs/brand/banner.png" alt="arriving tomorrow: Order everything. Receive nothing." width="100%">
 </h1>
 
-[![CI](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml)
-[![Deploy](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/deploy.yml/badge.svg)](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/deploy.yml)
-[![Live site](https://img.shields.io/badge/live-shankar--sachin.github.io-ff3d7f)](https://shankar-sachin.github.io/clothesnevercome/)
+[![CI](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml)
+[![Deploy](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/deploy.yml/badge.svg)](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/deploy.yml)
+[![Live site](https://img.shields.io/badge/live-shankar--sachin.github.io-ff3d7f)](https://shankar-sachin.github.io/arriving-tomorrow/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-ff3d7f.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-7-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=1b1033)](https://react.dev/)
@@ -21,7 +21,7 @@ Then watch a delivery truck that is always arriving *tomorrow*.
 
 No accounts. No credit cards. No clothes.
 
-**Shop now (receive never):** https://shankar-sachin.github.io/clothesnevercome/
+**Shop now (receive never):** https://shankar-sachin.github.io/arriving-tomorrow/
 
 ## Features
 
@@ -77,11 +77,13 @@ The first run downloads the model, which needs around 35 GB of free disk. Use `-
 
 ## Deployment
 
-Every push to `main` builds the site and deploys `dist/` to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). In **Settings → Pages**, the source must be set to **GitHub Actions** (not "Deploy from a branch"). More details are in the [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki/Deployment).
+Every push to `main` builds the site and deploys `dist/` to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). In **Settings → Pages**, the source must be set to **GitHub Actions** (not "Deploy from a branch"). More details are in the [wiki](https://github.com/shankar-sachin/arriving-tomorrow/wiki/Deployment).
+
+It also deploys to **Vercel**, configured by [`vercel.json`](vercel.json): Vite build, `dist/` output, and a rewrite so deep links work. Vercel serves from `/`, so no `BASE_PATH` is needed there, and every pull request gets its own preview link.
 
 ## Documentation
 
-The [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki) covers architecture, the catalog generator, deployment, and an FAQ. Its source lives in [`docs/wiki/`](docs/wiki) and is published automatically on every merge to `main`.
+The [wiki](https://github.com/shankar-sachin/arriving-tomorrow/wiki) covers architecture, the catalog generator, deployment, and an FAQ. Its source lives in [`docs/wiki/`](docs/wiki) and is published automatically on every merge to `main`.
 
 ## Contributing
 

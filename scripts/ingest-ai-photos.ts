@@ -39,7 +39,7 @@ for (const e of entries) {
     creator: "Generated with FLUX.1-schnell",
     license: "AI-generated",
     licenseUrl: "https://huggingface.co/black-forest-labs/FLUX.1-schnell",
-    sourceUrl: "https://github.com/shankar-sachin/clothesnevercome/blob/main/scripts/ai-photo-jobs.json",
+    sourceUrl: "https://github.com/shankar-sachin/arriving-tomorrow/blob/main/scripts/ai-photo-jobs.json",
   };
   const list = (manifest[e.archetype] ??= []);
   const i = list.findIndex((p) => p.key === e.key);
