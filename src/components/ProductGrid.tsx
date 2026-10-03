@@ -9,7 +9,9 @@ export function ProductGrid({ items }: { items: CardItem[] }) {
   const [shown, setShown] = useState(PAGE);
   const sentinel = useRef<HTMLDivElement>(null);
 
-  useEffect(() => setShown(PAGE), [items]);
+  useEffect(() => {
+    setShown(PAGE);
+  }, [items]);
 
   useEffect(() => {
     const el = sentinel.current;

@@ -14,9 +14,13 @@ import { Orders } from "./pages/Orders";
 import { Search } from "./pages/Search";
 import { Shop } from "./pages/Shop";
 
-function AppRoutes() {
+export function AppRoutes() {
   const location = useLocation();
-  useEffect(() => window.scrollTo({ top: 0 }), [location.pathname]);
+  // Braces matter: newer Chrome's scrollTo returns a Promise, and returning it would make
+  // React treat the Promise as this effect's cleanup and crash on the next navigation.
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [location.pathname]);
   return (
     // Keyed so each navigation remounts the page (fresh state + entrance animation).
     <ErrorBoundary resetKey={location.pathname + location.search}>
