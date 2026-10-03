@@ -57,6 +57,20 @@ The catalog is read-only, so it ships as static data instead of living in a data
 
 Want more stuff? Add archetypes to the taxonomy or raise `VARIANTS_PER_ARCHETYPE`. See [docs/PLAN.md](docs/PLAN.md) for the full plan, the database options, and the PR roadmap.
 
+## AI product photos (Mac)
+
+Product photos can be generated locally with [FLUX.1-schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell) (Apache-2.0) on an Apple Silicon Mac. That's one studio photo per garment type × colour family (612 images), matched to every product of that colour.
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -U mflux pillow
+python3 scripts/generate_photos.py --limit 5     # quick test first
+python3 scripts/generate_photos.py               # the full run; resumable, shows an ETA
+git add public/photos/ai && git commit -m "Add AI product photos" && git push
+```
+
+The first run downloads the model, which needs around 35 GB of free disk. Use `--quantize 4` on 16 GB Macs if memory is tight. After pushing, `npm run photos:ingest-ai` adds the images to the catalog, and they go through the same review as every other photo (`photo-approved.json`, `npm run photos:prune`). Every AI image is labelled as AI-generated on its product page.
+
 ## Deployment
 
 Every push to `main` builds the site and deploys `dist/` to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). In **Settings → Pages**, the source must be set to **GitHub Actions** (not "Deploy from a branch"). More details are in the [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki/Deployment).

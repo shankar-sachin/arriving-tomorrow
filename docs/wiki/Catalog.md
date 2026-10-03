@@ -35,6 +35,10 @@ Real photos come from Wikimedia Commons under open licences (CC0, public domain,
 
 Pushing a change to `photo-sources.ts` automatically re-fetches archetypes that have fewer than 3 approved photos.
 
+### AI photos
+
+`scripts/generate_photos.py` generates studio product photos with FLUX.1-schnell on an Apple Silicon Mac (see the README for the commands). Prompts are built by `npm run photos:ai-jobs` from per-garment descriptions in `scripts/ai-photo-prompts.ts`, one per garment type × colour family, and always ask for an empty dress form or ghost mannequin, so no people are generated. `npm run photos:ingest-ai` adds the results for review. An approved AI photo is used for every product of its colour family (no recolouring), and it takes priority over real photos and drawings. AI images are labelled as such on the product page and on `/credits`.
+
 ## Adding stuff
 
 - **More of everything:** raise `VARIANTS_PER_ARCHETYPE` in `generate.ts`.

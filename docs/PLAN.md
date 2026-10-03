@@ -102,6 +102,8 @@ Other later upgrade paths:
 | --- | --- |
 | **v1.0.0** (shipped) | Plan, scaffold, taxonomy + generator (~6k SKUs), SVG art, shop/product/cart/checkout/tracking/orders, CI, unit tests. |
 | **v1.1.0** | **Real product images** (see section 6). |
+| **v1.1.x** | Locally generated AI photos (FLUX.1-schnell on a Mac): one per garment type × colour family, 612 images (see section 6.7). |
+| **v1.2.0** | **A unique AI photo for every product (6,120)**, matching each product's exact colour, fabric and motif (see section 6.8). |
 | #2 | Search upgrades (fuzzy matching, facets), URL-synced filters, skeleton loaders. |
 | #3 | More regions (East Asia, Africa, Latin America, Middle East) via the Wikidata-assisted taxonomy. Target 15k+ SKUs. |
 | #4 | Delight pass: add-to-cart flight animation, sound effects (muted by default), achievement toasts ("Spent $10k on nothing"). |
@@ -170,3 +172,21 @@ garment, colour, and fabric**.
 - **Human review.** Every photo is checked on contact sheets. `photo-approved.json` is the allowlist, `npm run photos:prune` deletes and blocklists everything else, and the build only ever uses approved photos. The first pass approved 263 of 517 (rejects included wrong items, illustrations, brand logos, public figures, and one Nazi-uniform illustration).
 - **Catalog.** An archetype needs at least 3 approved photos to use them; each SKU's colour name is re-matched to its photo. Archetypes below the bar keep the SVG drawings.
 - **UI.** Photos fill the cards (cover, 4:5), the product page shows the whole photo over a blurred backdrop, every product page credits its photo, and `/credits` lists them all.
+
+### 6.7 AI-generated photos (v1.1.x)
+
+Real photos cover most garment types, but each photo repeats about 11 times and 9 types have nothing usable. The fix is to generate studio product photos locally:
+
+- **Model:** FLUX.1-schnell (Apache-2.0), run on an Apple Silicon Mac via `mflux`, at roughly 10–30 s per image. The dev VM and GitHub runners have no GPU (and the VM can't reach Hugging Face), so the Mac is the practical option.
+- **Scope:** one image per garment type × colour family, 68 × 9 = **612 images**. Every product uses the image for its own colour family, so the photo matches the name without recolouring.
+- **Prompts:** built from a hand-written, culturally specific description of each garment (`scripts/ai-photo-prompts.ts`), always on an empty dress form, ghost mannequin, or stand.
+- **Flow:** `scripts/generate_photos.py` (resumable) → push → `npm run photos:ingest-ai` → review on contact sheets → approve/prune → ship. Images are labelled as AI-generated on the site.
+
+### 6.8 A unique photo for every product (v1.2.0)
+
+Extend the job list from garment type × colour family to **one job per product (6,120)**. Each prompt adds the product's exact palette colour, fabric (e.g. "Kanjeevaram silk", "selvedge denim"), and motif (e.g. "temple border", "houndstooth"), so no two products share a photo.
+
+- **Runtime:** about 6,120 × 15 s ≈ 25 hours on an M-series Mac. The generator is already resumable, so it can run over several nights.
+- **Storage:** about 6,120 × 60 KB ≈ 370 MB. That's too big for the repo, so v1.2.0 should move photos to object storage (Cloudflare R2 or S3) or Git LFS, and keep only a manifest in git.
+- **Review:** 6,120 images is too many to check one by one. Add automated checks (CLIP-score prompt match, a face detector, and a blank/duplicate detector), then review only the flagged images plus a random sample per garment type.
+- **Product IDs** stay stable as long as the seed and taxonomy don't change, so each image is keyed by product ID.
