@@ -101,7 +101,7 @@ export function Item() {
               Photo: <a href={item.photoCredit.sourceUrl} target="_blank" rel="noopener noreferrer">{item.photoCredit.title}</a>
               {" "}by {item.photoCredit.creator} ·{" "}
               <a href={item.photoCredit.licenseUrl} target="_blank" rel="noopener noreferrer">{item.photoCredit.license}</a>
-              {" "}via {item.photoCredit.source === "met" ? "The Met" : item.photoCredit.source === "commons" ? "Wikimedia Commons" : "Pexels"}.
+              {" "}via {({ met: "The Met", commons: "Wikimedia Commons", pexels: "Pexels", cma: "the Cleveland Museum of Art" } as const)[item.photoCredit.source]}.
               {" "}Representative photo; the garment you'll never receive may differ. <Link to="/credits">All credits</Link>
             </p>
           )}

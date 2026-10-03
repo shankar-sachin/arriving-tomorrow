@@ -109,7 +109,7 @@ export interface Photo {
   /** Measured garment colour and background colour. */
   color: string;
   bg: string;
-  source: "met" | "commons" | "pexels";
+  source: "met" | "commons" | "pexels" | "cma";
   title: string;
   creator: string;
   license: string;

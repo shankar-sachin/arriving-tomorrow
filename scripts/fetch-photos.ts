@@ -104,12 +104,12 @@ async function fromMet(q: string, names: string[]): Promise<Candidate[]> {
   return out;
 }
 
-async function fromCommons(q: string): Promise<Candidate[]> {
-  const url =
-    "https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrnamespace=6&gsrlimit=30" +
-    `&gsrsearch=${encodeURIComponent(`${q} filetype:bitmap`)}&prop=imageinfo&iiprop=url|size|mime|extmetadata&iiurlwidth=1000`;
-  const data = await json<{ query?: { pages: Record<string, { pageid: number; title: string; index: number; imageinfo?: Array<Record<string, unknown>> }> } }>(url);
-  const pages = Object.values(data.query?.pages ?? {}).sort((a, b) => a.index - b.index);
+type CommonsPage = { pageid: number; title: string; index?: number; imageinfo?: Array<Record<string, unknown>> };
+const COMMONS = "https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*";
+const IMAGEINFO = "&prop=imageinfo&iiprop=url|size|mime|extmetadata&iiurlwidth=1000";
+
+/** Turn Commons file pages into candidates, enforcing open licences and skipping people-rights files. */
+function commonsCandidates(pages: CommonsPage[]): Candidate[] {
   const out: Candidate[] = [];
   for (const p of pages) {
     const info = p.imageinfo?.[0] as { thumburl?: string; width?: number; height?: number; mime?: string; descriptionurl?: string; extmetadata?: Record<string, { value: string }> } | undefined;
@@ -132,6 +132,64 @@ async function fromCommons(q: string): Promise<Candidate[]> {
     });
   }
   return out;
+}
+
+async function commonsSearch(search: string, limit = 30): Promise<Candidate[]> {
+  const data = await json<{ query?: { pages: Record<string, CommonsPage> } }>(
+    `${COMMONS}&generator=search&gsrnamespace=6&gsrlimit=${limit}&gsrsearch=${encodeURIComponent(search)}${IMAGEINFO}`,
+  );
+  return commonsCandidates(Object.values(data.query?.pages ?? {}).sort((a, b) => (a.index ?? 0) - (b.index ?? 0)));
+}
+
+/** Keyword search (least precise; last resort). */
+const fromCommons = (q: string) => commonsSearch(`${q} filetype:bitmap`);
+
+/** The Met's own CC0 object photos, uploaded to Commons as "<Object name> MET <accession>.jpg". */
+const fromMetOnCommons = (name: string) => commonsSearch(`intitle:"MET" intitle:"${name}" filetype:bitmap`, 40);
+
+/**
+ * Human-curated Commons categories. Find categories whose *title* contains a required term
+ * (far more precise than searching file text), then take their files.
+ */
+async function fromCommonsCategories(cats: { search: string[]; must: string[]; not?: string[] }): Promise<{ cats: string[]; candidates: Candidate[] }> {
+  const titles = new Set<string>();
+  for (const q of cats.search) {
+    const data = await json<{ query?: { search: Array<{ title: string }> } }>(
+      `${COMMONS}&list=search&srnamespace=14&srlimit=15&srsearch=${encodeURIComponent(q)}`,
+    );
+    for (const { title } of data.query?.search ?? []) {
+      const t = title.toLowerCase();
+      if (cats.must.some((m) => t.includes(m.toLowerCase())) && !(cats.not ?? []).some((n) => t.includes(n.toLowerCase()))) titles.add(title);
+    }
+  }
+  const chosen = [...titles].slice(0, 5);
+  const candidates: Candidate[] = [];
+  for (const cat of chosen) {
+    const data = await json<{ query?: { pages: Record<string, CommonsPage> } }>(
+      `${COMMONS}&generator=categorymembers&gcmtype=file&gcmlimit=60&gcmtitle=${encodeURIComponent(cat)}${IMAGEINFO}`,
+    );
+    candidates.push(...commonsCandidates(Object.values(data.query?.pages ?? {})));
+  }
+  return { cats: chosen, candidates };
+}
+
+/** Cleveland Museum of Art Open Access (CC0, no key), textiles and costume only. */
+async function fromCleveland(q: string): Promise<Candidate[]> {
+  const data = await json<{ data: Array<{ id: number; title: string; creation_date?: string; culture?: string[]; type?: string; department?: string; url: string; share_license_status?: string; images?: { web?: { url: string } } }> }>(
+    `https://openaccess-api.clevelandart.org/api/artworks/?q=${encodeURIComponent(q)}&has_image=1&cc0=1&limit=40`,
+  );
+  return data.data
+    .filter((o) => o.images?.web?.url && o.share_license_status === "CC0" && (/textile|costume/i.test(o.type ?? "") || /textile/i.test(o.department ?? "")))
+    .map((o) => ({
+      key: `cma:${o.id}`,
+      imageUrl: o.images!.web!.url,
+      source: "cma" as const,
+      title: [o.title, o.creation_date].filter(Boolean).join(", "),
+      creator: o.culture?.[0] || "Unknown maker",
+      license: "CC0 1.0",
+      licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
+      sourceUrl: o.url,
+    }));
 }
 
 async function fromPexels(q: string): Promise<Candidate[]> {
@@ -249,8 +307,15 @@ async function main() {
     const keep = (manifest[name] ?? []).filter((p) => ok.has(p.key));
     for (const p of manifest[name] ?? []) if (!ok.has(p.key)) rmSync(join(ROOT, "public", p.src), { force: true });
 
+    const warn = (what: string) => (e: unknown) => (console.warn(`  ${what}: ${e}`), [] as Candidate[]);
+    const catResult = src.cats ? await fromCommonsCategories(src.cats).catch((e) => (console.warn(`  cats ${name}: ${e}`), { cats: [], candidates: [] })) : { cats: [], candidates: [] };
+    if (catResult.cats.length) console.log(`  categories: ${catResult.cats.join(" | ")}`);
+    // Most precise sources first: museum objects, curated categories, then keyword search.
     const lists = await Promise.all([
-      src.met ? fromMet(src.met.q, src.met.names).catch((e) => (console.warn(`  met ${name}: ${e}`), [])) : [],
+      ...(src.metCommons ?? []).map((n) => fromMetOnCommons(n).catch(warn(`met-on-commons ${n}`))),
+      ...(src.cma ?? []).map((q) => fromCleveland(q).catch(warn(`cleveland ${q}`))),
+      Promise.resolve(catResult.candidates),
+      src.met ? fromMet(src.met.q, src.met.names).catch(warn(`met ${name}`)) : [],
       ...(src.commons ?? []).map((q) => fromCommons(q).catch((e) => (console.warn(`  commons ${q}: ${e}`), []))),
       ...(src.pexels ?? []).map((q) => fromPexels(q).catch((e) => (console.warn(`  pexels ${q}: ${e}`), []))),
     ]);
