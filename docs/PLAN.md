@@ -81,8 +81,9 @@ tricorne…), filled with that SKU's palette and a pattern (paisley dots,
 stripes, checks, brocade diamonds, zigzag, florals). The art is unique per
 item, weighs nothing, scales to any size, and animates.
 
-Later upgrade paths:
-- **AI-generated images** baked at build time per archetype × palette, cached in object storage (R2/S3).
+v1.0.0 ships with these drawings. **Real product images are planned for v1.1.0. See [section 6](#6-v110-real-product-images).**
+
+Other later upgrade paths:
 - **Open data enrichment**: Wikidata SPARQL for "traditional clothing by country" to expand archetypes into dozens more regions (Japan, Nigeria, Mexico, Korea, Scotland…), with each archetype's description linked back to its source.
 
 ## 4. The flow
@@ -99,7 +100,8 @@ Later upgrade paths:
 
 | PR | Scope |
 | --- | --- |
-| **#1 (this one)** | Plan, scaffold, taxonomy + generator (~6k SKUs), SVG art, shop/product/cart/checkout/tracking/orders, CI, unit tests. |
+| **v1.0.0** (shipped) | Plan, scaffold, taxonomy + generator (~6k SKUs), SVG art, shop/product/cart/checkout/tracking/orders, CI, unit tests. |
+| **v1.1.0** | **Real product images** (see section 6). |
 | #2 | Search upgrades (fuzzy matching, facets), URL-synced filters, skeleton loaders. |
 | #3 | More regions (East Asia, Africa, Latin America, Middle East) via the Wikidata-assisted taxonomy. Target 15k+ SKUs. |
 | #4 | Delight pass: add-to-cart flight animation, sound effects (muted by default), achievement toasts ("Spent $10k on nothing"). |
@@ -107,3 +109,52 @@ Later upgrade paths:
 | #6 | Switch the catalog to in-browser SQLite with FTS5 (option B) once SKU count calls for it. |
 
 Every PR runs CI (catalog → typecheck → tests → build). Merge once it's green.
+
+## 6. v1.1.0: Real product images
+
+### 6.1 Why v1 uses drawings
+
+Every product is invented by the generator, so no photo of, say, a "Moonlit
+Burgundy Georgette Banarasi Saree" exists anywhere. The two obvious shortcuts
+are both off the table:
+
+- **Scraping real store photos** means other brands' copyrighted images, shown next to fake prices. That's a legal problem and a trust problem.
+- **Random stock photos** don't match the product. The listing says *Ruby Velvet Sherwani* and the photo shows a blue kurta.
+
+So v1.1.0 needs images that are **ours to use** and **match each product's
+garment, colour, and fabric**.
+
+### 6.2 Options
+
+| Option | Match quality | Cost | Verdict |
+| --- | --- | --- | --- |
+| **A. AI-generated product photos, baked at build time** | High: the prompt is built from archetype + palette + fabric + motif | One-off image-generation cost, plus storage | **Recommended** |
+| B. Licensed stock (Unsplash / Pexels APIs) per archetype, filtered by colour | Medium: the right garment type, roughly the right colour, never the exact item | Free, but attribution is required and the APIs have hotlinking and rate rules | Fallback for archetypes A handles badly |
+| C. Commissioned photography or flat-lays | Perfect | Expensive at any scale | Hero and marketing shots only |
+| D. Keep SVG only | N/A | Free | Stays as the loading placeholder and error fallback |
+
+### 6.3 Recommended approach (option A)
+
+1. **Generate per archetype × palette, not per SKU.** That's 68 archetypes × 30 palettes = **2,040 images**, which covers all 6,120 SKUs. SKUs that share an archetype and palette share a photo; fabric and motif still differ in the text. This is about a third of the cost of per-SKU generation, and the generated catalog stays consistent.
+2. **House style:** studio product shots on a warm cream backdrop, either ghost-mannequin or flat-lay. **No people or faces**, which avoids likeness and consent issues and keeps every image consistent.
+3. **Prompt builder**: a new `scripts/build-images.ts` writes each prompt from the taxonomy, e.g. *"studio product photo, ghost mannequin, Kanjeevaram silk saree, saffron with deep pink border, temple-border motif, cream backdrop, soft light"*. Prompts are checked into the repo, so images are reproducible and reviewable in PRs.
+4. **Cultural accuracy review.** Image models regularly get South Asian and historical European garments wrong (for example, a saree draped like a toga, or a lehenga that's really a ball gown). Every archetype gets a contact sheet that a human approves before its images ship, and rejected images are regenerated with prompt fixes.
+5. **Formats and sizes:** AVIF and WebP at 400w (cards) and 1200w (product page) via `<picture>`/`srcset`, at roughly 40–120 KB each.
+6. **Hosting:** keep the images **out of git**, because thousands of binaries bloat every clone. Upload them to object storage (Cloudflare R2 or S3) behind a CDN, keyed by `archetype/palette.avif`. The catalog shards gain an `image` field; the app falls back to the SVG when it's missing.
+7. **Loading UX:** the SVG drawing renders instantly as the placeholder, and the photo cross-fades in once it loads (`loading="lazy"`, `decoding="async"`). Nothing ever shows a broken image.
+
+### 6.4 v1.1.0 deliverables
+
+| PR | Scope |
+| --- | --- |
+| 1.1.0-a | `image` field in `CatalogItem`, `<ProductImage>` with SVG fallback + cross-fade, `srcset` support. Ships with zero photos and changes nothing visually. |
+| 1.1.0-b | `scripts/build-images.ts`: the prompt builder, generation runner, contact-sheet export, and upload to object storage |
+| 1.1.0-c | Pilot: a single category (India → Sarees: 5 archetypes × 30 palettes = 150 images), reviewed and live |
+| 1.1.0-d | Roll out the remaining 14 categories in batches, each with its own accuracy review |
+| 1.1.0-e | Optional: licensed stock (option B) for any archetype that still fails review, with attribution shown on the product page |
+
+### 6.5 Decisions needed before starting
+
+- **Image generation provider and budget.** About 2,040 images, plus re-rolls for rejects.
+- **Object storage account** (R2 or S3), and whether to put a custom domain in front of it.
+- **Who signs off on cultural accuracy** for each region's contact sheets.
