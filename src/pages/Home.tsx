@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { GarmentArt } from "../components/GarmentArt";
+import { ProductImage } from "../components/ProductImage";
 import { Marquee } from "../components/Marquee";
 import { Loading, Page } from "../components/Page";
 import { ProductCard } from "../components/ProductCard";
@@ -70,7 +70,7 @@ export function Home() {
               transition={{ delay: 0.2 + i * 0.12, type: "spring", stiffness: 160, damping: 14 }}
               whileHover={{ scale: 1.08, rotate: 0, zIndex: 10 }}
             >
-              <GarmentArt silhouette={item.silhouette} pattern={item.pattern} colors={item.colors} label={item.name} float />
+              <ProductImage item={item} hero />
             </motion.div>
           ))}
           <motion.div className="sticker" initial={{ scale: 0, rotate: -40 }} animate={{ scale: 1, rotate: -12 }} transition={{ delay: 1, type: "spring" }}>
@@ -97,7 +97,7 @@ export function Home() {
                 <div className="region-collage">
                   {r.categories.slice(0, 3).map((c, i) => (
                     <div key={c.id} className={`rc rc-${i}`} style={{ background: c.cover.colors[1] }}>
-                      <GarmentArt silhouette={c.cover.silhouette} pattern={c.cover.pattern} colors={c.cover.colors} label={c.name} />
+                      <ProductImage item={c.cover} />
                     </div>
                   ))}
                 </div>

@@ -1,0 +1,74 @@
+name: Fetch photos
+
+# Downloads openly licensed product photos (The Met, Wikimedia Commons, optional Pexels)
+# and commits them to the branch this is run on. Run it from the Actions tab or the API.
+on:
+  # Re-fetch automatically when the search sources or the fetcher change on a PR branch.
+  # (Not on review commits: approving/blocklisting photos shouldn't start another fetch.)
+  push:
+    branches-ignore: [main]
+    paths:
+      - scripts/photo-sources.ts
+      - scripts/fetch-photos.ts
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Comma-separated archetype names (blank = all)"
+        required: false
+        default: ""
+      per:
+        description: "Photos per archetype"
+        required: false
+        default: "8"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: photos-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch photos
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          ONLY: ${{ inputs.only }}
+          PER: ${{ inputs.per }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          # Automatic (push) runs only top up archetypes that have fewer than 3 approved photos.
+          if [ "$EVENT" = "push" ]; then PER=10; fi
+          args=(--per "${PER:-8}")
+          if [ -n "$ONLY" ]; then args+=(--only "$ONLY"); fi
+          if [ "$EVENT" = "push" ]; then args+=(--thin 3); fi
+          npx tsx scripts/fetch-photos.ts "${args[@]}" | tee photo-report.txt
+      - name: Commit photos to this branch
+        env:
+          ACTOR: ${{ github.actor }}
+          ACTOR_ID: ${{ github.actor_id }}
+        run: |
+          git config user.name "$ACTOR"
+          git config user.email "${ACTOR_ID}+${ACTOR}@users.noreply.github.com"
+          git add public/photos src/catalog/photos.json
+          if git diff --cached --quiet; then echo "No photo changes."; exit 0; fi
+          {
+            echo "Fetch product photos"
+            echo
+            grep -E "^(Done|Thin)" -A 80 photo-report.txt | head -60 || true
+            echo
+            echo "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          } > msg.txt
+          git commit -q -F msg.txt
+          git pull --rebase -q origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { CountUp } from "../components/CountUp";
-import { GarmentArt } from "../components/GarmentArt";
+import { ProductImage } from "../components/ProductImage";
 import { Page } from "../components/Page";
 import { money } from "../lib/format";
 import { computeTotals, itemCount } from "../lib/pricing";
@@ -32,7 +32,7 @@ export function Cart() {
             {cart.map((l) => (
               <motion.li key={l.key} className="line" layout initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 60, height: 0, marginBottom: 0, padding: 0 }}>
                 <Link to={`/item/${l.item.id}`} className="line-art" style={{ background: l.item.colors[1] }}>
-                  <GarmentArt silhouette={l.item.silhouette} pattern={l.item.pattern} colors={l.item.colors} label={l.item.name} />
+                  <ProductImage item={l.item} />
                 </Link>
                 <div className="line-info">
                   <Link to={`/item/${l.item.id}`}><h3>{l.item.name}</h3></Link>

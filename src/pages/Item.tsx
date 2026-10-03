@@ -3,10 +3,11 @@ import { Link, useParams } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { parseItemId, toCard } from "../catalog/generate";
 import { REGIONS } from "../catalog/taxonomy";
-import { GarmentArt } from "../components/GarmentArt";
+import { ProductImage } from "../components/ProductImage";
 import { Loading, Page } from "../components/Page";
 import { PriceTag, ProductCard, Stars } from "../components/ProductCard";
 import { loadShard, useAsync } from "../lib/catalogApi";
+import { money } from "../lib/format";
 import { useShop } from "../lib/store";
 
 export function Item() {
@@ -45,10 +46,10 @@ export function Item() {
         <Link to="/">Home</Link> / <Link to={`/shop/${region.id}`}>{region.name}</Link> / <Link to={`/shop/${region.id}/${category.id}`}>{category.name}</Link>
       </nav>
       <div className="item-layout">
-        <motion.div className="item-stage" style={{ "--c1": item.colors[1], "--c2": item.colors[2] } as React.CSSProperties} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
-          <div className="stage-blob" />
+        <motion.div className={`item-stage ${item.photo ? "with-photo" : ""}`} style={{ "--c1": item.photo?.bg ?? item.colors[1], "--c2": item.colors[2] } as React.CSSProperties} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}>
+          {!item.photo && <div className="stage-blob" />}
           {item.badge && <span className="badge badge-lg">{item.badge}</span>}
-          <GarmentArt silhouette={item.silhouette} pattern={item.pattern} colors={item.colors} label={item.name} float className="item-art" />
+          <ProductImage item={item} hero className="item-art" />
         </motion.div>
 
         <div className="item-info">
@@ -63,6 +64,7 @@ export function Item() {
             <div><dt>Fabric</dt><dd>{item.fabric}</dd></div>
             <div><dt>Motif</dt><dd>{item.motif}</dd></div>
             <div><dt>Colour</dt><dd><i className="dot" style={{ background: item.colors[0] }} />{item.colorName}</dd></div>
+            <div><dt>For</dt><dd>{item.audience === "unisex" ? "Everyone" : item.audience === "women" ? "Women" : "Men"}</dd></div>
             <div><dt>SKU</dt><dd>{item.id.toUpperCase()}</dd></div>
           </dl>
 
@@ -74,9 +76,12 @@ export function Item() {
             ))}
           </div>
 
-          <motion.button className="btn btn-primary btn-xl" whileTap={{ scale: 0.94 }} disabled={!chosen} onClick={onAdd}>
-            {chosen ? "Add to cart (it won't come)" : "Pick a size first"}
-          </motion.button>
+          <div className="buy-bar">
+            <span className="buy-bar-price">{money(item.price)}</span>
+            <motion.button className="btn btn-primary btn-xl" whileTap={{ scale: 0.94 }} disabled={!chosen} onClick={onAdd}>
+              {chosen ? "Add to cart (it won't come)" : "Pick a size first"}
+            </motion.button>
+          </div>
           <AnimatePresence>
             {added > 0 && (
               <motion.div key={added} className="toast" initial={{ opacity: 0, y: 10, scale: 0.9 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0 }}>
@@ -90,6 +95,16 @@ export function Item() {
             <li><b>Returns:</b> free, since there's nothing to return</li>
             <li><b>Price at checkout:</b> $0.00 with FREE-CLOTHES</li>
           </ul>
+
+          {item.photoCredit && (
+            <p className="photo-credit">
+              Photo: <a href={item.photoCredit.sourceUrl} target="_blank" rel="noopener noreferrer">{item.photoCredit.title}</a>
+              {" "}by {item.photoCredit.creator} ·{" "}
+              <a href={item.photoCredit.licenseUrl} target="_blank" rel="noopener noreferrer">{item.photoCredit.license}</a>
+              {" "}via {item.photoCredit.source === "met" ? "The Met" : item.photoCredit.source === "commons" ? "Wikimedia Commons" : "Pexels"}.
+              {" "}Representative photo; the garment you'll never receive may differ. <Link to="/credits">All credits</Link>
+            </p>
+          )}
         </div>
       </div>
 

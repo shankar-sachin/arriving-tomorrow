@@ -24,6 +24,17 @@ taxonomy.ts ──► generate.ts (seeded PRNG) ──► build-catalog.ts ─�
 | Classical Europe | 5 | 23 | 2,070 |
 | **Total** | **15** | **68** | **6,120** |
 
+## Photos
+
+Real photos come from Wikimedia Commons under open licences (CC0, public domain, CC BY, CC BY-SA), with full credit on each product page and on `/credits`.
+
+1. `scripts/fetch-photos.ts` (run by the **Fetch photos** workflow, since it needs the open internet) downloads candidates for each archetype from the queries in `scripts/photo-sources.ts`. It resizes them to WebP in `public/photos/`, measures the garment colour, and records attribution in `src/catalog/photos.json`.
+2. A human reviews contact sheets and lists the good ones in `src/catalog/photo-approved.json`.
+3. `npm run photos:prune` deletes everything not approved and adds it to `photo-blocklist.json`, so it never comes back.
+4. The build only uses approved photos. An archetype needs at least 3 to use them, and each product's colour name is matched to its photo.
+
+Pushing a change to `photo-sources.ts` automatically re-fetches archetypes that have fewer than 3 approved photos.
+
 ## Adding stuff
 
 - **More of everything:** raise `VARIANTS_PER_ARCHETYPE` in `generate.ts`.

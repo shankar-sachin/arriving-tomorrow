@@ -1,8 +1,11 @@
 import { ADJECTIVES, OCCASIONS, PALETTES, REGIONS, SIZE_SETS } from "./taxonomy";
-import type { CardItem, CatalogIndex, CatalogItem, RegionId } from "./types";
+import type { Palette } from "./taxonomy";
+import type { CardItem, CatalogIndex, CatalogItem, PhotoManifest, RegionId } from "./types";
 
 export const DEFAULT_SEED = 0xc10755;
 export const VARIANTS_PER_ARCHETYPE = 90;
+/** Archetypes with fewer approved photos than this keep the SVG drawings (avoids 90 copies of one photo). */
+export const MIN_PHOTOS = 3;
 
 /** Small, fast, deterministic PRNG. Same seed → same catalog → stable URLs. */
 export function mulberry32(seed: number): () => number {
@@ -62,7 +65,28 @@ export function parseItemId(id: string): { region: RegionId; category: string; i
 
 const roundPrice = (v: number) => Math.max(10, Math.round(v / 5) * 5) - 0.01;
 
-export function generateCatalog(seed = DEFAULT_SEED, variants = VARIANTS_PER_ARCHETYPE): CatalogItem[] {
+const rgb = (hex: string) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+
+/** Closest named palette to a measured colour ("redmean" distance, cheap and perceptually decent). */
+export function nearestPalette(hex: string): Palette {
+  const [r1, g1, b1] = rgb(hex);
+  let best = PALETTES[0];
+  let bestD = Infinity;
+  for (const p of PALETTES) {
+    const [r2, g2, b2] = rgb(p.colors[0]);
+    const rm = (r1 + r2) / 2;
+    const d = (2 + rm / 256) * (r1 - r2) ** 2 + 4 * (g1 - g2) ** 2 + (2 + (255 - rm) / 256) * (b1 - b2) ** 2;
+    if (d < bestD) [best, bestD] = [p, d];
+  }
+  return best;
+}
+
+/**
+ * `photos` (see scripts/fetch-photos.ts) is passed in rather than imported so the client bundle
+ * never pulls in the photo manifest. Archetypes with photos cycle through them, and each SKU's
+ * colour is re-matched to its photo so a "Ruby" sherwani is actually red.
+ */
+export function generateCatalog(seed = DEFAULT_SEED, variants = VARIANTS_PER_ARCHETYPE, photos: PhotoManifest = {}): CatalogItem[] {
   const rng = mulberry32(seed);
   const items: CatalogItem[] = [];
   const names = new Set<string>();
@@ -77,17 +101,21 @@ export function generateCatalog(seed = DEFAULT_SEED, variants = VARIANTS_PER_ARC
 
   for (const region of REGIONS) {
     for (const category of region.categories) {
-      let index = 0;
+      const perArchetype: CatalogItem[][] = [];
       for (const arch of category.archetypes) {
+        const batch: CatalogItem[] = [];
+        perArchetype.push(batch);
         const fabrics = arch.fabrics ?? region.fabrics;
         const combos: Array<[number, number, number]> = [];
         for (let p = 0; p < PALETTES.length; p++)
           for (let f = 0; f < fabrics.length; f++)
             for (let m = 0; m < region.motifs.length; m++) combos.push([p, f, m]);
         shuffle(combos, rng);
+        const archPhotos = (photos[arch.name] ?? []).length >= MIN_PHOTOS ? photos[arch.name] : [];
 
-        for (const [p, f, m] of combos.slice(0, variants)) {
-          const palette = PALETTES[p];
+        for (const [k, [p, f, m]] of combos.slice(0, variants).entries()) {
+          const photo = archPhotos.length ? archPhotos[k % archPhotos.length] : undefined;
+          const palette = photo ? nearestPalette(photo.color) : PALETTES[p];
           const fabric = fabrics[f];
           const [motif, pattern] = region.motifs[m];
           const name = uniqueName(`${palette.name} ${joinFabric(fabric, arch.name)}`, motif, Math.floor(rng() * ADJECTIVES.length));
@@ -98,12 +126,13 @@ export function generateCatalog(seed = DEFAULT_SEED, variants = VARIANTS_PER_ARC
           const badgeRoll = rng();
           const occasion = pick(OCCASIONS, rng);
 
-          items.push({
-            id: itemId(region.id, category.id, index++),
+          batch.push({
+            id: "", // assigned below, once archetypes are interleaved
             name,
             region: region.id,
             category: category.id,
             archetype: arch.name,
+            audience: arch.audience,
             silhouette: arch.silhouette,
             pattern,
             colors: palette.colors,
@@ -116,27 +145,37 @@ export function generateCatalog(seed = DEFAULT_SEED, variants = VARIANTS_PER_ARC
             badge: badgeRoll < 0.2 ? BADGES[Math.floor(badgeRoll * 25)] : undefined,
             fabric,
             motif,
+            ...(photo && {
+              photo: { src: photo.src, w: photo.w, h: photo.h, bg: photo.bg },
+              photoCredit: { title: photo.title, creator: photo.creator, license: photo.license, licenseUrl: photo.licenseUrl, sourceUrl: photo.sourceUrl, source: photo.source },
+            }),
             blurb: pick(BLURBS, rng)({ fabric, motif, arch: arch.name, occasion }),
             sizes: SIZE_SETS[arch.sizes],
-            tags: [region.name, category.name, arch.name, fabric, motif, palette.name, palette.family].map((t) =>
+            tags: [region.name, category.name, arch.name, arch.audience, fabric, motif, palette.name, palette.family].map((t) =>
               t.toLowerCase(),
             ),
           });
         }
       }
+      // Interleave archetypes so a category grid mixes garments instead of 90 of one in a row.
+      let index = 0;
+      for (let k = 0; k < variants; k++)
+        for (const batch of perArchetype) if (batch[k]) items.push({ ...batch[k], id: itemId(region.id, category.id, index++) });
     }
   }
   return items;
 }
 
 export function toCard(item: CatalogItem): CardItem {
-  const { fabric: _f, motif: _m, blurb: _b, sizes: _s, tags: _t, ...card } = item;
+  const { motif: _m, blurb: _b, sizes: _s, tags: _t, photoCredit: _p, ...card } = item;
   return card;
 }
 
 export function buildIndex(items: CatalogItem[], seed = DEFAULT_SEED): CatalogIndex {
   const rng = mulberry32(seed ^ 0xfeed);
-  const featured = shuffle([...items], rng).slice(0, 12).map(toCard);
+  // Lead with real photos where we have them.
+  const byPhoto = (list: CatalogItem[]) => [...list.filter((i) => i.photo), ...list.filter((i) => !i.photo)];
+  const featured = byPhoto(shuffle([...items], rng)).slice(0, 12).map(toCard);
   return {
     total: items.length,
     featured,
@@ -150,7 +189,8 @@ export function buildIndex(items: CatalogItem[], seed = DEFAULT_SEED): CatalogIn
         count: regionItems.length,
         categories: region.categories.map((c) => {
           const catItems = regionItems.filter((i) => i.category === c.id);
-          return { id: c.id, name: c.name, count: catItems.length, cover: toCard(pick(catItems, rng)) };
+          const withPhoto = catItems.filter((i) => i.photo);
+          return { id: c.id, name: c.name, count: catItems.length, cover: toCard(pick(withPhoto.length ? withPhoto : catItems, rng)) };
         }),
       };
     }),

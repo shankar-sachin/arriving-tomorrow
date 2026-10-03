@@ -1,10 +1,13 @@
 import { useId } from "react";
 
-/** Brand mark: a coat hanger whose hook is an infinity loop. Same artwork as public/favicon.svg. */
-export function LogoMark({ size = 40, className }: { size?: number; className?: string }) {
+/**
+ * Brand mark: a coat hanger whose hook is an infinity loop. Same artwork as public/favicon.svg.
+ * Pass x/y to nest it inside another SVG (e.g. the delivery truck's side panel).
+ */
+export function LogoMark({ size = 40, className, x, y }: { size?: number; className?: string; x?: number; y?: number }) {
   const id = `cnc-g${useId().replace(/:/g, "")}`;
   return (
-    <svg viewBox="0 0 64 64" width={size} height={size} className={className} aria-hidden="true">
+    <svg viewBox="0 0 64 64" x={x} y={y} width={size} height={size} className={className} aria-hidden="true">
       <defs>
         <linearGradient id={id} x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stopColor="#ff3d7f" />
