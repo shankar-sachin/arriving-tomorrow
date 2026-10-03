@@ -18,7 +18,7 @@ export function GiftComposer({ order }: { order: Order }) {
   const share = async () => {
     try {
       await navigator.share({
-        title: "A gift from Clothes Never Come",
+        title: "A gift from arriving tomorrow",
         text: `${from.trim() || "Someone"} sent you a gift. It's arriving tomorrow.`,
         url: url(),
       });

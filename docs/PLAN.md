@@ -1,4 +1,6 @@
-# Clothes Never Come: Build Plan
+# arriving tomorrow: Build Plan
+
+*(Formerly Clothes Never Come.)*
 
 > A full online-shopping experience. Browse thousands of garments, fill your cart,
 > check out for $0.00 with the auto-applied `FREE-CLOTHES` coupon, and then
@@ -206,7 +208,7 @@ A **Try it on** button on product pages opens the camera and overlays the garmen
 ### How A works
 1. **Garment cut-outs:** v1.2.0's AI photos are generated on a plain backdrop, so a background-removal pass (`rembg`, or keying out the known studio colour) produces a transparent PNG per product at generation time.
 2. **Anchors per silhouette:** tops, jackets, and coats map to shoulders and hips; dresses, gowns, sarees, and lehengas to shoulders and ankles; trousers and skirts to hips and knees or ankles; hats, turbans, and bonnets to the head; scarves and dupattas to the neck and shoulders. Shoes are skipped (feet tracking is unreliable).
-3. **Render:** each frame, scale, rotate, and lightly mesh-warp the cut-out to the pose landmarks on a `<canvas>` over the camera feed. Add a **snapshot** button (saved locally, with a "Clothes Never Come — it never came" frame) for shareable silliness.
+3. **Render:** each frame, scale, rotate, and lightly mesh-warp the cut-out to the pose landmarks on a `<canvas>` over the camera feed. Add a **snapshot** button (saved locally, with a "arriving tomorrow — it never came" frame) for shareable silliness.
 4. **Privacy:** the camera stream and model run on-device. No uploads and no storage, and the page says so. Without camera permission, or on old devices, fall back to the existing product photo.
 5. **Performance:** lazy-load the pose model (a few MB) only when you tap **Try it on**, target 30 fps on mid-range phones, and respect `prefers-reduced-motion`.
 

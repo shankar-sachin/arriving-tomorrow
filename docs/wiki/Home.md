@@ -1,8 +1,8 @@
-![Clothes Never Come](https://raw.githubusercontent.com/shankar-sachin/clothesnevercome/main/docs/brand/banner.png)
+![arriving tomorrow](https://raw.githubusercontent.com/shankar-sachin/arriving-tomorrow/main/docs/brand/banner.png)
 
 The online store where you can order anything you want, and none of it ever arrives.
 
-**Live site:** https://shankar-sachin.github.io/clothesnevercome/
+**Live site:** https://shankar-sachin.github.io/arriving-tomorrow/
 
 Browse 6,120 garments from India, America, and classical Europe, check out for $0.00 with the auto-applied `FREE-CLOTHES` coupon, and track a package that is always arriving *tomorrow*. No accounts, no cards, no clothes.
 
@@ -18,8 +18,8 @@ Browse 6,120 garments from India, America, and classical Europe, check out for $
 
 ## Project links
 
-- [README](https://github.com/shankar-sachin/clothesnevercome#readme)
-- [Build plan and roadmap](https://github.com/shankar-sachin/clothesnevercome/blob/main/docs/PLAN.md)
-- [Contributing](https://github.com/shankar-sachin/clothesnevercome/blob/main/CONTRIBUTING.md): issues welcome, outside PRs not accepted
-- [Code of Conduct](https://github.com/shankar-sachin/clothesnevercome/blob/main/CODE_OF_CONDUCT.md)
-- [Security policy](https://github.com/shankar-sachin/clothesnevercome/blob/main/SECURITY.md)
+- [README](https://github.com/shankar-sachin/arriving-tomorrow#readme)
+- [Build plan and roadmap](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/docs/PLAN.md)
+- [Contributing](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/CONTRIBUTING.md): issues welcome, outside PRs not accepted
+- [Code of Conduct](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/CODE_OF_CONDUCT.md)
+- [Security policy](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/SECURITY.md)

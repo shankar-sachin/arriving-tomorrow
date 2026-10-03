@@ -19,10 +19,10 @@ In your browser's `localStorage`. Clearing site data empties your cart and order
 Every one of the 6,120 products gets its own procedurally generated SVG. That means no photos to license or host, and they animate.
 
 **Can I contribute code?**
-Outside pull requests aren't accepted, sorry. [Open an issue](https://github.com/shankar-sachin/clothesnevercome/issues) with bugs or ideas instead. See [CONTRIBUTING.md](https://github.com/shankar-sachin/clothesnevercome/blob/main/CONTRIBUTING.md).
+Outside pull requests aren't accepted, sorry. [Open an issue](https://github.com/shankar-sachin/arriving-tomorrow/issues) with bugs or ideas instead. See [CONTRIBUTING.md](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/CONTRIBUTING.md).
 
 **I found a security issue.**
-Please report it privately. See [SECURITY.md](https://github.com/shankar-sachin/clothesnevercome/blob/main/SECURITY.md).
+Please report it privately. See [SECURITY.md](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/SECURITY.md).
 
 **A garment name or description is wrong.**
 Please open an issue. We want the catalog to be accurate and respectful of the cultures it draws from.

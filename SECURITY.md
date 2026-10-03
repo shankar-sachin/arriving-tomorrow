@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Clothes Never Come is a static site. Only the latest commit on `main` is supported.
+arriving tomorrow is a static site. Only the latest commit on `main` is supported.
 
 | Version | Supported |
 | --- | --- |

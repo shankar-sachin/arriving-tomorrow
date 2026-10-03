@@ -10,7 +10,7 @@ export function installDomGuard() {
   const removeChild = Node.prototype.removeChild;
   Node.prototype.removeChild = function <T extends Node>(this: Node, child: T): T {
     if (child.parentNode !== this) {
-      console.warn("[Clothes Never Come] skipped removeChild on a node that was moved by the browser or an extension");
+      console.warn("[arriving tomorrow] skipped removeChild on a node that was moved by the browser or an extension");
       return child;
     }
     return removeChild.call(this, child) as T;
@@ -19,7 +19,7 @@ export function installDomGuard() {
   const insertBefore = Node.prototype.insertBefore;
   Node.prototype.insertBefore = function <T extends Node>(this: Node, node: T, ref: Node | null): T {
     if (ref && ref.parentNode !== this) {
-      console.warn("[Clothes Never Come] skipped insertBefore relative to a node that was moved by the browser or an extension");
+      console.warn("[arriving tomorrow] skipped insertBefore relative to a node that was moved by the browser or an extension");
       return node;
     }
     return insertBefore.call(this, node, ref) as T;

@@ -1,8 +1,8 @@
 # Deployment
 
-The site is deployed to **GitHub Pages** by GitHub Actions. No Vercel or Netlify is needed.
+The site is deployed to **GitHub Pages** by GitHub Actions, and to **Vercel**. Both build the same code.
 
-**Live:** https://shankar-sachin.github.io/clothesnevercome/
+**Live:** https://shankar-sachin.github.io/arriving-tomorrow/
 
 ## One-time setup
 
@@ -16,7 +16,7 @@ Don't use "Deploy from a branch" with `/ (root)`. The repository root holds *sou
 `.github/workflows/deploy.yml` runs on every push to `main` (or manually via **Run workflow**):
 
 1. `npm ci`
-2. `npm run build` with `BASE_PATH=/clothesnevercome/`, which generates the catalog, typechecks, and builds with every asset URL prefixed by the repo path
+2. `npm run build` with `BASE_PATH=/arriving-tomorrow/`, which generates the catalog, typechecks, and builds with every asset URL prefixed by the repo path
 3. Copies `dist/index.html` to `dist/404.html`, so deep links like `/item/india-sarees-0001` still load the app on refresh (Pages has no rewrite rules)
 4. Uploads `dist/` and deploys it with `actions/deploy-pages`
 
@@ -27,6 +27,12 @@ Don't use "Deploy from a branch" with `/ (root)`. The repository root holds *sou
 - The catalog loader fetches from `BASE_URL + "catalog/…"`.
 
 If you add a custom domain or move to a host serving from `/`, just drop the `BASE_PATH` env var.
+
+## Vercel
+
+`vercel.json` sets the Vite build (`npm run build`, output `dist/`) and rewrites every path to `index.html`, so deep links work. Vercel serves from `/`, so `BASE_PATH` stays unset. Every pull request gets a preview deployment with its own link.
+
+To set it up: in Vercel, **Add New → Project**, import the `arriving-tomorrow` repository, keep the detected settings, and deploy.
 
 ## Other hosts
 

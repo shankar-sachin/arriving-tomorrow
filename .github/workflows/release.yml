@@ -1,6 +1,6 @@
 name: Release
 
-# Push a tag like v1.1.0 → publishes a GitHub release titled "Clothes Never Come v1.1.0",
+# Push a tag like v1.1.0 → publishes a GitHub release titled "arriving tomorrow v1.2.0",
 # with that version's section of CHANGELOG.md followed by GitHub's generated PR list.
 # Releases created on github.com keep their notes; empty ones get the same title and notes.
 on:
@@ -30,7 +30,7 @@ jobs:
         run: |
           prerelease=""
           case "$GITHUB_REF_NAME" in *-*) prerelease="--prerelease" ;; esac
-          title="Clothes Never Come $GITHUB_REF_NAME"
+          title="arriving tomorrow $GITHUB_REF_NAME"
           # Creating a release on github.com also pushes its tag and lands here. Notes written there
           # are kept as they are; an empty release gets the changelog section plus the PR list.
           if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then

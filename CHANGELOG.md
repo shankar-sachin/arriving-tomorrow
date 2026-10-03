@@ -1,6 +1,11 @@
 # Changelog
 
-All notable changes to Clothes Never Come. Releases are published automatically from this file when a `v*` tag is pushed (see `.github/workflows/release.yml`).
+All notable changes to arriving tomorrow (formerly Clothes Never Come). Releases are published automatically from this file when a `v*` tag is pushed (see `.github/workflows/release.yml`).
+
+## [Unreleased]
+
+### Changed
+- **Clothes Never Come is now arriving tomorrow**, styled in lowercase. The hanger-and-infinity logo stays the same. The new name shows up in the header, footer, page title, home-screen app name, README banner and release titles. Saved carts, orders, achievements and theme settings carry over.
 
 ## [1.1.1] - 2026-10-03
 
