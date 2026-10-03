@@ -19,7 +19,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error("[Clothes Never Come] render error:", error, info.componentStack);
+    console.error("[arriving tomorrow] render error:", error, info.componentStack);
   }
 
   componentDidUpdate(prev: Props) {

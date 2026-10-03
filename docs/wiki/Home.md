@@ -1,4 +1,4 @@
-![Clothes Never Come](https://raw.githubusercontent.com/shankar-sachin/clothesnevercome/main/docs/brand/banner.png)
+![arriving tomorrow](https://raw.githubusercontent.com/shankar-sachin/clothesnevercome/main/docs/brand/banner.png)
 
 The online store where you can order anything you want, and none of it ever arrives.
 

@@ -31,7 +31,7 @@ export function GetApp() {
     <Page className="get-app">
       <h1 className="page-title">Get the app <span className="serif">(no App Store required)</span></h1>
       <p className="lede">
-        Clothes Never Come installs straight from your browser. No App Store, no account, no download size worth mentioning, and the
+        arriving tomorrow installs straight from your browser. No App Store, no account, no download size worth mentioning, and the
         same guaranteed non-delivery.
       </p>
       {installed && <p className="saved-banner">You're already using the app. Look at you.</p>}

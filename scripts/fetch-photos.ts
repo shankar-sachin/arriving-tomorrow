@@ -22,7 +22,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MANIFEST = join(ROOT, "src/catalog/photos.json");
 const BLOCKLIST = join(ROOT, "src/catalog/photo-blocklist.json");
 const APPROVED = join(ROOT, "src/catalog/photo-approved.json");
-const UA = "ClothesNeverCome/1.1 (+https://github.com/shankar-sachin/clothesnevercome)";
+const UA = "ArrivingTomorrow/1.1 (+https://github.com/shankar-sachin/clothesnevercome)";
 const MET_DEPARTMENTS = new Set(["The Costume Institute", "Asian Art", "Islamic Art", "The American Wing"]);
 const OPEN_LICENSE = /^(cc0|cc[- ]zero|public domain|pd\b|pd-|cc[- ]by(-sa)?[- ]\d)/i;
 

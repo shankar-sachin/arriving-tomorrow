@@ -20,7 +20,7 @@ export const ACHIEVEMENTS = [
   { id: "manager", title: "Let me speak to your manager", blurb: "Ask support for a manager." },
   { id: "persistent", title: "Persistent", blurb: "Send customer support 15 messages." },
   { id: "lights-out", title: "Lights out", blurb: "Switch on dark mode." },
-  { id: "home-screen", title: "Home screen hero", blurb: "Open Clothes Never Come as an app from your home screen." },
+  { id: "home-screen", title: "Home screen hero", blurb: "Open arriving tomorrow as an app from your home screen." },
 ] as const;
 
 export type AchievementId = (typeof ACHIEVEMENTS)[number]["id"];

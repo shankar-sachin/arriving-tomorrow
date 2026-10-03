@@ -35,7 +35,7 @@ export function classify(message: string): Intent {
 /** Three tiers per intent: calm, weird, fully unhinged. */
 const LINES: Record<Intent, [string[], string[], string[]]> = {
   greeting: [
-    ["Hi! Thanks for contacting Clothes Never Come. How can I not help you today?"],
+    ["Hi! Thanks for contacting arriving tomorrow. How can I not help you today?"],
     ["Hello again! It's always lovely to hear from a customer who's still waiting."],
     ["Oh. It's you. Hi. The package is fine. Everyone's fine."],
   ],
@@ -116,6 +116,6 @@ export function reply(message: string, turn: number): { intent: Intent; text: st
   return { intent, text: options[turn % options.length] };
 }
 
-export const GREETING = "Hi, I'm Brenda from Clothes Never Come support. Ask me anything about your order, and I'll tell you it's arriving tomorrow.";
+export const GREETING = "Hi, I'm Brenda from arriving tomorrow support. Ask me anything about your order, and I'll tell you when it's coming. (Tomorrow.)";
 
 export const QUICK_REPLIES = ["Where's my order?", "I want a refund", "Does it run true to size?", "Let me speak to a manager"];

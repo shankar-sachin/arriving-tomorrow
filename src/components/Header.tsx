@@ -51,7 +51,7 @@ export function Header() {
     <header className={`header ${hidden ? "header-hidden" : ""}`}>
       <Link to="/" className="logo">
         <LogoMark className="logo-mark" />
-        <span className="logo-text">Clothes <i>Never</i> Come</span>
+        <span className="logo-text">arriving <i>tomorrow</i></span>
       </Link>
       <nav className="nav">
         <Link to="/shop/all?aud=women" className={aud === "women" ? "active" : ""}>Women</Link>

@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for wanting to help! Unfortunately, much like our deliveries, **pull requests from outside contributors won't be accepted.** Clothes Never Come is a personal project, and all code changes are made by the maintainer.
+Thanks for wanting to help! Unfortunately, much like our deliveries, **pull requests from outside contributors won't be accepted.** arriving tomorrow is a personal project, and all code changes are made by the maintainer.
 
 Any pull request from outside the project will be closed without review. Sorry. It's not you, it's us.
 

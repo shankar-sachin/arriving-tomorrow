@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="docs/brand/banner.png" alt="Clothes Never Come: Order everything. Receive nothing." width="100%">
+  <img src="docs/brand/banner.png" alt="arriving tomorrow: Order everything. Receive nothing." width="100%">
 </h1>
 
 [![CI](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml)
@@ -13,7 +13,7 @@
 [![Deliveries](https://img.shields.io/badge/deliveries-0-1b1033)](#)
 [![Coupon](https://img.shields.io/badge/coupon-FREE--CLOTHES-00b4a6)](#)
 
-The online store where you can order anything you want, and none of it ever arrives.
+**arriving tomorrow** (formerly Clothes Never Come) is the online store where you can order anything you want, and none of it ever arrives.
 
 Browse thousands of garments from India, America, and classical Europe. Fill your cart.
 Check out for **$0.00**: the details fill themselves in and the `FREE-CLOTHES` coupon applies automatically.
