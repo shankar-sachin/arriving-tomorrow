@@ -2,6 +2,22 @@
 
 All notable changes to Clothes Never Come. Releases are published automatically from this file when a `v*` tag is pushed (see `.github/workflows/release.yml`).
 
+## [1.1.1] - 2026-10-03
+
+The "now with someone to complain to" release.
+
+### New
+- **Send a package to a friend.** Any order can be turned into a gift link from its tracking page, with their name, your name and a message. Your friend gets their own tracking page for a gift that will never arrive. The whole gift lives in the link: no accounts, no server.
+- **Customer support chat.** Brenda, Senior Delivery Optimist, is one tap away on every page. She's fully scripted (no AI, nothing leaves your browser), and her excuses get more unhinged the longer you talk. Asking for a manager gets you her manager, who is also Brenda.
+- **Achievements.** 16 of them, from "Welcome to the waitlist" to "Spent $10,000 on nothing" and "Yeehaw, m'lady" (a crinoline ball gown and a cowboy hat in one order). They pop up as toasts and live on a new **/achievements** page.
+- **Install it as an app.** A web app manifest and home-screen icons, so "Add to Home Screen" in Safari (or "Install app" in Chrome) gives you a full-screen app. A home-page banner explains how on iPhone, and **/app** has steps for every device. No App Store needed.
+- **Dark mode.** Follows your system by default, with a sun/moon toggle in the header that remembers your choice and applies before the first paint, so there's no white flash.
+
+### Behind the scenes
+- **AI photo pipeline** for the garment types that still lack photos: `scripts/generate_photos.py` runs FLUX.1-schnell (Apache-2.0) locally on an Apple Silicon Mac, producing one studio photo per garment type × colour family (612). AI images are labelled as AI-generated. *(The images themselves arrive in a follow-up.)*
+- **Automatic releases**: pushing a `v*` tag publishes a GitHub release with that version's notes from this changelog.
+- The plan now covers v1.2.0: a unique AI photo for every product, AR try-on, and an unhinged in-browser AI support agent.
+
 ## [1.1.0] - 2026-10-03
 
 The "it looks real now (it still won't come)" release.
@@ -11,7 +27,6 @@ The "it looks real now (it still won't come)" release.
 - **Every photo was reviewed by hand.** 667 were rejected (wrong items, portraits, illustrations, brand logos, public figures) and blocklisted, and the build only ever uses approved photos.
 - **Colour names match the photo**: a red gown is called "Burgundy", not "Camel". A saturated-hue analyser measures the garment, not the mannequin beside it.
 - Photos cross-fade in over the drawings, which stay as the instant placeholder and the fallback. Product pages show the whole photo over a blurred backdrop, every product credits its photo, and a new **/credits** page lists them all.
-- **AI photo pipeline** for the rest: `scripts/generate_photos.py` runs FLUX.1-schnell (Apache-2.0) locally on an Apple Silicon Mac, producing one studio photo per garment type × colour family (612). AI images are labelled as AI-generated. *(The images themselves arrive in a follow-up.)*
 
 ### Shopping
 - **Women / Men** in the header, plus a new **Shop all** page covering every region.

@@ -30,6 +30,10 @@ No accounts. No credit cards. No clothes.
 - **Shopping that feels real**: category chips, sorting, colour and price filters, search, infinite scroll, sizes, and a persistent cart
 - **Self-filling parody checkout** with a typed-out coupon, a total that counts down to zero, and confetti
 - **Order tracking that never resolves**: progress approaches 100% without reaching it, and the excuses rotate
+- **Gift links**: send any order to a friend, who gets their own never-arriving tracking page (the gift lives entirely in the URL)
+- **Customer support** from Brenda, a scripted agent whose excuses escalate the longer you chat
+- **16 achievements**, like "Spent $10,000 on nothing"
+- **Installable app** (Add to Home Screen from Safari, or Install in Chrome) and **dark mode**
 - Spring animations everywhere, with `prefers-reduced-motion` respected throughout
 
 ## Getting started

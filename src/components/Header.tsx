@@ -5,6 +5,7 @@ import { REGIONS } from "../catalog/taxonomy";
 import { itemCount } from "../lib/pricing";
 import { useShop } from "../lib/store";
 import { LogoMark } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 /** On small screens, slide the header away while scrolling down and back on scroll up. */
 function useHideOnScroll() {
@@ -65,6 +66,7 @@ export function Header() {
       <form className="search" onSubmit={submit} role="search">
         <input type="search" enterKeyHint="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search 6,000+ things you'll never get" aria-label="Search the catalog" />
       </form>
+      <ThemeToggle />
       <NavLink to="/orders" className="hdr-btn">
         Orders{orders ? <small>{orders}</small> : null}
       </NavLink>

@@ -29,6 +29,7 @@ export function Orders() {
         <span>Lifetime savings</span>
         <strong><CountUp value={saved} duration={2} /></strong>
         <span>across {orders.length} {orders.length === 1 ? "order" : "orders"}, none delivered</span>
+        <Link to="/achievements" className="saved-link">Achievements →</Link>
       </div>
       <ul className="order-list">
         {orders.map((o, i) => {

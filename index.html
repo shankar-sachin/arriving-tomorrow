@@ -6,7 +6,22 @@
     <meta name="description" content="Order anything. It never comes. Free forever with FREE-CLOTHES." />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#ff3d7f" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#fbf6ec" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Never Come" />
+    <script>
+      // Apply the saved theme before first paint (key must match src/lib/theme.ts).
+      try {
+        var t = JSON.parse(localStorage.getItem("clothes-never-come-theme") || "{}").state;
+        var c = t && t.choice;
+        if (c === "light" || c === "dark") document.documentElement.dataset.theme = c;
+        var dark = c === "dark" || (c !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.querySelector('meta[name="theme-color"]').setAttribute("content", "#140c26");
+      } catch (e) {}
+    </script>
     <title>Clothes Never Come</title>
   </head>
   <body>

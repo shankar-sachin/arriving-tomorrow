@@ -1,0 +1,23 @@
+{
+  "name": "Clothes Never Come",
+  "short_name": "Never Come",
+  "description": "Order anything. It never comes. Free forever with FREE-CLOTHES.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fbf6ec",
+  "theme_color": "#fbf6ec",
+  "categories": ["shopping", "entertainment"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Your orders", "short_name": "Orders", "url": "./orders" },
+    { "name": "Shop everything", "short_name": "Shop", "url": "./shop/all" }
+  ]
+}

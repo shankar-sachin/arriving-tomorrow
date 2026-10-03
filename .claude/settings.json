@@ -1,0 +1,19 @@
+{
+  "attribution": {
+    "commit": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+    "sessionUrl": false
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -c '.tool_input' | grep -qiE 'claude\\.ai/code/session|claude-session[:]' && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"deny\",\"permissionDecisionReason\":\"Session links are private. Strip the claude.ai session URL / session trailer from this commit, PR, comment or file and try again.\"}}' || true"
+          }
+        ]
+      }
+    ]
+  }
+}

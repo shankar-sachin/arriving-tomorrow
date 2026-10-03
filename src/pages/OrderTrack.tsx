@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { GiftComposer } from "../components/GiftComposer";
 import { ProductImage } from "../components/ProductImage";
 import { LogoMark } from "../components/Logo";
 import { Page } from "../components/Page";
+import { unlock } from "../lib/achievements";
 import { money } from "../lib/format";
 import { useShop } from "../lib/store";
 import { NEVER, STAGES, trackingState } from "../lib/tracking";
@@ -43,6 +45,14 @@ export function OrderTrack() {
   const { id } = useParams();
   const order = useShop((s) => s.orders.find((o) => o.id === id));
   const now = useNow();
+  const placedAt = order?.placedAt;
+
+  useEffect(() => {
+    if (placedAt === undefined) return;
+    if (Date.now() - placedAt > 86_400_000) unlock("still-tomorrow");
+    const t = setTimeout(() => unlock("watched-pot"), 120_000);
+    return () => clearTimeout(t);
+  }, [placedAt]);
 
   if (!order) {
     return (
@@ -116,6 +126,7 @@ export function OrderTrack() {
           <div className="row discount"><span>FREE-CLOTHES</span><span>−{money(order.totals.discount)}</span></div>
           <div className="row total"><span>You paid</span><span>{money(order.totals.total)}</span></div>
           <Link to="/" className="btn btn-primary btn-block">Order more nothing</Link>
+          <GiftComposer order={order} />
         </aside>
       </div>
     </Page>
