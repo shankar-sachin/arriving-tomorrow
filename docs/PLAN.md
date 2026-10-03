@@ -102,9 +102,9 @@ Other later upgrade paths:
 | --- | --- |
 | **v1.0.0** (shipped) | Plan, scaffold, taxonomy + generator (~6k SKUs), SVG art, shop/product/cart/checkout/tracking/orders, CI, unit tests. |
 | **v1.1.0** | **Real product images** (see section 6). |
-| **Next release** | Gift links ("send a package to a friend"), scripted customer-support chat, achievements, installable web app (manifest + home-screen icons), dark mode. |
+| **v1.1.1** | Gift links ("send a package to a friend"), scripted customer-support chat, achievements, installable web app (manifest + home-screen icons), dark mode. |
 | **v1.1.x** | Locally generated AI photos (FLUX.1-schnell on a Mac): one per garment type × colour family, 612 images (see section 6.7). |
-| **v1.2.0** | **A unique AI photo for every product (6,120)**, matching each product's exact colour, fabric and motif (see section 6.8), plus **AR try-on** (see section 7). |
+| **v1.2.0** | **A unique AI photo for every product (6,120)**, matching each product's exact colour, fabric and motif (see section 6.8), **AR try-on** (see section 7), and an **unhinged AI support agent** (see section 8). |
 | #2 | Search upgrades (fuzzy matching, facets), URL-synced filters, skeleton loaders. |
 | #3 | More regions (East Asia, Africa, Latin America, Middle East) via the Wikidata-assisted taxonomy. Target 15k+ SKUs. |
 | #4 | Delight pass: add-to-cart flight animation, sound effects (muted by default). *(Achievement toasts shipped.)* |
@@ -214,3 +214,26 @@ A **Try it on** button on product pages opens the camera and overlays the garmen
 - Try-on works for every non-footwear silhouette on iOS Safari, Android Chrome, and desktop Chrome/Safari.
 - No network requests while the camera is on, apart from the one-time model download.
 - Snapshot sharing works, and the joke lands: the "Add to cart" button inside try-on still says *(it won't come)*.
+
+## 8. v1.2.0: Unhinged AI support agent
+
+v1.1.1's Brenda is scripted: keyword intents and a fixed pool of excuses. v1.2.0 swaps in a tiny language model dedicated to one job: being the most unhinged customer-support agent on the internet, while never, ever admitting the package is gone.
+
+### Approach
+| Option | Verdict |
+| --- | --- |
+| **A. Tiny model in the browser** (WebLLM or transformers.js on WebGPU; a 135M–500M model such as SmolLM2 or Qwen2.5-0.5B, 4-bit) | **Chosen.** No server, no API bill, no keys, and chats never leave the device, so the "nothing leaves your browser" promise holds. |
+| B. Small hosted model behind a serverless function (Vercel / Cloudflare Workers AI) | Easier to make smart, but it costs money per message, needs abuse limits, and sends chats to a server. Only if A is too slow on phones. |
+| C. Big general-purpose API model | Overkill, expensive, and it'd need heavy prompting to stay in character. No. |
+
+### How A works
+1. **Fine-tune for the bit:** LoRA fine-tune the base model on a few thousand Brenda conversations: the v1.1.1 script lines, plus synthetic dialogues that escalate from polite to deranged. Hard rules baked into the data: the package always arrives *tomorrow*, refunds are always $0.00, a manager is always Brenda in a different hat. No real names, brands or people.
+2. **Ship it small:** quantise to 4-bit (roughly 100–300 MB), host the weights as static files, and lazy-load them only when someone taps **Unhinged mode** in the chat. Show download progress ("Brenda is putting on her headset…").
+3. **Fallback:** without WebGPU, on low memory, or while the model loads, scripted Brenda answers. She's always there.
+4. **Guardrails:** a short system prompt, an output length cap, and a small blocklist filter on replies. Escalation still drives the tone: the longer the chat, the higher the temperature and the weirder the persona.
+
+### Done when
+- Unhinged mode replies in under ~2 s per message on a recent iPhone and a mid-range Android phone.
+- No network requests during a chat, apart from the one-time model download.
+- Scripted Brenda still works everywhere the model can't run.
+

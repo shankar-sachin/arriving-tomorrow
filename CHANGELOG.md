@@ -2,7 +2,9 @@
 
 All notable changes to Clothes Never Come. Releases are published automatically from this file when a `v*` tag is pushed (see `.github/workflows/release.yml`).
 
-## [Unreleased]
+## [1.1.1] - 2026-10-03
+
+The "now with someone to complain to" release.
 
 ### New
 - **Send a package to a friend.** Any order can be turned into a gift link from its tracking page, with their name, your name and a message. Your friend gets their own tracking page for a gift that will never arrive. The whole gift lives in the link: no accounts, no server.
