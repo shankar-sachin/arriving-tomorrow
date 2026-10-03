@@ -21,6 +21,7 @@ export function ProductImage({ item, hero = false, className = "" }: Props) {
       {state !== "loaded" && (
         <GarmentArt silhouette={item.silhouette} pattern={item.pattern} colors={item.colors} label={item.name} float={hero} className="product-art" />
       )}
+      {photo && hero && <img className="backdrop" src={`${import.meta.env.BASE_URL}${photo.src}`} alt="" aria-hidden="true" decoding="async" />}
       {photo && (
         <img
           src={`${import.meta.env.BASE_URL}${photo.src}`}

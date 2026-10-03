@@ -69,14 +69,17 @@ describe("photos in the catalog", () => {
       key, src: `photos/sherwani/${key}.webp`, w: 600, h: 800, color, bg: "#eeeeee",
       source: "met" as const, title: "Coat", creator: "Unknown maker", license: "CC0 1.0", licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/", sourceUrl: "https://example.org",
     });
-    const manifest: PhotoManifest = { Sherwani: [photo("met-1", "#c0141f"), photo("met-2", "#0a3fa8")] };
+    const manifest: PhotoManifest = { Sherwani: [photo("met-1", "#c0141f"), photo("met-2", "#0a3fa8"), photo("met-3", "#c0141f")] };
     const withPhotos = generateCatalog(undefined, undefined, manifest);
     const sherwanis = withPhotos.filter((i) => i.archetype === "Sherwani");
     expect(sherwanis.every((i) => i.photo && i.photoCredit?.license === "CC0 1.0")).toBe(true);
-    for (const i of sherwanis) expect(i.colorFamily).toBe(i.photo!.src.includes("met-1") ? "red" : "blue");
+    for (const i of sherwanis) expect(i.colorFamily).toBe(i.photo!.src.includes("met-2") ? "blue" : "red");
     expect(withPhotos.filter((i) => i.archetype !== "Sherwani").every((i) => !i.photo)).toBe(true);
     // Names stay unique even when many SKUs share a photo (and therefore a colour).
     expect(new Set(withPhotos.map((i) => i.name)).size).toBe(withPhotos.length);
+    // Below MIN_PHOTOS an archetype keeps its drawings rather than repeating one photo 90 times.
+    const thin = generateCatalog(undefined, undefined, { Sherwani: manifest.Sherwani.slice(0, 2) });
+    expect(thin.some((i) => i.photo)).toBe(false);
     // Photo credits stay off the lightweight card objects.
     expect("photoCredit" in toCard(sherwanis[0])).toBe(false);
   });
