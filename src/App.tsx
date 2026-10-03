@@ -36,7 +36,7 @@ function AnimatedRoutes() {
 export function App() {
   return (
     <MotionConfig reducedMotion="user">
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Header />
         <AnimatedRoutes />
         <Footer />
