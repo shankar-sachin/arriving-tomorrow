@@ -2,7 +2,7 @@ import { Loading, Page } from "../components/Page";
 import type { PhotoManifest } from "../catalog/types";
 import { useAsync } from "../lib/catalogApi";
 
-const SOURCE = { met: "The Met", commons: "Wikimedia Commons", pexels: "Pexels", cma: "Cleveland Museum of Art" } as const;
+const SOURCE = { met: "The Met", commons: "Wikimedia Commons", pexels: "Pexels", cma: "Cleveland Museum of Art", ai: "AI-generated (FLUX.1-schnell)" } as const;
 // Loaded on demand so the attribution manifest stays out of the main bundle.
 const loadPhotos = () => import("../catalog/photos.json").then((m) => m.default as PhotoManifest);
 

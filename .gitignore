@@ -3,3 +3,5 @@ dist
 public/catalog
 *.log
 .DS_Store
+__pycache__
+.venv
