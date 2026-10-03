@@ -111,11 +111,16 @@ export function generateCatalog(seed = DEFAULT_SEED, variants = VARIANTS_PER_ARC
           for (let f = 0; f < fabrics.length; f++)
             for (let m = 0; m < region.motifs.length; m++) combos.push([p, f, m]);
         shuffle(combos, rng);
-        const archPhotos = (photos[arch.name] ?? []).length >= MIN_PHOTOS ? photos[arch.name] : [];
+        // AI photos are made per colour family, so they match a product's own colour exactly.
+        const aiByFamily = new Map((photos[arch.name] ?? []).filter((p) => p.source === "ai" && p.family).map((p) => [p.family!, p]));
+        const real = (photos[arch.name] ?? []).filter((p) => p.source !== "ai");
+        const archPhotos = real.length >= MIN_PHOTOS ? real : [];
 
         for (const [k, [p, f, m]] of combos.slice(0, variants).entries()) {
-          const photo = archPhotos.length ? archPhotos[k % archPhotos.length] : undefined;
-          const palette = photo ? nearestPalette(photo.color) : PALETTES[p];
+          const aiPhoto = aiByFamily.get(PALETTES[p].family);
+          const photo = aiPhoto ?? (archPhotos.length ? archPhotos[k % archPhotos.length] : undefined);
+          // Real photos re-colour the product to match; an AI photo already matches its colour.
+          const palette = photo && !aiPhoto ? nearestPalette(photo.color) : PALETTES[p];
           const fabric = fabrics[f];
           const [motif, pattern] = region.motifs[m];
           const name = uniqueName(`${palette.name} ${joinFabric(fabric, arch.name)}`, motif, Math.floor(rng() * ADJECTIVES.length));

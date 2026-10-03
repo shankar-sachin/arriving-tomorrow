@@ -72,9 +72,40 @@ describe("photo review", () => {
 
   it("only open licences, with attribution", () => {
     for (const p of Object.values(m).flat()) {
-      expect(p.license).toMatch(/^(CC0|Public domain|PD|CC BY(-SA)? \d|Pexels License)/i);
+      expect(p.license).toMatch(p.source === "ai" ? /^AI-generated$/ : /^(CC0|Public domain|PD|CC BY(-SA)? \d|Pexels License)/i);
       expect(p.license).not.toMatch(/\b(NC|ND)\b/);
       expect(p.creator && p.sourceUrl && p.licenseUrl).toBeTruthy();
+    }
+  });
+});
+
+import aiJobs from "../../scripts/ai-photo-jobs.json";
+import { buildJobs, HINTS } from "../../scripts/ai-photo-prompts";
+import { generateCatalog } from "../catalog/generate";
+import type { Photo } from "../catalog/types";
+
+describe("AI photos", () => {
+  it("has a garment description for every archetype, and the job list is up to date", () => {
+    expect(Object.keys(HINTS).sort()).toEqual([...archetypes].sort());
+    expect(aiJobs).toEqual(buildJobs()); // run `npm run photos:ai-jobs` if this fails
+    expect(aiJobs).toHaveLength(archetypes.length * 9);
+  });
+
+  it("prompts ask for an empty display, never a person", () => {
+    for (const j of buildJobs()) expect(j.prompt).toMatch(/dress form|ghost mannequin|display stand|three-quarter view|standing upright/);
+  });
+
+  it("matches each product to the AI photo of its own colour family, without recolouring it", () => {
+    const ai = (family: Photo["family"]): Photo => ({
+      key: `ai:sherwani--${family}`, src: `photos/ai/sherwani/${family}.webp`, w: 720, h: 900, color: "#888888", bg: "#f5f0e6",
+      source: "ai", family, title: "AI", creator: "Generated with FLUX.1-schnell", license: "AI-generated", licenseUrl: "https://example.org", sourceUrl: "https://example.org",
+    });
+    const plain = generateCatalog().filter((i) => i.archetype === "Sherwani");
+    const withAi = generateCatalog(undefined, undefined, { Sherwani: [ai("red"), ai("blue")] }).filter((i) => i.archetype === "Sherwani");
+    for (const [i, before] of withAi.map((x, n) => [x, plain[n]] as const)) {
+      expect(i.colorName).toBe(before.colorName); // AI never recolours
+      if (i.colorFamily === "red" || i.colorFamily === "blue") expect(i.photo?.src).toBe(`photos/ai/sherwani/${i.colorFamily}.webp`);
+      else expect(i.photo).toBeUndefined(); // no AI photo for that family, too few real ones → drawing
     }
   });
 });

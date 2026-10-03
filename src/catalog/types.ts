@@ -109,7 +109,9 @@ export interface Photo {
   /** Measured garment colour and background colour. */
   color: string;
   bg: string;
-  source: "met" | "commons" | "pexels" | "cma";
+  source: "met" | "commons" | "pexels" | "cma" | "ai";
+  /** AI photos are generated per colour family and matched to products of that family. */
+  family?: ColorFamily;
   title: string;
   creator: string;
   license: string;

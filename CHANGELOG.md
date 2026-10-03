@@ -1,0 +1,36 @@
+# Changelog
+
+All notable changes to Clothes Never Come. Releases are published automatically from this file when a `v*` tag is pushed (see `.github/workflows/release.yml`).
+
+## [1.1.0] - 2026-10-03
+
+The "it looks real now (it still won't come)" release.
+
+### Real product photos
+- **485 openly licensed photos** now cover **59 of the 68 garment types**, so **5,310 of 6,120 products** show a real photo. They come from Wikimedia Commons (including The Met's CC0 Costume Institute photos) and the Cleveland Museum of Art, and only CC0, public domain, CC BY, and CC BY-SA are kept.
+- **Every photo was reviewed by hand.** 667 were rejected (wrong items, portraits, illustrations, brand logos, public figures) and blocklisted, and the build only ever uses approved photos.
+- **Colour names match the photo**: a red gown is called "Burgundy", not "Camel". A saturated-hue analyser measures the garment, not the mannequin beside it.
+- Photos cross-fade in over the drawings, which stay as the instant placeholder and the fallback. Product pages show the whole photo over a blurred backdrop, every product credits its photo, and a new **/credits** page lists them all.
+- **AI photo pipeline** for the rest: `scripts/generate_photos.py` runs FLUX.1-schnell (Apache-2.0) locally on an Apple Silicon Mac, producing one studio photo per garment type × colour family (612). AI images are labelled as AI-generated. *(The images themselves arrive in a follow-up.)*
+
+### Shopping
+- **Women / Men** in the header, plus a new **Shop all** page covering every region.
+- **Advanced filters**: audience, region, garment, colour, fabric, pattern, price (presets plus min/max), rating, and 40%+ deals. Every option shows a live count, active filters appear as removable pills, and everything is **saved in the URL**, so filtered views are shareable.
+- Category grids mix garment types instead of showing 90 of one in a row.
+
+### Mobile
+- Bottom tab bar, a header that hides on scroll, a filter bottom sheet, and a sticky add-to-cart bar.
+- 44px tap targets, no iOS zoom-on-focus, safe-area insets, and heavy effects turned off on phones for smooth scrolling.
+
+### Fixes
+- **Clicking any link crashed the app in newer Chrome**, where `scrollTo()` returns a Promise that React treated as an effect cleanup. Fixed, with a regression test.
+- The site now **deploys to GitHub Pages** properly (built output, correct base path, deep links survive refresh).
+- Error boundaries show what went wrong instead of a blank page, and the app is protected from browser translation and extensions rewriting the page.
+
+### Brand & project
+- The **hanger-and-infinity logo** now appears on the favicon, header, footer, and README, and on the delivery truck.
+- A wiki (auto-published from `docs/wiki/`), CONTRIBUTING (issues only), and a Code of Conduct.
+
+## [1.0.0] - 2026-10-03
+
+First release: 6,120 procedurally generated products across India, America, and classical Europe, with SVG art, a persistent cart, a self-filling $0.00 checkout with the `FREE-CLOTHES` coupon, and order tracking that never reaches 100%.

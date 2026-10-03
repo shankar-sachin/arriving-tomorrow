@@ -96,12 +96,18 @@ export function Item() {
             <li><b>Price at checkout:</b> $0.00 with FREE-CLOTHES</li>
           </ul>
 
-          {item.photoCredit && (
+          {item.photoCredit?.source === "ai" && (
+            <p className="photo-credit">
+              AI-generated product image (<a href={item.photoCredit.licenseUrl} target="_blank" rel="noopener noreferrer">FLUX.1-schnell</a>).
+              {" "}Fittingly, the garment doesn't exist either. <Link to="/credits">All credits</Link>
+            </p>
+          )}
+          {item.photoCredit && item.photoCredit.source !== "ai" && (
             <p className="photo-credit">
               Photo: <a href={item.photoCredit.sourceUrl} target="_blank" rel="noopener noreferrer">{item.photoCredit.title}</a>
               {" "}by {item.photoCredit.creator} ·{" "}
               <a href={item.photoCredit.licenseUrl} target="_blank" rel="noopener noreferrer">{item.photoCredit.license}</a>
-              {" "}via {({ met: "The Met", commons: "Wikimedia Commons", pexels: "Pexels", cma: "the Cleveland Museum of Art" } as const)[item.photoCredit.source]}.
+              {" "}via {({ met: "The Met", commons: "Wikimedia Commons", pexels: "Pexels", cma: "the Cleveland Museum of Art", ai: "FLUX.1-schnell" } as const)[item.photoCredit.source]}.
               {" "}Representative photo; the garment you'll never receive may differ. <Link to="/credits">All credits</Link>
             </p>
           )}

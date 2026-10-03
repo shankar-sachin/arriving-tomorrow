@@ -1,7 +1,7 @@
 {
   "name": "clothes-never-come",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "catalog": "tsx scripts/build-catalog.ts",
@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "typecheck": "tsc",
     "test": "vitest run",
-    "photos:prune": "tsx scripts/prune-photos.ts"
+    "photos:prune": "tsx scripts/prune-photos.ts",
+    "photos:ai-jobs": "tsx scripts/ai-photo-prompts.ts",
+    "photos:ingest-ai": "tsx scripts/ingest-ai-photos.ts"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.3.0",
