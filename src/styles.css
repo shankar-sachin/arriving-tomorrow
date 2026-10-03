@@ -122,18 +122,17 @@ h1, h2, h3 {
 }
 
 .logo-mark {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
+  display: block;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--pink), var(--violet));
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 3px 3px 0 var(--ink);
   transition: transform 0.4s var(--ease);
 }
+.logo-loop {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 0;
+}
+.logo:hover .logo-loop { animation: loop-trace 1.2s var(--ease); }
+@keyframes loop-trace { from { stroke-dashoffset: 80; } }
 
 .logo:hover .logo-mark { transform: rotate(-10deg) scale(1.08); }
 .logo i, .footer-logo i { font-family: var(--serif); font-weight: 400; font-size: 1.15em; color: var(--pink); }
@@ -983,7 +982,7 @@ h1, h2, h3 {
   font-size: 14px;
 }
 .footer p { max-width: 52ch; margin: 8px 0 0; line-height: 1.5; }
-.footer-logo { font-size: 22px; color: var(--ink); letter-spacing: -0.02em; }
+.footer-logo { display: inline-flex; align-items: center; gap: 10px; font-size: 22px; color: var(--ink); letter-spacing: -0.02em; }
 .footer-fine { align-self: end; }
 
 /* ───────────── Responsive ───────────── */
