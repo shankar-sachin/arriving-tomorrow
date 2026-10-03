@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig } from "framer-motion";
+import { BottomNav } from "./components/BottomNav";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Cart } from "./pages/Cart";
 import { Checkout } from "./pages/Checkout";
+import { Credits } from "./pages/Credits";
 import { Home } from "./pages/Home";
 import { Item } from "./pages/Item";
 import { NotFound } from "./pages/NotFound";
@@ -22,9 +24,10 @@ export function AppRoutes() {
     window.scrollTo({ top: 0 });
   }, [location.pathname]);
   return (
-    // Keyed so each navigation remounts the page (fresh state + entrance animation).
-    <ErrorBoundary resetKey={location.pathname + location.search}>
-      <Routes location={location} key={location.pathname + location.search}>
+    // Keyed by path so each page remounts (fresh state + entrance animation), while query changes
+    // like shop filters or a new search update in place.
+    <ErrorBoundary resetKey={location.pathname}>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/shop/:region/:category?" element={<Shop />} />
         <Route path="/item/:id" element={<Item />} />
@@ -33,6 +36,7 @@ export function AppRoutes() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/orders/:id" element={<OrderTrack />} />
+        <Route path="/credits" element={<Credits />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ErrorBoundary>
@@ -47,6 +51,7 @@ export function App() {
           <Header />
           <AppRoutes />
           <Footer />
+          <BottomNav />
         </ErrorBoundary>
       </BrowserRouter>
     </MotionConfig>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import type { CardItem } from "../catalog/types";
 import { compact, money } from "../lib/format";
-import { GarmentArt } from "./GarmentArt";
+import { ProductImage } from "./ProductImage";
 
 export function Stars({ rating, reviews }: { rating: number; reviews?: number }) {
   return (
@@ -35,9 +35,9 @@ export function ProductCard({ item, index = 0 }: { item: CardItem; index?: numbe
       whileHover={{ y: -6, rotate: index % 2 ? 1.2 : -1.2 }}
     >
       <Link to={`/item/${item.id}`} className="card-link">
-        <div className="card-art" style={{ background: `${item.colors[1]}55` }}>
+        <div className="card-art" style={{ background: item.photo ? item.photo.bg : `${item.colors[1]}55` }}>
           {item.badge && <span className="badge">{item.badge}</span>}
-          <GarmentArt silhouette={item.silhouette} pattern={item.pattern} colors={item.colors} label={item.name} />
+          <ProductImage item={item} />
         </div>
         <div className="card-body">
           <h3>{item.name}</h3>

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { GarmentArt } from "../components/GarmentArt";
+import { ProductImage } from "../components/ProductImage";
+import { LogoMark } from "../components/Logo";
 import { Page } from "../components/Page";
 import { money } from "../lib/format";
 import { useShop } from "../lib/store";
@@ -27,8 +28,8 @@ function Truck() {
         animate={reduce ? undefined : { x: ["0%", "560%", "520%", "600%", "540%", "0%"], scaleX: [1, 1, 1, 1, -1, -1] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", times: [0, 0.4, 0.5, 0.6, 0.65, 1] }}
       >
-        <rect x="2" y="6" width="38" height="20" rx="3" fill="#ff3d7f" stroke="#1b1033" strokeWidth="2" />
-        <text x="21" y="20" textAnchor="middle" fontSize="8" fontWeight="800" fill="#fff8e7">CNC</text>
+        <rect x="2" y="6" width="38" height="20" rx="3" fill="#fff8e7" stroke="#1b1033" strokeWidth="2" />
+        <LogoMark x={13} y={7.5} size={17} />
         <path d="M40 12 h12 l8 8 v6 h-20 z" fill="#ffb703" stroke="#1b1033" strokeWidth="2" strokeLinejoin="round" />
         <rect x="44" y="14" width="7" height="5" fill="#c9fff9" />
         <circle cx="14" cy="28" r="5" fill="#463b5e" stroke="#fbf6ec" strokeWidth="2" />
@@ -105,7 +106,7 @@ export function OrderTrack() {
             {order.lines.map((l) => (
               <li key={l.key}>
                 <span className="mini-art" style={{ background: l.item.colors[1] }}>
-                  <GarmentArt silhouette={l.item.silhouette} pattern={l.item.pattern} colors={l.item.colors} label={l.item.name} />
+                  <ProductImage item={l.item} />
                 </span>
                 <span>{l.item.name}<small> × {l.qty} · {l.size}</small></span>
               </li>
