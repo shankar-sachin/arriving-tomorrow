@@ -4,6 +4,7 @@ import { motion, useAnimationControls } from "framer-motion";
 import { REGIONS } from "../catalog/taxonomy";
 import { itemCount } from "../lib/pricing";
 import { useShop } from "../lib/store";
+import { LogoMark } from "./Logo";
 
 export function Header() {
   const cart = useShop((s) => s.cart);
@@ -28,7 +29,7 @@ export function Header() {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        <span className="logo-mark">CNC</span>
+        <LogoMark className="logo-mark" />
         <span className="logo-text">Clothes <i>Never</i> Come</span>
       </Link>
       <nav className="nav">

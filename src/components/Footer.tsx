@@ -1,8 +1,10 @@
+import { LogoMark } from "./Logo";
+
 export function Footer() {
   return (
     <footer className="footer">
       <div>
-        <strong className="footer-logo">Clothes <i>Never</i> Come</strong>
+        <strong className="footer-logo"><LogoMark size={28} className="footer-mark" /><span>Clothes <i>Never</i> Come</span></strong>
         <p>A parody store. No real products, payments, or deliveries. Nothing you enter leaves your browser.</p>
       </div>
       <p className="footer-fine">© 2026 · Shipping policy: no · Returns: nothing to return</p>

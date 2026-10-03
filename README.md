@@ -1,4 +1,6 @@
-# Clothes Never Come
+<h1 align="center">
+  <img src="docs/brand/banner.png" alt="Clothes Never Come: Order everything. Receive nothing." width="100%">
+</h1>
 
 [![CI](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/ci.yml)
 [![Deploy](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/deploy.yml/badge.svg)](https://github.com/shankar-sachin/clothesnevercome/actions/workflows/deploy.yml)
@@ -61,7 +63,7 @@ Every push to `main` builds the site and deploys `dist/` to GitHub Pages via [`.
 
 ## Documentation
 
-The [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki) covers architecture, the catalog generator, deployment, and an FAQ.
+The [wiki](https://github.com/shankar-sachin/clothesnevercome/wiki) covers architecture, the catalog generator, deployment, and an FAQ. Its source lives in [`docs/wiki/`](docs/wiki) and is published automatically on every merge to `main`.
 
 ## Contributing
 
