@@ -35,7 +35,7 @@ The main session (Opus 5.5) is the **orchestrator**. It talks to the user, break
 | --- | --- | --- | --- |
 | `planner` | Sonnet 5.5 | 1 | Investigation, design decisions, implementation plans, reviewing diffs. Read-only. |
 | `implementer` | Sonnet 5.5 | 1 | Hard or cross-cutting implementation that needs judgment. |
-| `builder` | Haiku 5.5 | up to 3 at once | Small, clearly specified tasks from a plan. |
+| `builder` | Haiku 5.5 | up to 5 at once | Small, clearly specified tasks from a plan. |
 
 How a feature flows:
 1. **Plan:** for anything non-trivial, the planner investigates and returns numbered steps, marking which can run in parallel. Trivial changes skip this.
