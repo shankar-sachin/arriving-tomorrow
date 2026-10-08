@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH": "1"
+  },
   "attribution": {
     "commit": "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
     "sessionUrl": false

@@ -29,17 +29,18 @@ always read its body back and update it to remove that footer.
 
 ## Agent team
 
-The main session (Opus 5.5) is the **orchestrator**. It talks to the user, breaks work down, hands it out, reviews and integrates the results, commits, pushes, and opens PRs. Subagents never commit, push, or open PRs.
+The main session (Opus 5.5) is the **orchestrator**. It talks to the user, breaks work down, starts every agent itself, reviews and integrates the results, commits, pushes, and opens PRs. The team is flat: agents never start other agents (nesting is switched off in `.claude/settings.json`), commit, push, or open PRs.
 
 | Agent | Model | Count | Use for |
 | --- | --- | --- | --- |
-| `planner` | Sonnet 5.5 | 1 | Investigation, design decisions, implementation plans, reviewing diffs. Read-only. |
-| `implementer` | Sonnet 5.5 | 1 | Hard or cross-cutting implementation that needs judgment. |
-| `builder` | Haiku 5.5 | up to 5 at once | Small, clearly specified tasks from a plan. |
+| `lead` | Sonnet 5.5, medium effort | 1 | Investigation, plans, the hard implementation, and reviewing diffs. |
+| `builder` | Haiku 5.5 | up to 5 at once | Small, clearly specified tasks, including read-only audits of one area. |
 
 How a feature flows:
-1. **Plan:** for anything non-trivial, the planner investigates and returns numbered steps, marking which can run in parallel. Trivial changes skip this.
-2. **Build:** the orchestrator gives the hard steps to the implementer and the mechanical ones to builders, all in parallel where the plan allows. Agents that edit code run with `isolation: "worktree"` so they never collide.
+1. **Plan:** for anything non-trivial, the lead investigates and returns numbered steps, marking which can run in parallel. Trivial changes skip this.
+2. **Build:** the orchestrator starts up to five builders in parallel on the mechanical steps, and the lead on the hard ones. Agents that edit code run with `isolation: "worktree"` so they never collide.
 3. **Integrate:** the orchestrator merges the worktrees, resolves overlaps, and runs `npx tsc`, `npx vitest run` and the build.
-4. **Review:** for larger changes, the planner reviews the combined diff; the orchestrator fixes what it finds.
+4. **Review:** for larger changes, the lead reviews the combined diff; the orchestrator fixes what it finds.
 5. **Ship:** the orchestrator checks the UI in a browser when the change is visual, commits as the user, pushes, opens the PR, and strips any session-link footer from it.
+
+Audits work the same way: the orchestrator splits the codebase into up to five areas, gives each to a builder, and has the lead verify the combined findings before they reach the user.
