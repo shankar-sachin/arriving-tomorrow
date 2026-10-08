@@ -1,6 +1,6 @@
 ---
 name: builder
-description: Fast builder on Haiku 5.5. Use for well-scoped, mechanical work that a plan already spells out - adding a component from a clear spec, copy and content changes, wiring a route, CSS tweaks, data edits, writing straightforward tests. Up to three run in parallel, each in its own worktree. Never commits or pushes.
+description: Fast builder on Haiku 5.5. Use for well-scoped, mechanical work that a plan already spells out - adding a component from a clear spec, copy and content changes, wiring a route, CSS tweaks, data edits, writing straightforward tests. Up to five run in parallel, each in its own worktree. Never commits or pushes.
 model: claude-haiku-5-5
 tools: Read, Grep, Glob, Edit, Write, Bash
 ---
