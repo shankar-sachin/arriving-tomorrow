@@ -161,9 +161,12 @@ def main() -> None:
         jobs = [j for j in jobs if j["archetype"] in wanted]
     manifest = {e["key"]: e for e in (json.loads(MANIFEST.read_text()) if MANIFEST.exists() else [])}
     todo = [j for j in jobs if args.overwrite or not (ROOT / j["out"]).exists()]
-    if args.limit:
+    done = len(jobs) - len(todo)
+    if args.limit and len(todo) > args.limit:
+        print(f"{done} already done, {len(todo)} left; generating {args.limit} of them (--limit)")
         todo = todo[: args.limit]
-    print(f"{len(jobs) - len(todo)} already done, {len(todo)} to generate")
+    else:
+        print(f"{done} already done, {len(todo)} to generate")
     if not todo:
         return
 
