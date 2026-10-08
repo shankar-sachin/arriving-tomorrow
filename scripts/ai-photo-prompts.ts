@@ -103,7 +103,7 @@ export const FAMILY_COLOUR: Record<ColorFamily, string> = {
 };
 
 const DISPLAY: Record<Silhouette, string> = {
-  saree: "elegantly draped and pleated on a headless dress form",
+  saree: "worn-style drape on a headless dress form: neat front pleats at the waist, the decorated pallu falling over the left shoulder",
   lehenga: "displayed on a headless dress form",
   anarkali: "displayed on a headless dress form",
   tunic: "displayed on an invisible ghost mannequin",
@@ -151,7 +151,9 @@ export function buildJobs(): AiJob[] {
             prompt:
               `Professional e-commerce product photograph of a ${colour} ${HINTS[arch.name]}, ${DISPLAY[arch.silhouette]}. ` +
               "Soft even studio lighting, seamless warm off-white backdrop, centered, the whole item in frame, " +
-              "crisp fabric texture, photorealistic catalogue photography. Empty display, nobody wearing it, no text, no logos.",
+              "crisp fabric texture, photorealistic catalogue photography. Empty display, nobody wearing it. " +
+              "Plain unbranded display with no labels, tags or writing anywhere, and no jewellery or accessories " +
+              "except the garment itself. No text, no logos.",
           });
         }
   return jobs;
