@@ -19,6 +19,7 @@ public/photos/ai/ and records them in public/photos/ai/manifest.json. Then commi
 from __future__ import annotations
 
 import argparse
+import inspect
 import io
 import json
 import os
@@ -39,6 +40,32 @@ OUT_W, OUT_H = 720, 900  # 4:5, matches the product cards
 
 # ───────── Engines ─────────
 
+def _python_gen(flux, steps: int, width: int, height: int):
+    """Build gen(job) for the generate_image signature this mflux version has, and check it before the first image."""
+    sig = inspect.signature(flux.generate_image)
+    if "config" in sig.parameters:  # mflux 0.5 – 0.9: steps and sizes travel in a Config object
+        try:
+            from mflux.config.config import Config  # type: ignore
+        except ImportError:
+            from mflux.models.common.config import Config  # type: ignore
+        cfg_extra = {"model_config": getattr(flux, "model_config", None)} if "model_config" in inspect.signature(Config).parameters else {}
+
+        def make_args(job: dict) -> dict:
+            return dict(seed=job["seed"], prompt=job["prompt"],
+                        config=Config(num_inference_steps=steps, height=height, width=width, **cfg_extra))
+    else:  # mflux 0.22+: steps and sizes are plain keyword arguments (see Flux1.generate_image)
+        def make_args(job: dict) -> dict:
+            return dict(seed=job["seed"], prompt=job["prompt"], num_inference_steps=steps, height=height, width=width)
+
+    sig.bind(**make_args({"seed": 0, "prompt": ""}))  # raises TypeError now, not after the first image
+
+    def gen(job: dict) -> Image.Image:
+        result = flux.generate_image(**make_args(job))
+        return getattr(result, "image", result)  # GeneratedImage.image is a PIL image
+
+    return gen
+
+
 def mflux_engine(quantize: int, steps: int, width: int, height: int):
     """Load FLUX.1-schnell once via mflux's Python API; fall back to its CLI if the API moved."""
     last: Exception | None = None
@@ -49,40 +76,24 @@ def mflux_engine(quantize: int, steps: int, width: int, height: int):
         ("mflux.flux.flux", "Flux1", "mflux.config.model_config", "ModelConfig"),
     ]
     for flux_mod, flux_cls, cfg_mod, cfg_cls in attempts:
-        try:
+        try:  # only a wrong module layout moves on to the next attempt
             Flux1 = getattr(__import__(flux_mod, fromlist=[flux_cls]), flux_cls)
             ModelConfig = getattr(__import__(cfg_mod, fromlist=[cfg_cls]), cfg_cls)
-            try:
-                from mflux.config.config import Config  # type: ignore
-            except ImportError:
-                from mflux.models.common.config import Config  # type: ignore
-            flux = Flux1(model_config=ModelConfig.schnell(), quantize=quantize)
-
-            def gen(job: dict) -> Image.Image:
-                result = flux.generate_image(
-                    seed=job["seed"], prompt=job["prompt"], config=Config(num_inference_steps=steps, height=height, width=width)
-                )
-                return getattr(result, "image", result)
-
-            print(f"engine: mflux Python API ({flux_mod})")
-            return gen
-        except Exception as e:  # noqa: BLE001 — try the next layout
+        except (ImportError, AttributeError) as e:
             last = e
+            continue
+        # Real load errors (HF 401, network, OOM) propagate with their own message.
+        flux = Flux1(model_config=ModelConfig.schnell(), quantize=quantize)
+        print(f"engine: mflux Python API ({flux_mod})")
+        return _python_gen(flux, steps, width, height)
     try:  # oldest public API
-        from mflux import Config, Flux1  # type: ignore
-
+        from mflux import Flux1  # type: ignore
+    except (ImportError, AttributeError) as e:
+        last = e
+    else:
         flux = Flux1.from_name(model_name="schnell", quantize=quantize)
-
-        def gen(job: dict) -> Image.Image:
-            result = flux.generate_image(
-                seed=job["seed"], prompt=job["prompt"], config=Config(num_inference_steps=steps, height=height, width=width)
-            )
-            return getattr(result, "image", result)
-
         print("engine: mflux Python API (Flux1.from_name)")
-        return gen
-    except Exception:  # noqa: BLE001
-        pass
+        return _python_gen(flux, steps, width, height)
 
     cli = shutil.which("mflux-generate")
     if not cli:
