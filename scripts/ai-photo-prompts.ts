@@ -122,6 +122,11 @@ const DISPLAY: Record<Silhouette, string> = {
   scarf: "artfully draped over a simple display stand",
 };
 
+const STYLE =
+  "Soft even studio lighting, seamless warm off-white backdrop, centered, full length: the entire item from top to hem in frame with space around it, " +
+  "crisp fabric texture, photorealistic catalogue photography. Empty display, nobody wearing it. " +
+  "The display is plain matte white and completely bare apart from the garment. No text, no logos.";
+
 export interface AiJob {
   /** Photo key, also the file stem. */
   key: string;
@@ -148,12 +153,7 @@ export function buildJobs(): AiJob[] {
             family,
             seed: hash(key),
             out: `public/photos/ai/${slug(arch.name)}/${family}.webp`,
-            prompt:
-              `Professional e-commerce product photograph of a ${colour} ${HINTS[arch.name]}, ${DISPLAY[arch.silhouette]}. ` +
-              "Soft even studio lighting, seamless warm off-white backdrop, centered, the whole item in frame, " +
-              "crisp fabric texture, photorealistic catalogue photography. Empty display, nobody wearing it. " +
-              "Plain unbranded display with no labels, tags or writing anywhere, and no jewellery or accessories " +
-              "except the garment itself. No text, no logos.",
+            prompt: `Professional e-commerce product photograph of a ${colour} ${HINTS[arch.name]}, ${DISPLAY[arch.silhouette]}. ${STYLE}`,
           });
         }
   return jobs;

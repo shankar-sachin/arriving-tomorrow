@@ -11,6 +11,7 @@ Run (resumable — rerun to continue where it stopped):
     python3 scripts/generate_photos.py --limit 10          # quick test
     python3 scripts/generate_photos.py --only "Sherwani,Doublet"
     python3 scripts/generate_photos.py --quantize 4        # 8–16 GB Macs
+    python3 scripts/generate_photos.py --fast              # 720×896, 2 steps: roughly 2–3× quicker
 
 Reads scripts/ai-photo-jobs.json (built by `npm run photos:ai-jobs`), writes WebP files under
 public/photos/ai/ and records them in public/photos/ai/manifest.json. Then commit and push both;
@@ -35,6 +36,7 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parent.parent
 JOBS = ROOT / "scripts" / "ai-photo-jobs.json"
 MANIFEST = ROOT / "public" / "photos" / "ai" / "manifest.json"
+FAST = {"width": 720, "height": 896, "steps": 2}  # --fast: about the 720×900 we save, and schnell's minimum sensible steps
 OUT_W, OUT_H = 720, 900  # 4:5, matches the product cards
 
 
@@ -148,18 +150,25 @@ def main() -> None:
     ap.add_argument("--only", help="comma-separated archetype names")
     ap.add_argument("--limit", type=int, help="stop after this many new images")
     ap.add_argument("--quantize", type=int, default=8, choices=[3, 4, 6, 8], help="model quantisation (4 for 8–16 GB RAM)")
-    ap.add_argument("--steps", type=int, default=4, help="schnell is tuned for 1–4 steps")
-    ap.add_argument("--width", type=int, default=832)
-    ap.add_argument("--height", type=int, default=1040)
+    ap.add_argument("--steps", type=int, help="schnell is tuned for 1–4 steps (default 4)")
+    ap.add_argument("--width", type=int, help="default 832")
+    ap.add_argument("--height", type=int, help="default 1040")
+    ap.add_argument("--fast", action="store_true", help=f"quicker preset: {FAST['width']}×{FAST['height']}, {FAST['steps']} steps (explicit flags still win)")
     ap.add_argument("--engine", choices=["mflux", "dummy"], default="mflux")
     ap.add_argument("--overwrite", action="store_true", help="regenerate images that already exist")
     args = ap.parse_args()
+    preset = FAST if args.fast else {"width": 832, "height": 1040, "steps": 4}
+    for k, v in preset.items():
+        if getattr(args, k) is None:
+            setattr(args, k, v)
 
     jobs = json.loads(JOBS.read_text())
+    manifest_path = MANIFEST
+    print(f"{args.width}×{args.height}, {args.steps} steps")
     if args.only:
         wanted = {s.strip() for s in args.only.split(",")}
         jobs = [j for j in jobs if j["archetype"] in wanted]
-    manifest = {e["key"]: e for e in (json.loads(MANIFEST.read_text()) if MANIFEST.exists() else [])}
+    manifest = {e["key"]: e for e in (json.loads(manifest_path.read_text()) if manifest_path.exists() else [])}
     todo = [j for j in jobs if args.overwrite or not (ROOT / j["out"]).exists()]
     done = len(jobs) - len(todo)
     if args.limit and len(todo) > args.limit:
@@ -178,17 +187,19 @@ def main() -> None:
         out = ROOT / job["out"]
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(data)
+        manifest_path.parent.mkdir(parents=True, exist_ok=True)
         manifest[job["key"]] = {k: job[k] for k in ("key", "archetype", "family", "prompt", "seed")} | {
             "src": job["out"].removeprefix("public/"), "w": w, "h": h, "engine": args.engine,
+            "steps": args.steps, "size": f"{args.width}x{args.height}",
         }
-        tmp = MANIFEST.with_suffix(".tmp")
+        tmp = manifest_path.with_suffix(".tmp")
         tmp.write_text(json.dumps(sorted(manifest.values(), key=lambda e: e["key"]), indent=1) + "\n")
-        os.replace(tmp, MANIFEST)  # atomic, so stopping mid-run never corrupts it
+        os.replace(tmp, manifest_path)  # atomic, so stopping mid-run never corrupts it
         per = (time.time() - started) / i
         eta = per * (len(todo) - i)
         print(f"[{i}/{len(todo)}] {job['archetype']} · {job['family']}  {time.time() - t0:.1f}s  (eta {eta / 60:.0f} min)", flush=True)
 
-    print(f"Done. Now: git add public/photos/ai && git commit -m 'Add AI product photos' && git push")
+    print("Done. Images are in public/photos/ai/. To share: git add public/photos/ai && git commit -m 'Add AI product photos' && git push")
 
 
 if __name__ == "__main__":
