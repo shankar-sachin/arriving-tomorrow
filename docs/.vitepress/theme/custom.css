@@ -56,7 +56,8 @@
 .VPNavBarTitle .title {
   font-weight: 800;
   letter-spacing: -0.02em;
-  text-transform: lowercase;
+  /* The gradient is painted on the box, so the box must fit the whole title or its end turns invisible. */
+  width: max-content;
   background: linear-gradient(120deg, var(--at-pink), var(--at-violet));
   -webkit-background-clip: text;
   background-clip: text;
