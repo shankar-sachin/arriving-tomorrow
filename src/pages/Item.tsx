@@ -9,6 +9,8 @@ import { PriceTag, ProductCard, Stars } from "../components/ProductCard";
 import { loadShard, useAsync } from "../lib/catalogApi";
 import { money } from "../lib/format";
 import { useShop } from "../lib/store";
+import { isTryable } from "../ar/anchors";
+import { TRY_ON_COPY } from "../ar/copy";
 
 export function Item() {
   const { id = "" } = useParams();
@@ -89,6 +91,19 @@ export function Item() {
               </motion.div>
             )}
           </AnimatePresence>
+
+          {isTryable(item.silhouette) && (
+            <div className="try-on">
+              <Link className="btn btn-ghost try-on-btn" to={`/item/${item.id}/try`}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 8h3l2-3h6l2 3h3v11H4z" />
+                  <circle cx="12" cy="13" r="3.5" />
+                </svg>
+                {TRY_ON_COPY.button}
+              </Link>
+              <p className="fine try-on-hint">{TRY_ON_COPY.buttonHint}</p>
+            </div>
+          )}
 
           <ul className="promises">
             <li><b>Delivery:</b> tomorrow (permanently)</li>

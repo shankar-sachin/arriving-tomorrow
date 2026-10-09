@@ -198,6 +198,8 @@ Extend the job list from garment type × colour family to **one job per product 
 
 A **Try it on** button on product pages opens the camera and overlays the garment on you live, entirely in the browser.
 
+> **Status (Oct 2026): shipped (option A).** The overlay is each product's own vector drawing rather than a photo cutout: the AI photos are shot on dress forms, so cutting the garment out cleanly isn't practical yet. Code lives in `src/ar/` and `src/pages/TryOn.tsx`; `?debug=landmarks` runs the whole pipeline on a synthetic figure without a camera. Photo cutouts and mesh warping are follow-ups.
+
 ### Approach
 | Option | Verdict |
 | --- | --- |

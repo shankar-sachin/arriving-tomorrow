@@ -13,6 +13,7 @@ export const ACHIEVEMENTS = [
   { id: "full-cart", title: "Cart full of dreams", blurb: "Have 25 items in your cart at once." },
   { id: "time-traveller", title: "Time traveller", blurb: "One order with something from India, America and Classical Europe." },
   { id: "yeehaw", title: "Yeehaw, m'lady", blurb: "Order a crinoline ball gown and a cowboy hat together." },
+  { id: "fitting-room", title: "Fitting room, no fitting", blurb: "Try something on in AR. It still won't come." },
   { id: "still-tomorrow", title: "Still tomorrow", blurb: "Check on an order that's over a day old. It's arriving tomorrow." },
   { id: "watched-pot", title: "A watched pot", blurb: "Stare at a tracking page for two whole minutes." },
   { id: "regifter", title: "Generous to a fault", blurb: "Send a friend a package that will never arrive." },

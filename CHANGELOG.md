@@ -5,12 +5,14 @@ All notable changes to arriving tomorrow (formerly Clothes Never Come). Releases
 ## [Unreleased]
 
 ### New
+- **AR try-on.** Every product page (bar boots and shoes) has a **Try it on** button that opens your camera and puts the garment on you live: tops and jackets on your shoulders, dresses and sarees down to your ankles, trousers and skirts from the waist, hats on your head, scarves round your neck. It's the product's own drawing, in its colours and pattern, tracked to your body with MediaPipe pose detection that runs entirely in your browser. Nothing is uploaded. Take a photo (framed, stamped "IT NEVER CAME") or add it to your cart, where it still won't come. Trying something on earns a new achievement, "Fitting room, no fitting".
 - **AI product photos are live.** 578 of the 612 FLUX.1-schnell studio photos passed review and now show on the site, so **6,093 of 6,120 products** have a photo (up from 5,310). Each product picks the AI photo for its colour family first, then a real museum photo, then the drawing.
 
 ### Behind the scenes
 - **Docs and developer site** at https://shankar-sachin.github.io/arriving-tomorrow/, built with VitePress from `docs/` and deployed to GitHub Pages. It reuses the wiki, plan, changelog and contributing guide, so nothing is written twice.
 - The wiki source, the plan and the brand assets moved out of `docs/` to `wiki/`, `PLAN.md` and `brand/`, so `docs/` is just the site.
 - `scripts/generate_photos.py --unapproved --reroll N` regenerates only the photos review rejected, with fresh seeds. Prompts for skirts, cargo pants and the tricorne hat are tighter, since those were the systemic rejects.
+- The pose model and its WebAssembly runtime are served from the site itself (`npm run fetch:pose`, run by `dev` and `build`) and only load when you tap **Try it on**, so the shop's own bundle doesn't grow.
 - Vitest skips `.claude/` so agent worktrees don't double the test run.
 
 ### Changed

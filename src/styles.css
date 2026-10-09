@@ -827,6 +827,9 @@ h1, h2, h3 {
 .size.on { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 3px 3px 0 var(--pink); }
 .item-info .btn-xl { width: 100%; }
 .buy-bar-price { display: none; }
+.try-on { margin-top: 14px; }
+.try-on-btn { gap: 8px; align-items: center; }
+.try-on-hint { margin-top: 6px; color: var(--muted); }
 .toast {
   margin-top: 14px;
   padding: 14px 18px;
@@ -1634,6 +1637,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
     -webkit-backdrop-filter: blur(16px);
     border-top: 1px solid var(--line);
   }
+  .try-on-btn { width: 100%; justify-content: center; }
   .item .buy-bar .btn-xl { flex: 1; width: auto; padding: 14px 18px; font-size: 16px; box-shadow: 3px 3px 0 var(--ink); }
   .buy-bar-price { display: block !important; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
   .stepper button { width: 44px; height: 44px; }

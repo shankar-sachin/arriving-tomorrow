@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { MotionConfig } from "framer-motion";
 import { AchievementToasts } from "./components/AchievementToasts";
@@ -21,6 +21,9 @@ import { OrderTrack } from "./pages/OrderTrack";
 import { Orders } from "./pages/Orders";
 import { Search } from "./pages/Search";
 import { Shop } from "./pages/Shop";
+import { Loading, Page } from "./components/Page";
+
+const TryOn = lazy(() => import("./pages/TryOn").then((m) => ({ default: m.TryOn })));
 
 export function AppRoutes() {
   const location = useLocation();
@@ -37,6 +40,14 @@ export function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/shop/:region/:category?" element={<Shop />} />
         <Route path="/item/:id" element={<Item />} />
+        <Route
+          path="/item/:id/try"
+          element={
+            <Suspense fallback={<Page><Loading label="Warming up the fitting room" /></Page>}>
+              <TryOn />
+            </Suspense>
+          }
+        />
         <Route path="/search" element={<Search />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
