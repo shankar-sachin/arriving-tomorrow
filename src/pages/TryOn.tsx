@@ -51,7 +51,7 @@ export function TryOn() {
       </Page>
     );
   }
-  return anchorFor(item.silhouette) ? <Stage item={item} /> : <Fallback item={item} message={TRY_ON_COPY.notTryable} />;
+  return anchorFor(item.silhouette) ? <Stage key={item.id} item={item} /> : <Fallback item={item} message={TRY_ON_COPY.notTryable} />;
 }
 
 function Fallback({ item, message }: { item: CardItem; message: string }) {
@@ -89,6 +89,7 @@ function Stage({ item }: { item: CatalogItem }) {
   const runRef = useRef(0);
   const cancelRef = useRef<(() => void) | null>(null);
   const addedTimer = useRef<number | undefined>(undefined);
+  const stageRef = useRef<HTMLDivElement>(null);
 
   /** Stops the loop, every track and the tracker. Bumping runRef also aborts an in-flight start. */
   const stop = useCallback(() => {
@@ -237,14 +238,25 @@ function Stage({ item }: { item: CatalogItem }) {
         return;
       }
       setPhase("starting");
+      // Load the model alongside the camera rather than after it, so the camera isn't sitting on
+      // during the download. getUserMedia is still called in this tick, inside the tap (iOS needs that).
+      const trackerLoad = createPoseTracker();
       try {
-        if (!(await openStream(face, run))) return;
+        if (!(await openStream(face, run))) {
+          trackerLoad.then((t) => t.close(), () => undefined);
+          return;
+        }
       } catch (e) {
-        if (runRef.current === run) setPhase({ error: errorKeyFor(e) });
+        trackerLoad.then((t) => t.close(), () => undefined);
+        // play() can fail after the stream opened; release the camera before showing the error.
+        if (runRef.current === run) {
+          stop();
+          setPhase({ error: errorKeyFor(e) });
+        }
         return;
       }
       try {
-        const tracker = await createPoseTracker();
+        const tracker = await trackerLoad;
         if (runRef.current !== run) {
           tracker.close();
           return;
@@ -328,12 +340,21 @@ function Stage({ item }: { item: CatalogItem }) {
 
   useEffect(() => () => window.clearTimeout(addedTimer.current), []);
 
+  // The Start button unmounts once the camera starts, so move focus somewhere sensible.
+  useEffect(() => {
+    if (phase === "running" && !debug) stageRef.current?.focus();
+  }, [phase, debug]);
+
   const onSnapshot = async () => {
     const video = videoRef.current;
     const overlay = canvasRef.current;
     if (!video || !overlay || !video.videoWidth) return;
-    const blob = await renderSnapshot({ video, overlay, mirrored: facing === "user", caption: TRY_ON_COPY.snapshotCaption });
-    downloadBlob(blob, snapshotFilename(item.name));
+    try {
+      const blob = await renderSnapshot({ video, overlay, mirrored: facing === "user", caption: TRY_ON_COPY.snapshotCaption });
+      downloadBlob(blob, snapshotFilename(item.name));
+    } catch {
+      // A failed snapshot isn't worth interrupting the fitting room over.
+    }
   };
 
   const onAdd = () => {
@@ -353,9 +374,9 @@ function Stage({ item }: { item: CatalogItem }) {
     <Page className="tryon">
       <div className="tryon-card">
         <h1 className="tryon-title">{item.name}</h1>
-        <div className="tryon-stage" style={{ aspectRatio: aspect }}>
-          <video ref={videoRef} className={`tryon-video ${mirrored ? "mirrored" : ""}`} playsInline muted hidden={debug} />
-          <canvas ref={canvasRef} className={`tryon-canvas ${mirrored ? "mirrored" : ""}`} data-testid="tryon-canvas" />
+        <div className="tryon-stage" style={{ aspectRatio: aspect }} ref={stageRef} tabIndex={-1} aria-label={`Fitting room: ${item.name}`}>
+          <video ref={videoRef} className={`tryon-video ${mirrored ? "mirrored" : ""}`} playsInline muted hidden={debug} aria-label="Your camera" />
+          <canvas ref={canvasRef} className={`tryon-canvas ${mirrored ? "mirrored" : ""}`} data-testid="tryon-canvas" aria-hidden="true" />
           {phase === "idle" && (
             <div className="tryon-overlay">
               <p className="tryon-msg">{TRY_ON_COPY.privacy}</p>

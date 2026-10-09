@@ -41,3 +41,4 @@
 .tryon-controls { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .tryon .toast { margin-top: 0; }
 .page.tryon { padding-bottom: 110px; }
+.tryon-stage:focus:not(:focus-visible) { outline: none; }

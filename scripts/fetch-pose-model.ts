@@ -13,7 +13,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "public/models/mediapipe");
 const WASM_SRC = join(ROOT, "node_modules/@mediapipe/tasks-vision/wasm");
 const WASM_OUT = join(OUT, "wasm");
-const MODEL_URL = "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task";
+// Pinned to version 1 (not "latest") so landmark output can't change under us between builds.
+const MODEL_URL = "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task";
 const MODEL_OUT = join(OUT, "pose_landmarker_lite.task");
 const MIN_BYTES = 1024 * 1024;
 

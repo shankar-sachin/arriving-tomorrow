@@ -112,21 +112,27 @@ export async function renderSnapshot(opts: {
   ctx.fillText(caption, layout.caption.x, layout.caption.y);
 
   // Rubber stamp, rotated, with a rounded outline.
-  const { x, y, size, rotation } = layout.stamp;
+  const { size, rotation } = layout.stamp;
   const text = "IT NEVER CAME";
+  ctx.font = `800 ${size}px ${FONT}`;
+  const pad = size * 0.25;
+  const boxW = ctx.measureText(text).width + pad * 2;
+  const boxH = size * 1.1;
+  // Keep the whole rotated stamp inside the photo: the layout only knows its centre, not the text width.
+  const halfX = (boxW / 2) * Math.abs(Math.cos(rotation)) + (boxH / 2) * Math.abs(Math.sin(rotation));
+  const halfY = (boxW / 2) * Math.abs(Math.sin(rotation)) + (boxH / 2) * Math.abs(Math.cos(rotation));
+  const margin = layout.border;
+  const x = Math.max(layout.photo.x + halfX + margin, Math.min(layout.stamp.x, layout.photo.x + layout.photo.w - halfX - margin));
+  const y = Math.min(layout.photo.y + layout.photo.h - halfY - margin, Math.max(layout.stamp.y, layout.photo.y + halfY + margin));
   ctx.save();
   ctx.translate(x, y);
   ctx.rotate(rotation);
-  ctx.font = `800 ${size}px ${FONT}`;
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.fillStyle = STAMP;
   ctx.strokeStyle = STAMP;
   ctx.lineWidth = 3;
   ctx.fillText(text, 0, 0);
-  const pad = size * 0.25;
-  const boxW = ctx.measureText(text).width + pad * 2;
-  const boxH = size * 1.1;
   strokeRoundRect(ctx, -boxW / 2, -boxH / 2, boxW, boxH, size * 0.2);
   ctx.restore();
 
