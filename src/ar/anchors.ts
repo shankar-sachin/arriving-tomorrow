@@ -137,17 +137,20 @@ function fitHead(lms: Landmark[], videoW: number, videoH: number): GarmentTransf
   if (!ears) return null;
   const [el, er] = ears;
   const span = dist(el, er);
-  const width = span * 1.9;
+  // The hat sprite's box is the whole hat, brim included, and is wide and short (about 5:3).
+  // The crown is roughly 45% of the brim, so this makes the crown about as wide as the head.
+  const width = span * 2.4;
+  const height = width * 0.6;
   const rotation = angleOf(el, er);
   const m = mid(el, er);
-  // Perpendicular to the ear line, pointing up (negative y when upright).
-  const offset = 0.55 * span;
+  // Perpendicular to the ear line, pointing up (negative y when upright): the hatband lands on the forehead.
+  const offset = 0.65 * span;
   return finish(
     {
       x: m.x + Math.sin(rotation) * offset,
       y: m.y - Math.cos(rotation) * offset,
       width,
-      height: width,
+      height,
       rotation,
     },
     span,
@@ -161,14 +164,18 @@ function fitNeck(lms: Landmark[], videoW: number, videoH: number): GarmentTransf
   const span = dist(sl, sr);
   const rotation = angleOf(sl, sr);
   const m = mid(sl, sr);
-  // Perpendicular to the shoulder line, pointing down (positive y when upright).
-  const offset = 0.25 * span;
+  // The scarf sprite is tall and narrow (about 1:2.2): it hangs from the neck down the chest.
+  const width = span * 0.8;
+  const height = width * 2.2;
+  // Perpendicular to the shoulder line, pointing down (positive y when upright), so the top sits
+  // just above the shoulder line.
+  const offset = height / 2 - 0.15 * span;
   return finish(
     {
       x: m.x - Math.sin(rotation) * offset,
       y: m.y + Math.cos(rotation) * offset,
-      width: span * 1.1,
-      height: span * 0.9,
+      width,
+      height,
       rotation,
     },
     span,
