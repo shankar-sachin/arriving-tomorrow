@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: "/logo.svg",
-    siteTitle: "arriving tomorrow",
+    siteTitle: "arriving tomorrow Docs",
     nav: [
       { text: "Guide", link: "/guide/getting-started", activeMatch: "/guide/" },
       { text: "Roadmap", link: "/roadmap" },
