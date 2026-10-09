@@ -52,4 +52,4 @@ Run `npm test` afterwards. The tests check counts, uniqueness, price sanity, and
 
 ## Future options
 
-The `docs/PLAN.md` roadmap covers moving to in-browser SQLite with FTS5 once the catalog gets very large, and a hosted database (Cloudflare D1 or Supabase) only if shared, written state is ever needed, such as a global "packages never delivered" counter.
+The `PLAN.md` roadmap covers moving to in-browser SQLite with FTS5 once the catalog gets very large, and a hosted database (Cloudflare D1 or Supabase) only if shared, written state is ever needed, such as a global "packages never delivered" counter.

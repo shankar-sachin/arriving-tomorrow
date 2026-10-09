@@ -1,8 +1,8 @@
 <h1 align="center">
-  <img src="docs/brand/banner.png" alt="arriving tomorrow: Order everything. Receive nothing." width="100%">
+  <img src="brand/banner.png" alt="arriving tomorrow: Order everything. Receive nothing." width="100%">
 </h1>
 
-<p align="center"><b>🔗 <a href="https://arriving-tomorrow.vercel.app">arriving-tomorrow.vercel.app</a></b></p>
+<p align="center"><b>🔗 <a href="https://arriving-tomorrow.vercel.app">arriving-tomorrow.vercel.app</a></b> · <b>📖 <a href="https://shankar-sachin.github.io/arriving-tomorrow/">Docs</a></b></p>
 
 [![CI](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml)
 [![Vercel](https://img.shields.io/github/deployments/shankar-sachin/arriving-tomorrow/Production?label=Vercel&logo=vercel&logoColor=white)](https://github.com/shankar-sachin/arriving-tomorrow/deployments)
@@ -11,7 +11,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-7-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=1b1033)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8-7b2ff7?logo=vite&logoColor=white)](https://vite.dev/)
-[![Catalog](https://img.shields.io/badge/catalog-6%2C120%20SKUs-ffb703)](docs/PLAN.md#3-the-catalog-the-big-one)
+[![Catalog](https://img.shields.io/badge/catalog-6%2C120%20SKUs-ffb703)](PLAN.md#3-the-catalog-the-big-one)
 [![Deliveries](https://img.shields.io/badge/deliveries-0-1b1033)](#)
 [![Coupon](https://img.shields.io/badge/coupon-FREE--CLOTHES-00b4a6)](#)
 
@@ -61,7 +61,7 @@ The catalog is read-only, so it ships as static data instead of living in a data
 2. `src/catalog/generate.ts` expands them with a seeded PRNG into unique SKUs. The same seed always produces the same catalog, so URLs stay stable.
 3. `scripts/build-catalog.ts` writes one JSON shard per category, plus `index.json` and `search.json`.
 
-Want more stuff? Add archetypes to the taxonomy or raise `VARIANTS_PER_ARCHETYPE`. See [docs/PLAN.md](docs/PLAN.md) for the full plan, the database options, and the PR roadmap.
+Want more stuff? Add archetypes to the taxonomy or raise `VARIANTS_PER_ARCHETYPE`. See [PLAN.md](PLAN.md) for the full plan, the database options, and the PR roadmap.
 
 ## AI product photos (Mac)
 
@@ -83,7 +83,9 @@ The site is hosted on **Vercel** at https://arriving-tomorrow.vercel.app. Every 
 
 ## Documentation
 
-The [wiki](https://github.com/shankar-sachin/arriving-tomorrow/wiki) covers architecture, the catalog generator, deployment, and an FAQ. Its source lives in [`docs/wiki/`](docs/wiki) and is published automatically on every merge to `main`.
+The [wiki](https://github.com/shankar-sachin/arriving-tomorrow/wiki) covers architecture, the catalog generator, deployment, and an FAQ. Its source lives in [`wiki/`](wiki) and is published automatically on every merge to `main`.
+
+**Documentation site:** https://shankar-sachin.github.io/arriving-tomorrow/ is a [VitePress](https://vitepress.dev) site (source in [`docs/`](docs)) with the guide, the AI photo pipeline, the roadmap and the changelog. It reuses the wiki Markdown and is deployed to GitHub Pages by `.github/workflows/docs.yml`. Run it locally with `npm run docs:dev`.
 
 ## Contributing
 
