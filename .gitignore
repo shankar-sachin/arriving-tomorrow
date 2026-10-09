@@ -8,3 +8,6 @@ __pycache__
 
 # Claude Code agent worktrees
 .claude/worktrees/
+
+# TypeScript build info
+*.tsbuildinfo
