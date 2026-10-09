@@ -20,6 +20,7 @@ public/photos/ai/ and records them in public/photos/ai/manifest.json. Then commi
 from __future__ import annotations
 
 import argparse
+import gc
 import inspect
 import io
 import json
@@ -42,6 +43,34 @@ OUT_W, OUT_H = 720, 900  # 4:5, matches the product cards
 
 # ───────── Engines ─────────
 
+CACHE_LIMIT_GB = 2  # MLX's buffer cache is unbounded by default and grows image after image
+
+
+def _free_memory(flux) -> None:
+    """Drop what mflux keeps between images. Every prompt here is unique, so FLUX's prompt_cache
+    only ever grows, and MLX holds freed GPU buffers in its cache. Left alone, a 48 GB Mac went
+    from ~4 s to ~21 s per step after one image, with 20 GB of swap (mflux's --low-ram does the same)."""
+    cache = getattr(flux, "prompt_cache", None)
+    if isinstance(cache, dict):
+        cache.clear()
+    gc.collect()
+    try:
+        import mlx.core as mx  # type: ignore
+
+        (getattr(mx, "clear_cache", None) or mx.metal.clear_cache)()
+    except Exception:  # noqa: BLE001 - freeing memory is best-effort, never worth a crash
+        pass
+
+
+def _limit_mlx_cache() -> None:
+    try:
+        import mlx.core as mx  # type: ignore
+
+        (getattr(mx, "set_cache_limit", None) or mx.metal.set_cache_limit)(CACHE_LIMIT_GB << 30)
+    except Exception:  # noqa: BLE001
+        pass
+
+
 def _python_gen(flux, steps: int, width: int, height: int):
     """Build gen(job) for the generate_image signature this mflux version has, and check it before the first image."""
     sig = inspect.signature(flux.generate_image)
@@ -60,10 +89,15 @@ def _python_gen(flux, steps: int, width: int, height: int):
             return dict(seed=job["seed"], prompt=job["prompt"], num_inference_steps=steps, height=height, width=width)
 
     sig.bind(**make_args({"seed": 0, "prompt": ""}))  # raises TypeError now, not after the first image
+    _limit_mlx_cache()
 
     def gen(job: dict) -> Image.Image:
         result = flux.generate_image(**make_args(job))
-        return getattr(result, "image", result)  # GeneratedImage.image is a PIL image
+        image = getattr(result, "image", result)  # GeneratedImage.image is a PIL image
+        image.load()
+        del result
+        _free_memory(flux)
+        return image
 
     return gen
 
