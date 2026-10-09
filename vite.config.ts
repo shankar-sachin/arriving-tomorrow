@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config";
+import { configDefaults, defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
@@ -7,5 +7,7 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: "node",
+    // Agent worktrees are full copies of the repo; don't run their tests twice.
+    exclude: [...configDefaults.exclude, ".claude/**"],
   },
 });

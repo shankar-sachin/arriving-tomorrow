@@ -12,6 +12,7 @@ Run (resumable — rerun to continue where it stopped):
     python3 scripts/generate_photos.py --only "Sherwani,Doublet"
     python3 scripts/generate_photos.py --quantize 4        # 8–16 GB Macs
     python3 scripts/generate_photos.py --fast              # 720×896, 2 steps: roughly 2–3× quicker
+    python3 scripts/generate_photos.py --fast --unapproved --reroll 1   # redo what review rejected
 
 Reads scripts/ai-photo-jobs.json (built by `npm run photos:ai-jobs`), writes WebP files under
 public/photos/ai/ and records them in public/photos/ai/manifest.json. Then commit and push both;
@@ -37,6 +38,7 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parent.parent
 JOBS = ROOT / "scripts" / "ai-photo-jobs.json"
 MANIFEST = ROOT / "public" / "photos" / "ai" / "manifest.json"
+APPROVED = ROOT / "src" / "catalog" / "photo-approved.json"
 FAST = {"width": 720, "height": 896, "steps": 2}  # --fast: about the 720×900 we save, and schnell's minimum sensible steps
 OUT_W, OUT_H = 720, 900  # 4:5, matches the product cards
 
@@ -190,6 +192,10 @@ def main() -> None:
     ap.add_argument("--fast", action="store_true", help=f"quicker preset: {FAST['width']}×{FAST['height']}, {FAST['steps']} steps (explicit flags still win)")
     ap.add_argument("--engine", choices=["mflux", "dummy"], default="mflux")
     ap.add_argument("--overwrite", action="store_true", help="regenerate images that already exist")
+    ap.add_argument("--unapproved", action="store_true",
+                    help="only images that exist but aren't approved in src/catalog/photo-approved.json (review rejects); implies --overwrite")
+    ap.add_argument("--reroll", type=int, default=0,
+                    help="shift every seed by this much, so regenerating gives a different image; recorded in the manifest")
     args = ap.parse_args()
     preset = FAST if args.fast else {"width": 832, "height": 1040, "steps": 4}
     for k, v in preset.items():
@@ -197,6 +203,12 @@ def main() -> None:
             setattr(args, k, v)
 
     jobs = json.loads(JOBS.read_text())
+    if args.unapproved:
+        approved = {k for keys in json.loads(APPROVED.read_text()).values() for k in keys}
+        jobs = [j for j in jobs if j["key"] not in approved and (ROOT / j["out"]).exists()]
+        args.overwrite = True
+    if args.reroll:
+        jobs = [{**j, "seed": (j["seed"] + args.reroll * 1_000_003) % 2_000_000_000} for j in jobs]
     manifest_path = MANIFEST
     print(f"{args.width}×{args.height}, {args.steps} steps")
     if args.only:

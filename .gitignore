@@ -5,3 +5,9 @@ public/catalog
 .DS_Store
 __pycache__
 .venv
+
+# Claude Code agent worktrees
+.claude/worktrees/
+
+# TypeScript build info
+*.tsbuildinfo
