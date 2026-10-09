@@ -2,7 +2,7 @@
   <img src="docs/brand/banner.png" alt="arriving tomorrow: Order everything. Receive nothing." width="100%">
 </h1>
 
-<p align="center"><b><a href="https://arriving-tomorrow.vercel.app">arriving-tomorrow.vercel.app</a></b></p>
+<p align="center"><b>🔗 <a href="https://arriving-tomorrow.vercel.app">arriving-tomorrow.vercel.app</a></b></p>
 
 [![CI](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml/badge.svg)](https://github.com/shankar-sachin/arriving-tomorrow/actions/workflows/ci.yml)
 [![Vercel](https://img.shields.io/github/deployments/shankar-sachin/arriving-tomorrow/Production?label=Vercel&logo=vercel&logoColor=white)](https://github.com/shankar-sachin/arriving-tomorrow/deployments)

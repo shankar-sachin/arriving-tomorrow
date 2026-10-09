@@ -1,6 +1,15 @@
 {
  "Achkan": [
-  "commons:32332074"
+  "commons:32332074",
+  "ai:achkan--black",
+  "ai:achkan--blue",
+  "ai:achkan--green",
+  "ai:achkan--neutral",
+  "ai:achkan--orange",
+  "ai:achkan--pink",
+  "ai:achkan--purple",
+  "ai:achkan--red",
+  "ai:achkan--yellow"
  ],
  "Anarkali": [
   "commons:20129841",
@@ -9,7 +18,16 @@
   "commons:130481817",
   "commons:59490830",
   "commons:59490835",
-  "commons:116182967"
+  "commons:116182967",
+  "ai:anarkali--black",
+  "ai:anarkali--blue",
+  "ai:anarkali--green",
+  "ai:anarkali--neutral",
+  "ai:anarkali--orange",
+  "ai:anarkali--pink",
+  "ai:anarkali--purple",
+  "ai:anarkali--red",
+  "ai:anarkali--yellow"
  ],
  "Banarasi Saree": [
   "commons:18468956",
@@ -23,7 +41,16 @@
   "commons:60931442",
   "commons:17628951",
   "commons:60932371",
-  "cma:108046"
+  "cma:108046",
+  "ai:banarasi-saree--black",
+  "ai:banarasi-saree--blue",
+  "ai:banarasi-saree--green",
+  "ai:banarasi-saree--neutral",
+  "ai:banarasi-saree--orange",
+  "ai:banarasi-saree--pink",
+  "ai:banarasi-saree--purple",
+  "ai:banarasi-saree--red",
+  "ai:banarasi-saree--yellow"
  ],
  "Bandhani Saree": [
   "commons:86985843",
@@ -37,10 +64,27 @@
   "cma:107887",
   "cma:95468",
   "commons:61140515",
-  "commons:10708268"
+  "commons:10708268",
+  "ai:bandhani-saree--black",
+  "ai:bandhani-saree--blue",
+  "ai:bandhani-saree--green",
+  "ai:bandhani-saree--neutral",
+  "ai:bandhani-saree--orange",
+  "ai:bandhani-saree--pink",
+  "ai:bandhani-saree--purple",
+  "ai:bandhani-saree--red",
+  "ai:bandhani-saree--yellow"
  ],
  "Bandhgala": [
-  "commons:139484689"
+  "commons:139484689",
+  "ai:bandhgala--black",
+  "ai:bandhgala--blue",
+  "ai:bandhgala--green",
+  "ai:bandhgala--neutral",
+  "ai:bandhgala--orange",
+  "ai:bandhgala--pink",
+  "ai:bandhgala--red",
+  "ai:bandhgala--yellow"
  ],
  "Bomber Jacket": [
   "commons:101321366",
@@ -52,11 +96,29 @@
   "commons:134876731",
   "commons:135573729",
   "commons:36621655",
-  "commons:36621657"
+  "commons:36621657",
+  "ai:bomber-jacket--black",
+  "ai:bomber-jacket--blue",
+  "ai:bomber-jacket--green",
+  "ai:bomber-jacket--neutral",
+  "ai:bomber-jacket--orange",
+  "ai:bomber-jacket--pink",
+  "ai:bomber-jacket--purple",
+  "ai:bomber-jacket--red",
+  "ai:bomber-jacket--yellow"
  ],
  "Bowling Shirt": [
   "commons:161862553",
-  "commons:111611154"
+  "commons:111611154",
+  "ai:bowling-shirt--black",
+  "ai:bowling-shirt--blue",
+  "ai:bowling-shirt--green",
+  "ai:bowling-shirt--neutral",
+  "ai:bowling-shirt--orange",
+  "ai:bowling-shirt--pink",
+  "ai:bowling-shirt--purple",
+  "ai:bowling-shirt--red",
+  "ai:bowling-shirt--yellow"
  ],
  "Bridal Lehenga": [
   "commons:149784609",
@@ -66,7 +128,16 @@
   "commons:58848409",
   "commons:12223491",
   "commons:72886320",
-  "commons:22129159"
+  "commons:22129159",
+  "ai:bridal-lehenga--black",
+  "ai:bridal-lehenga--blue",
+  "ai:bridal-lehenga--green",
+  "ai:bridal-lehenga--neutral",
+  "ai:bridal-lehenga--orange",
+  "ai:bridal-lehenga--pink",
+  "ai:bridal-lehenga--purple",
+  "ai:bridal-lehenga--red",
+  "ai:bridal-lehenga--yellow"
  ],
  "Buckle Shoes": [
   "commons:30455995",
@@ -77,14 +148,25 @@
   "commons:59661410",
   "commons:4766501",
   "commons:59503701",
-  "commons:22870929"
+  "commons:22870929",
+  "ai:buckle-shoes--black",
+  "ai:buckle-shoes--blue",
+  "ai:buckle-shoes--green",
+  "ai:buckle-shoes--neutral",
+  "ai:buckle-shoes--orange",
+  "ai:buckle-shoes--pink",
+  "ai:buckle-shoes--purple",
+  "ai:buckle-shoes--yellow"
  ],
  "Cargo Pants": [
   "commons:25549559",
   "commons:25549560",
   "commons:58035286",
   "commons:58035288",
-  "commons:111892619"
+  "commons:111892619",
+  "ai:cargo-pants--pink",
+  "ai:cargo-pants--purple",
+  "ai:cargo-pants--red"
  ],
  "Chemise": [
   "commons:145923819",
@@ -93,7 +175,14 @@
   "commons:59504260",
   "commons:59488798",
   "commons:59503582",
-  "commons:59504760"
+  "commons:59504760",
+  "ai:chemise--blue",
+  "ai:chemise--green",
+  "ai:chemise--neutral",
+  "ai:chemise--orange",
+  "ai:chemise--pink",
+  "ai:chemise--purple",
+  "ai:chemise--yellow"
  ],
  "Chiffon Saree": [
   "commons:131174464",
@@ -107,7 +196,16 @@
   "commons:3153047",
   "commons:61140515",
   "commons:6422297",
-  "commons:60932368"
+  "commons:60932368",
+  "ai:chiffon-saree--black",
+  "ai:chiffon-saree--blue",
+  "ai:chiffon-saree--green",
+  "ai:chiffon-saree--neutral",
+  "ai:chiffon-saree--orange",
+  "ai:chiffon-saree--pink",
+  "ai:chiffon-saree--purple",
+  "ai:chiffon-saree--red",
+  "ai:chiffon-saree--yellow"
  ],
  "Corset Bodice": [
   "commons:118166973",
@@ -119,7 +217,16 @@
   "commons:59660501",
   "commons:31745143",
   "commons:31745144",
-  "commons:59664343"
+  "commons:59664343",
+  "ai:corset-bodice--black",
+  "ai:corset-bodice--blue",
+  "ai:corset-bodice--green",
+  "ai:corset-bodice--neutral",
+  "ai:corset-bodice--orange",
+  "ai:corset-bodice--pink",
+  "ai:corset-bodice--purple",
+  "ai:corset-bodice--red",
+  "ai:corset-bodice--yellow"
  ],
  "Cowboy Boots": [
   "commons:16922136",
@@ -130,7 +237,16 @@
   "commons:10400439",
   "commons:16004406",
   "commons:89205177",
-  "commons:81556302"
+  "commons:81556302",
+  "ai:cowboy-boots--black",
+  "ai:cowboy-boots--blue",
+  "ai:cowboy-boots--green",
+  "ai:cowboy-boots--neutral",
+  "ai:cowboy-boots--orange",
+  "ai:cowboy-boots--pink",
+  "ai:cowboy-boots--purple",
+  "ai:cowboy-boots--red",
+  "ai:cowboy-boots--yellow"
  ],
  "Cowboy Hat": [
   "commons:2749193",
@@ -143,7 +259,16 @@
   "commons:11407733",
   "commons:12183113",
   "commons:13814008",
-  "commons:164946609"
+  "commons:164946609",
+  "ai:cowboy-hat--black",
+  "ai:cowboy-hat--blue",
+  "ai:cowboy-hat--green",
+  "ai:cowboy-hat--neutral",
+  "ai:cowboy-hat--orange",
+  "ai:cowboy-hat--pink",
+  "ai:cowboy-hat--purple",
+  "ai:cowboy-hat--red",
+  "ai:cowboy-hat--yellow"
  ],
  "Cravat": [
   "commons:65333642",
@@ -153,7 +278,16 @@
   "commons:59660079",
   "commons:59660087",
   "commons:24197204",
-  "commons:24197628"
+  "commons:24197628",
+  "ai:cravat--black",
+  "ai:cravat--blue",
+  "ai:cravat--green",
+  "ai:cravat--neutral",
+  "ai:cravat--orange",
+  "ai:cravat--pink",
+  "ai:cravat--purple",
+  "ai:cravat--red",
+  "ai:cravat--yellow"
  ],
  "Crinoline Ball Gown": [
   "commons:44322458",
@@ -162,7 +296,16 @@
   "commons:90935268",
   "commons:95288443",
   "commons:59496259",
-  "commons:59497883"
+  "commons:59497883",
+  "ai:crinoline-ball-gown--black",
+  "ai:crinoline-ball-gown--blue",
+  "ai:crinoline-ball-gown--green",
+  "ai:crinoline-ball-gown--neutral",
+  "ai:crinoline-ball-gown--orange",
+  "ai:crinoline-ball-gown--pink",
+  "ai:crinoline-ball-gown--purple",
+  "ai:crinoline-ball-gown--red",
+  "ai:crinoline-ball-gown--yellow"
  ],
  "Denim Jacket": [
   "commons:131157828",
@@ -172,18 +315,38 @@
   "commons:157882347",
   "commons:47951793",
   "commons:157882368",
-  "commons:157882409"
+  "commons:157882409",
+  "ai:denim-jacket--black",
+  "ai:denim-jacket--green",
+  "ai:denim-jacket--neutral",
+  "ai:denim-jacket--orange",
+  "ai:denim-jacket--pink",
+  "ai:denim-jacket--purple",
+  "ai:denim-jacket--red",
+  "ai:denim-jacket--yellow"
  ],
  "Denim Skirt": [
   "commons:75460033",
   "commons:87624187",
   "commons:8459463",
-  "commons:18135849"
+  "commons:18135849",
+  "ai:denim-skirt--black",
+  "ai:denim-skirt--green",
+  "ai:denim-skirt--red",
+  "ai:denim-skirt--yellow"
  ],
  "Dhoti Pants": [
   "commons:57161075",
   "commons:57160975",
-  "commons:11962924"
+  "commons:11962924",
+  "ai:dhoti-pants--black",
+  "ai:dhoti-pants--blue",
+  "ai:dhoti-pants--green",
+  "ai:dhoti-pants--neutral",
+  "ai:dhoti-pants--orange",
+  "ai:dhoti-pants--pink",
+  "ai:dhoti-pants--purple",
+  "ai:dhoti-pants--yellow"
  ],
  "Doublet": [
   "commons:57103436",
@@ -196,7 +359,16 @@
   "commons:57103439",
   "commons:59495695",
   "commons:24846842",
-  "commons:26135059"
+  "commons:26135059",
+  "ai:doublet--black",
+  "ai:doublet--blue",
+  "ai:doublet--green",
+  "ai:doublet--neutral",
+  "ai:doublet--orange",
+  "ai:doublet--pink",
+  "ai:doublet--purple",
+  "ai:doublet--red",
+  "ai:doublet--yellow"
  ],
  "Dupatta": [
   "commons:57469507",
@@ -205,7 +377,15 @@
   "commons:20157100",
   "commons:48615507",
   "commons:3762468",
-  "cma:107887"
+  "cma:107887",
+  "ai:dupatta--black",
+  "ai:dupatta--blue",
+  "ai:dupatta--neutral",
+  "ai:dupatta--orange",
+  "ai:dupatta--pink",
+  "ai:dupatta--purple",
+  "ai:dupatta--red",
+  "ai:dupatta--yellow"
  ],
  "Empire-Waist Dress": [
   "commons:95706087",
@@ -215,7 +395,16 @@
   "commons:59491223",
   "commons:65221963",
   "commons:65233353",
-  "commons:59491230"
+  "commons:59491230",
+  "ai:empire-waist-dress--black",
+  "ai:empire-waist-dress--blue",
+  "ai:empire-waist-dress--green",
+  "ai:empire-waist-dress--neutral",
+  "ai:empire-waist-dress--orange",
+  "ai:empire-waist-dress--pink",
+  "ai:empire-waist-dress--purple",
+  "ai:empire-waist-dress--red",
+  "ai:empire-waist-dress--yellow"
  ],
  "Flannel Shirt": [
   "commons:82148241",
@@ -223,11 +412,28 @@
   "commons:39190527",
   "commons:149547645",
   "commons:4581680",
-  "commons:22778238"
+  "commons:22778238",
+  "ai:flannel-shirt--black",
+  "ai:flannel-shirt--blue",
+  "ai:flannel-shirt--green",
+  "ai:flannel-shirt--neutral",
+  "ai:flannel-shirt--orange",
+  "ai:flannel-shirt--pink",
+  "ai:flannel-shirt--purple",
+  "ai:flannel-shirt--yellow"
  ],
  "Fringe Jacket": [
   "commons:9816029",
-  "commons:51802624"
+  "commons:51802624",
+  "ai:fringe-jacket--black",
+  "ai:fringe-jacket--blue",
+  "ai:fringe-jacket--green",
+  "ai:fringe-jacket--neutral",
+  "ai:fringe-jacket--orange",
+  "ai:fringe-jacket--pink",
+  "ai:fringe-jacket--purple",
+  "ai:fringe-jacket--red",
+  "ai:fringe-jacket--yellow"
  ],
  "Frock Coat": [
   "commons:64345242",
@@ -239,7 +445,16 @@
   "commons:59664919",
   "commons:59498996",
   "commons:59494691",
-  "commons:59662256"
+  "commons:59662256",
+  "ai:frock-coat--black",
+  "ai:frock-coat--blue",
+  "ai:frock-coat--green",
+  "ai:frock-coat--neutral",
+  "ai:frock-coat--orange",
+  "ai:frock-coat--pink",
+  "ai:frock-coat--purple",
+  "ai:frock-coat--red",
+  "ai:frock-coat--yellow"
  ],
  "Ghagra": [
   "commons:30626853",
@@ -248,7 +463,16 @@
   "commons:124770739",
   "commons:61840288",
   "cma:107890",
-  "cma:108061"
+  "cma:108061",
+  "ai:ghagra--black",
+  "ai:ghagra--blue",
+  "ai:ghagra--green",
+  "ai:ghagra--neutral",
+  "ai:ghagra--orange",
+  "ai:ghagra--pink",
+  "ai:ghagra--purple",
+  "ai:ghagra--red",
+  "ai:ghagra--yellow"
  ],
  "Hawaiian Shirt": [
   "commons:4900164",
@@ -257,7 +481,15 @@
   "commons:25545856",
   "commons:4908291",
   "commons:130920345",
-  "commons:4900318"
+  "commons:4900318",
+  "ai:hawaiian-shirt--blue",
+  "ai:hawaiian-shirt--green",
+  "ai:hawaiian-shirt--neutral",
+  "ai:hawaiian-shirt--orange",
+  "ai:hawaiian-shirt--pink",
+  "ai:hawaiian-shirt--purple",
+  "ai:hawaiian-shirt--red",
+  "ai:hawaiian-shirt--yellow"
  ],
  "High-Top Sneakers": [
   "commons:110906905",
@@ -268,14 +500,32 @@
   "commons:737194",
   "commons:68665384",
   "commons:68665385",
-  "commons:126564650"
+  "commons:126564650",
+  "ai:high-top-sneakers--black",
+  "ai:high-top-sneakers--blue",
+  "ai:high-top-sneakers--green",
+  "ai:high-top-sneakers--neutral",
+  "ai:high-top-sneakers--orange",
+  "ai:high-top-sneakers--pink",
+  "ai:high-top-sneakers--purple",
+  "ai:high-top-sneakers--red",
+  "ai:high-top-sneakers--yellow"
  ],
  "Hoodie": [
   "commons:156218720",
   "commons:140673215",
   "commons:122502044",
   "commons:156218719",
-  "commons:133113556"
+  "commons:133113556",
+  "ai:hoodie--black",
+  "ai:hoodie--blue",
+  "ai:hoodie--green",
+  "ai:hoodie--neutral",
+  "ai:hoodie--orange",
+  "ai:hoodie--pink",
+  "ai:hoodie--purple",
+  "ai:hoodie--red",
+  "ai:hoodie--yellow"
  ],
  "Hussar Jacket": [
   "commons:21472421",
@@ -285,14 +535,31 @@
   "commons:41003172",
   "commons:127804187",
   "commons:41003237",
-  "commons:79184084"
+  "commons:79184084",
+  "ai:hussar-jacket--blue",
+  "ai:hussar-jacket--green",
+  "ai:hussar-jacket--neutral",
+  "ai:hussar-jacket--orange",
+  "ai:hussar-jacket--pink",
+  "ai:hussar-jacket--purple",
+  "ai:hussar-jacket--red",
+  "ai:hussar-jacket--yellow"
  ],
  "Inverness Cape": [
   "commons:30292701",
   "commons:64576485",
   "commons:64576480",
   "commons:64576503",
-  "commons:65757428"
+  "commons:65757428",
+  "ai:inverness-cape--black",
+  "ai:inverness-cape--blue",
+  "ai:inverness-cape--green",
+  "ai:inverness-cape--neutral",
+  "ai:inverness-cape--orange",
+  "ai:inverness-cape--pink",
+  "ai:inverness-cape--purple",
+  "ai:inverness-cape--red",
+  "ai:inverness-cape--yellow"
  ],
  "Kanjeevaram Saree": [
   "commons:58337889",
@@ -303,7 +570,16 @@
   "commons:61140515",
   "commons:60931442",
   "commons:60932368",
-  "cma:108046"
+  "cma:108046",
+  "ai:kanjeevaram-saree--black",
+  "ai:kanjeevaram-saree--blue",
+  "ai:kanjeevaram-saree--green",
+  "ai:kanjeevaram-saree--neutral",
+  "ai:kanjeevaram-saree--orange",
+  "ai:kanjeevaram-saree--pink",
+  "ai:kanjeevaram-saree--purple",
+  "ai:kanjeevaram-saree--red",
+  "ai:kanjeevaram-saree--yellow"
  ],
  "Kolhapuri Chappal": [
   "commons:158859020",
@@ -316,7 +592,16 @@
   "commons:58151320",
   "commons:30486957",
   "commons:30486964",
-  "commons:30486959"
+  "commons:30486959",
+  "ai:kolhapuri-chappal--black",
+  "ai:kolhapuri-chappal--blue",
+  "ai:kolhapuri-chappal--green",
+  "ai:kolhapuri-chappal--neutral",
+  "ai:kolhapuri-chappal--orange",
+  "ai:kolhapuri-chappal--pink",
+  "ai:kolhapuri-chappal--purple",
+  "ai:kolhapuri-chappal--red",
+  "ai:kolhapuri-chappal--yellow"
  ],
  "Kurta": [
   "commons:41827963",
@@ -326,10 +611,28 @@
   "commons:40301837",
   "commons:116182642",
   "commons:116182662",
-  "commons:116182775"
+  "commons:116182775",
+  "ai:kurta--black",
+  "ai:kurta--blue",
+  "ai:kurta--green",
+  "ai:kurta--neutral",
+  "ai:kurta--orange",
+  "ai:kurta--pink",
+  "ai:kurta--purple",
+  "ai:kurta--red",
+  "ai:kurta--yellow"
  ],
  "Kurti": [
-  "commons:136209190"
+  "commons:136209190",
+  "ai:kurti--black",
+  "ai:kurti--blue",
+  "ai:kurti--green",
+  "ai:kurti--neutral",
+  "ai:kurti--orange",
+  "ai:kurti--pink",
+  "ai:kurti--purple",
+  "ai:kurti--red",
+  "ai:kurti--yellow"
  ],
  "Lehenga Choli": [
   "commons:121812506",
@@ -337,11 +640,29 @@
   "commons:91105630",
   "commons:30626853",
   "commons:82407367",
-  "commons:22129159"
+  "commons:22129159",
+  "ai:lehenga-choli--black",
+  "ai:lehenga-choli--blue",
+  "ai:lehenga-choli--green",
+  "ai:lehenga-choli--neutral",
+  "ai:lehenga-choli--orange",
+  "ai:lehenga-choli--pink",
+  "ai:lehenga-choli--purple",
+  "ai:lehenga-choli--red",
+  "ai:lehenga-choli--yellow"
  ],
  "Letterman Sweater": [
   "commons:38324584",
-  "commons:38324581"
+  "commons:38324581",
+  "ai:letterman-sweater--black",
+  "ai:letterman-sweater--blue",
+  "ai:letterman-sweater--green",
+  "ai:letterman-sweater--neutral",
+  "ai:letterman-sweater--orange",
+  "ai:letterman-sweater--pink",
+  "ai:letterman-sweater--purple",
+  "ai:letterman-sweater--red",
+  "ai:letterman-sweater--yellow"
  ],
  "Military Pelisse": [
   "commons:59493450",
@@ -352,7 +673,16 @@
   "commons:59503816",
   "commons:61210805",
   "commons:59490482",
-  "commons:59503030"
+  "commons:59503030",
+  "ai:military-pelisse--black",
+  "ai:military-pelisse--blue",
+  "ai:military-pelisse--green",
+  "ai:military-pelisse--neutral",
+  "ai:military-pelisse--orange",
+  "ai:military-pelisse--pink",
+  "ai:military-pelisse--purple",
+  "ai:military-pelisse--red",
+  "ai:military-pelisse--yellow"
  ],
  "Mojari": [
   "commons:30456009",
@@ -365,11 +695,29 @@
   "commons:30486967",
   "commons:2611230",
   "commons:109987248",
-  "commons:30455591"
+  "commons:30455591",
+  "ai:mojari--black",
+  "ai:mojari--blue",
+  "ai:mojari--green",
+  "ai:mojari--neutral",
+  "ai:mojari--orange",
+  "ai:mojari--pink",
+  "ai:mojari--purple",
+  "ai:mojari--red",
+  "ai:mojari--yellow"
  ],
  "Nehru Jacket": [
   "commons:17484599",
-  "commons:11947584"
+  "commons:11947584",
+  "ai:nehru-jacket--black",
+  "ai:nehru-jacket--blue",
+  "ai:nehru-jacket--green",
+  "ai:nehru-jacket--neutral",
+  "ai:nehru-jacket--orange",
+  "ai:nehru-jacket--pink",
+  "ai:nehru-jacket--purple",
+  "ai:nehru-jacket--red",
+  "ai:nehru-jacket--yellow"
  ],
  "Opera Cloak": [
   "commons:59494328",
@@ -380,19 +728,46 @@
   "commons:59501381",
   "commons:81962273",
   "commons:59501378",
-  "commons:59490035"
+  "commons:59490035",
+  "ai:opera-cloak--black",
+  "ai:opera-cloak--blue",
+  "ai:opera-cloak--green",
+  "ai:opera-cloak--neutral",
+  "ai:opera-cloak--orange",
+  "ai:opera-cloak--pink",
+  "ai:opera-cloak--purple",
+  "ai:opera-cloak--red",
+  "ai:opera-cloak--yellow"
  ],
  "Overalls": [
   "commons:1144323",
   "commons:87942194",
   "commons:44974771",
   "commons:44974850",
-  "commons:58263906"
+  "commons:58263906",
+  "ai:overalls--black",
+  "ai:overalls--blue",
+  "ai:overalls--green",
+  "ai:overalls--neutral",
+  "ai:overalls--orange",
+  "ai:overalls--pink",
+  "ai:overalls--purple",
+  "ai:overalls--red",
+  "ai:overalls--yellow"
  ],
  "Pagdi Turban": [
   "commons:189339719",
   "commons:189339704",
-  "commons:189340337"
+  "commons:189340337",
+  "ai:pagdi-turban--black",
+  "ai:pagdi-turban--blue",
+  "ai:pagdi-turban--green",
+  "ai:pagdi-turban--neutral",
+  "ai:pagdi-turban--orange",
+  "ai:pagdi-turban--pink",
+  "ai:pagdi-turban--purple",
+  "ai:pagdi-turban--red",
+  "ai:pagdi-turban--yellow"
  ],
  "Paithani Saree": [
   "commons:27285805",
@@ -402,15 +777,43 @@
   "commons:60931564",
   "commons:60909523",
   "cma:108046",
-  "cma:95468"
+  "cma:95468",
+  "ai:paithani-saree--black",
+  "ai:paithani-saree--blue",
+  "ai:paithani-saree--green",
+  "ai:paithani-saree--neutral",
+  "ai:paithani-saree--orange",
+  "ai:paithani-saree--pink",
+  "ai:paithani-saree--purple",
+  "ai:paithani-saree--red",
+  "ai:paithani-saree--yellow"
  ],
- "Pathani Suit": [],
+ "Pathani Suit": [
+  "ai:pathani-suit--black",
+  "ai:pathani-suit--blue",
+  "ai:pathani-suit--green",
+  "ai:pathani-suit--neutral",
+  "ai:pathani-suit--orange",
+  "ai:pathani-suit--pink",
+  "ai:pathani-suit--purple",
+  "ai:pathani-suit--red",
+  "ai:pathani-suit--yellow"
+ ],
  "Pearl-Snap Shirt": [
   "commons:151450373",
   "commons:151452328",
   "commons:78595585",
   "commons:78595584",
-  "commons:78595583"
+  "commons:78595583",
+  "ai:pearl-snap-shirt--black",
+  "ai:pearl-snap-shirt--blue",
+  "ai:pearl-snap-shirt--green",
+  "ai:pearl-snap-shirt--neutral",
+  "ai:pearl-snap-shirt--orange",
+  "ai:pearl-snap-shirt--pink",
+  "ai:pearl-snap-shirt--purple",
+  "ai:pearl-snap-shirt--red",
+  "ai:pearl-snap-shirt--yellow"
  ],
  "Pleated Skirt": [
   "commons:150667103",
@@ -419,7 +822,16 @@
   "commons:146801877",
   "commons:40005751",
   "commons:45804415",
-  "commons:94990732"
+  "commons:94990732",
+  "ai:pleated-skirt--black",
+  "ai:pleated-skirt--blue",
+  "ai:pleated-skirt--green",
+  "ai:pleated-skirt--neutral",
+  "ai:pleated-skirt--orange",
+  "ai:pleated-skirt--pink",
+  "ai:pleated-skirt--purple",
+  "ai:pleated-skirt--red",
+  "ai:pleated-skirt--yellow"
  ],
  "Poke Bonnet": [
   "commons:59504634",
@@ -430,7 +842,16 @@
   "commons:149866389",
   "commons:59500120",
   "commons:59488888",
-  "commons:59494794"
+  "commons:59494794",
+  "ai:poke-bonnet--black",
+  "ai:poke-bonnet--blue",
+  "ai:poke-bonnet--green",
+  "ai:poke-bonnet--neutral",
+  "ai:poke-bonnet--orange",
+  "ai:poke-bonnet--pink",
+  "ai:poke-bonnet--purple",
+  "ai:poke-bonnet--red",
+  "ai:poke-bonnet--yellow"
  ],
  "Poodle Skirt": [
   "commons:17124083",
@@ -438,7 +859,10 @@
   "commons:152477947",
   "commons:23928962",
   "commons:184538554",
-  "commons:184538573"
+  "commons:184538573",
+  "ai:poodle-skirt--blue",
+  "ai:poodle-skirt--neutral",
+  "ai:poodle-skirt--orange"
  ],
  "Prairie Dress": [
   "commons:8478353",
@@ -451,7 +875,16 @@
   "commons:120536302",
   "commons:64360585",
   "commons:120536303",
-  "commons:64360611"
+  "commons:64360611",
+  "ai:prairie-dress--black",
+  "ai:prairie-dress--blue",
+  "ai:prairie-dress--green",
+  "ai:prairie-dress--neutral",
+  "ai:prairie-dress--orange",
+  "ai:prairie-dress--pink",
+  "ai:prairie-dress--purple",
+  "ai:prairie-dress--red",
+  "ai:prairie-dress--yellow"
  ],
  "Redingote": [
   "commons:14794739",
@@ -464,7 +897,16 @@
   "commons:60298210",
   "commons:27295038",
   "commons:60298211",
-  "commons:59658418"
+  "commons:59658418",
+  "ai:redingote--black",
+  "ai:redingote--blue",
+  "ai:redingote--green",
+  "ai:redingote--neutral",
+  "ai:redingote--orange",
+  "ai:redingote--pink",
+  "ai:redingote--purple",
+  "ai:redingote--red",
+  "ai:redingote--yellow"
  ],
  "Regency Gown": [
   "commons:178590690",
@@ -473,7 +915,16 @@
   "commons:95288564",
   "commons:59503194",
   "commons:112697033",
-  "commons:57850949"
+  "commons:57850949",
+  "ai:regency-gown--black",
+  "ai:regency-gown--blue",
+  "ai:regency-gown--green",
+  "ai:regency-gown--neutral",
+  "ai:regency-gown--orange",
+  "ai:regency-gown--pink",
+  "ai:regency-gown--purple",
+  "ai:regency-gown--red",
+  "ai:regency-gown--yellow"
  ],
  "Riding Boots": [
   "commons:88136327",
@@ -482,7 +933,16 @@
   "commons:83012440",
   "commons:61451629",
   "commons:59664085",
-  "commons:2947183"
+  "commons:2947183",
+  "ai:riding-boots--black",
+  "ai:riding-boots--blue",
+  "ai:riding-boots--green",
+  "ai:riding-boots--neutral",
+  "ai:riding-boots--orange",
+  "ai:riding-boots--pink",
+  "ai:riding-boots--purple",
+  "ai:riding-boots--red",
+  "ai:riding-boots--yellow"
  ],
  "Robe à la Française": [
   "commons:59492601",
@@ -496,7 +956,16 @@
   "commons:83289839",
   "commons:5960640",
   "commons:85675023",
-  "commons:84028074"
+  "commons:84028074",
+  "ai:robe-a-la-francaise--black",
+  "ai:robe-a-la-francaise--blue",
+  "ai:robe-a-la-francaise--green",
+  "ai:robe-a-la-francaise--neutral",
+  "ai:robe-a-la-francaise--orange",
+  "ai:robe-a-la-francaise--pink",
+  "ai:robe-a-la-francaise--purple",
+  "ai:robe-a-la-francaise--red",
+  "ai:robe-a-la-francaise--yellow"
  ],
  "Rugby Shirt": [
   "commons:76275676",
@@ -508,17 +977,43 @@
   "commons:65598806",
   "commons:65598791",
   "commons:65598777",
-  "commons:65598768"
+  "commons:65598768",
+  "ai:rugby-shirt--black",
+  "ai:rugby-shirt--blue",
+  "ai:rugby-shirt--green",
+  "ai:rugby-shirt--neutral",
+  "ai:rugby-shirt--orange",
+  "ai:rugby-shirt--pink",
+  "ai:rugby-shirt--purple",
+  "ai:rugby-shirt--red",
+  "ai:rugby-shirt--yellow"
  ],
  "Salwar Kameez": [
   "commons:10905753",
   "commons:12361491",
   "commons:45033609",
   "commons:45033664",
-  "commons:68477162"
+  "commons:68477162",
+  "ai:salwar-kameez--black",
+  "ai:salwar-kameez--blue",
+  "ai:salwar-kameez--green",
+  "ai:salwar-kameez--neutral",
+  "ai:salwar-kameez--orange",
+  "ai:salwar-kameez--pink",
+  "ai:salwar-kameez--purple",
+  "ai:salwar-kameez--red",
+  "ai:salwar-kameez--yellow"
  ],
  "Sharara Set": [
-  "commons:54575989"
+  "commons:54575989",
+  "ai:sharara-set--black",
+  "ai:sharara-set--blue",
+  "ai:sharara-set--neutral",
+  "ai:sharara-set--orange",
+  "ai:sharara-set--pink",
+  "ai:sharara-set--purple",
+  "ai:sharara-set--red",
+  "ai:sharara-set--yellow"
  ],
  "Sherwani": [
   "commons:32332074",
@@ -527,7 +1022,16 @@
   "commons:58320150",
   "commons:60898284",
   "commons:25760524",
-  "commons:60898285"
+  "commons:60898285",
+  "ai:sherwani--black",
+  "ai:sherwani--blue",
+  "ai:sherwani--green",
+  "ai:sherwani--neutral",
+  "ai:sherwani--orange",
+  "ai:sherwani--pink",
+  "ai:sherwani--purple",
+  "ai:sherwani--red",
+  "ai:sherwani--yellow"
  ],
  "Stays": [
   "commons:59491093",
@@ -539,7 +1043,16 @@
   "commons:59498490",
   "commons:59498487",
   "commons:59658914",
-  "commons:59659514"
+  "commons:59659514",
+  "ai:stays--black",
+  "ai:stays--blue",
+  "ai:stays--green",
+  "ai:stays--neutral",
+  "ai:stays--orange",
+  "ai:stays--pink",
+  "ai:stays--purple",
+  "ai:stays--red",
+  "ai:stays--yellow"
  ],
  "Straight-Leg Jeans": [
   "commons:153206952",
@@ -551,7 +1064,16 @@
   "commons:88153561",
   "commons:88152487",
   "commons:87651588",
-  "commons:22024871"
+  "commons:22024871",
+  "ai:straight-leg-jeans--black",
+  "ai:straight-leg-jeans--blue",
+  "ai:straight-leg-jeans--green",
+  "ai:straight-leg-jeans--neutral",
+  "ai:straight-leg-jeans--orange",
+  "ai:straight-leg-jeans--pink",
+  "ai:straight-leg-jeans--purple",
+  "ai:straight-leg-jeans--red",
+  "ai:straight-leg-jeans--yellow"
  ],
  "Swing Dress": [
   "commons:117005041",
@@ -560,7 +1082,16 @@
   "commons:117005037",
   "commons:59499145",
   "commons:7966999",
-  "commons:59497194"
+  "commons:59497194",
+  "ai:swing-dress--black",
+  "ai:swing-dress--blue",
+  "ai:swing-dress--green",
+  "ai:swing-dress--neutral",
+  "ai:swing-dress--orange",
+  "ai:swing-dress--pink",
+  "ai:swing-dress--purple",
+  "ai:swing-dress--red",
+  "ai:swing-dress--yellow"
  ],
  "Tailcoat": [
   "commons:14771520",
@@ -572,7 +1103,16 @@
   "commons:60286236",
   "commons:60286238",
   "commons:11896753",
-  "commons:12769246"
+  "commons:12769246",
+  "ai:tailcoat--black",
+  "ai:tailcoat--blue",
+  "ai:tailcoat--green",
+  "ai:tailcoat--neutral",
+  "ai:tailcoat--orange",
+  "ai:tailcoat--pink",
+  "ai:tailcoat--purple",
+  "ai:tailcoat--red",
+  "ai:tailcoat--yellow"
  ],
  "Top Hat": [
   "commons:107305883",
@@ -581,7 +1121,15 @@
   "commons:23052743",
   "commons:2565094",
   "commons:59501983",
-  "commons:5564017"
+  "commons:5564017",
+  "ai:top-hat--black",
+  "ai:top-hat--blue",
+  "ai:top-hat--green",
+  "ai:top-hat--orange",
+  "ai:top-hat--pink",
+  "ai:top-hat--purple",
+  "ai:top-hat--red",
+  "ai:top-hat--yellow"
  ],
  "Tricorne Hat": [
   "commons:59488989",
@@ -589,12 +1137,25 @@
   "commons:17504767",
   "commons:59501737",
   "commons:59488977",
-  "commons:59502718"
+  "commons:59502718",
+  "ai:tricorne-hat--neutral",
+  "ai:tricorne-hat--pink",
+  "ai:tricorne-hat--purple",
+  "ai:tricorne-hat--red"
  ],
  "Varsity Jacket": [
   "commons:129682333",
   "commons:59350992",
-  "commons:38961650"
+  "commons:38961650",
+  "ai:varsity-jacket--black",
+  "ai:varsity-jacket--blue",
+  "ai:varsity-jacket--green",
+  "ai:varsity-jacket--neutral",
+  "ai:varsity-jacket--orange",
+  "ai:varsity-jacket--pink",
+  "ai:varsity-jacket--purple",
+  "ai:varsity-jacket--red",
+  "ai:varsity-jacket--yellow"
  ],
  "Victorian Bustle Gown": [
   "commons:14933298",
@@ -605,7 +1166,16 @@
   "commons:117862666",
   "commons:59501668",
   "commons:59489166",
-  "commons:59497867"
+  "commons:59497867",
+  "ai:victorian-bustle-gown--black",
+  "ai:victorian-bustle-gown--blue",
+  "ai:victorian-bustle-gown--green",
+  "ai:victorian-bustle-gown--neutral",
+  "ai:victorian-bustle-gown--orange",
+  "ai:victorian-bustle-gown--pink",
+  "ai:victorian-bustle-gown--purple",
+  "ai:victorian-bustle-gown--red",
+  "ai:victorian-bustle-gown--yellow"
  ],
  "Waistcoat": [
   "commons:64764621",
@@ -617,6 +1187,15 @@
   "commons:57103429",
   "commons:83452721",
   "commons:59491756",
-  "commons:142475261"
+  "commons:142475261",
+  "ai:waistcoat--black",
+  "ai:waistcoat--blue",
+  "ai:waistcoat--green",
+  "ai:waistcoat--neutral",
+  "ai:waistcoat--orange",
+  "ai:waistcoat--pink",
+  "ai:waistcoat--purple",
+  "ai:waistcoat--red",
+  "ai:waistcoat--yellow"
  ]
 }

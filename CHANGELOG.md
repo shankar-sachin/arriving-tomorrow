@@ -4,6 +4,13 @@ All notable changes to arriving tomorrow (formerly Clothes Never Come). Releases
 
 ## [Unreleased]
 
+### New
+- **AI product photos are live.** 578 of the 612 FLUX.1-schnell studio photos passed review and now show on the site, so **6,093 of 6,120 products** have a photo (up from 5,310). Each product picks the AI photo for its colour family first, then a real museum photo, then the drawing.
+
+### Behind the scenes
+- `scripts/generate_photos.py --unapproved --reroll N` regenerates only the photos review rejected, with fresh seeds. Prompts for skirts, cargo pants and the tricorne hat are tighter, since those were the systemic rejects.
+- Vitest skips `.claude/` so agent worktrees don't double the test run.
+
 ### Changed
 - **Clothes Never Come is now arriving tomorrow**, styled in lowercase. The hanger-and-infinity logo stays the same. The new name shows up in the header, footer, page title, home-screen app name, README banner and release titles. Saved carts, orders, achievements and theme settings carry over.
 - **Moved to Vercel**: the site now lives at https://arriving-tomorrow.vercel.app, and every pull request gets a preview link. GitHub Pages is retired.
