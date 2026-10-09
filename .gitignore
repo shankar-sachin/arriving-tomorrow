@@ -24,3 +24,6 @@ docs/guide/architecture.md
 docs/guide/catalog.md
 docs/guide/deployment.md
 docs/guide/faq.md
+
+# MediaPipe pose model + wasm (fetched by scripts/fetch-pose-model.ts)
+public/models/
