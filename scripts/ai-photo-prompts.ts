@@ -122,20 +122,6 @@ const DISPLAY: Record<Silhouette, string> = {
   scarf: "artfully draped over a simple display stand",
 };
 
-const GHOST = "on an invisible ghost mannequin: the garment keeps the shape of a body but the body is completely removed, hollow and empty inside";
-
-/** `--display ghost`: no dress forms at all, so garments cut out cleanly for AR try-on. Stands for hats, shoes and scarves stay. */
-const DISPLAY_GHOST: Record<Silhouette, string> = {
-  ...DISPLAY,
-  saree: `worn-style drape with neat front pleats at the waist and the decorated pallu falling over the left shoulder, ${GHOST}`,
-  lehenga: `displayed ${GHOST}`,
-  anarkali: `displayed ${GHOST}`,
-  dress: `displayed ${GHOST}`,
-  ballgown: `displayed ${GHOST}, full skirt visible`,
-  skirt: `displayed ${GHOST}`,
-  corset: `displayed ${GHOST}`,
-};
-
 const STYLE =
   "Soft even studio lighting, seamless warm off-white backdrop, centered, full length: the entire item from top to hem in frame with space around it, " +
   "crisp fabric texture, photorealistic catalogue photography. Empty display, nobody wearing it. " +
@@ -150,8 +136,6 @@ export interface AiJob {
   seed: number;
   /** Output path relative to the repo root. */
   out: string;
-  /** The same shot with no dress form (`generate_photos.py --display ghost`), written to public/photos/ai-ghost/. */
-  ghost: { prompt: string; out: string };
 }
 
 const hash = (s: string) => [...s].reduce((h, c) => (Math.imul(h, 31) + c.charCodeAt(0)) >>> 0, 7) % 2_000_000_000;
@@ -170,10 +154,6 @@ export function buildJobs(): AiJob[] {
             seed: hash(key),
             out: `public/photos/ai/${slug(arch.name)}/${family}.webp`,
             prompt: `Professional e-commerce product photograph of a ${colour} ${HINTS[arch.name]}, ${DISPLAY[arch.silhouette]}. ${STYLE}`,
-            ghost: {
-              out: `public/photos/ai-ghost/${slug(arch.name)}/${family}.webp`,
-              prompt: `Professional e-commerce product photograph of a ${colour} ${HINTS[arch.name]}, ${DISPLAY_GHOST[arch.silhouette]}. ${STYLE}`,
-            },
           });
         }
   return jobs;

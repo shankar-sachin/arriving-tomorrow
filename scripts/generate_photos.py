@@ -12,7 +12,6 @@ Run (resumable — rerun to continue where it stopped):
     python3 scripts/generate_photos.py --only "Sherwani,Doublet"
     python3 scripts/generate_photos.py --quantize 4        # 8–16 GB Macs
     python3 scripts/generate_photos.py --fast              # 720×896, 2 steps: roughly 2–3× quicker
-    python3 scripts/generate_photos.py --display ghost     # no dress forms, into public/photos/ai-ghost/
 
 Reads scripts/ai-photo-jobs.json (built by `npm run photos:ai-jobs`), writes WebP files under
 public/photos/ai/ and records them in public/photos/ai/manifest.json. Then commit and push both;
@@ -155,8 +154,6 @@ def main() -> None:
     ap.add_argument("--width", type=int, help="default 832")
     ap.add_argument("--height", type=int, help="default 1040")
     ap.add_argument("--fast", action="store_true", help=f"quicker preset: {FAST['width']}×{FAST['height']}, {FAST['steps']} steps (explicit flags still win)")
-    ap.add_argument("--display", choices=["form", "ghost"], default="form",
-                    help="form: dress forms (the catalogue photos); ghost: invisible mannequin, written to public/photos/ai-ghost/")
     ap.add_argument("--engine", choices=["mflux", "dummy"], default="mflux")
     ap.add_argument("--overwrite", action="store_true", help="regenerate images that already exist")
     args = ap.parse_args()
@@ -167,10 +164,7 @@ def main() -> None:
 
     jobs = json.loads(JOBS.read_text())
     manifest_path = MANIFEST
-    if args.display == "ghost":
-        jobs = [{**j, "prompt": j["ghost"]["prompt"], "out": j["ghost"]["out"]} for j in jobs]
-        manifest_path = ROOT / "public" / "photos" / "ai-ghost" / "manifest.json"
-    print(f"{args.display} display, {args.width}×{args.height}, {args.steps} steps")
+    print(f"{args.width}×{args.height}, {args.steps} steps")
     if args.only:
         wanted = {s.strip() for s in args.only.split(",")}
         jobs = [j for j in jobs if j["archetype"] in wanted]
@@ -205,8 +199,7 @@ def main() -> None:
         eta = per * (len(todo) - i)
         print(f"[{i}/{len(todo)}] {job['archetype']} · {job['family']}  {time.time() - t0:.1f}s  (eta {eta / 60:.0f} min)", flush=True)
 
-    folder = "public/photos/ai-ghost" if args.display == "ghost" else "public/photos/ai"
-    print(f"Done. Images are in {folder}/. To share: git add {folder} && git commit -m 'Add AI product photos' && git push")
+    print("Done. Images are in public/photos/ai/. To share: git add public/photos/ai && git commit -m 'Add AI product photos' && git push")
 
 
 if __name__ == "__main__":
