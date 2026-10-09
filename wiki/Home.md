@@ -1,4 +1,4 @@
-![arriving tomorrow](https://raw.githubusercontent.com/shankar-sachin/arriving-tomorrow/main/docs/brand/banner.png)
+![arriving tomorrow](https://raw.githubusercontent.com/shankar-sachin/arriving-tomorrow/main/brand/banner.png)
 
 **arriving tomorrow** (formerly Clothes Never Come) is the online store where you can order anything you want, and none of it ever arrives.
 
@@ -19,7 +19,7 @@ Browse 6,120 garments from India, America, and classical Europe, check out for $
 ## Project links
 
 - [README](https://github.com/shankar-sachin/arriving-tomorrow#readme)
-- [Build plan and roadmap](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/docs/PLAN.md)
+- [Build plan and roadmap](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/PLAN.md)
 - [Contributing](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/CONTRIBUTING.md): issues welcome, outside PRs not accepted
 - [Code of Conduct](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/CODE_OF_CONDUCT.md)
 - [Security policy](https://github.com/shankar-sachin/arriving-tomorrow/blob/main/SECURITY.md)

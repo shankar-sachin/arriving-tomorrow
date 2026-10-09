@@ -8,6 +8,8 @@ All notable changes to arriving tomorrow (formerly Clothes Never Come). Releases
 - **AI product photos are live.** 578 of the 612 FLUX.1-schnell studio photos passed review and now show on the site, so **6,093 of 6,120 products** have a photo (up from 5,310). Each product picks the AI photo for its colour family first, then a real museum photo, then the drawing.
 
 ### Behind the scenes
+- **Docs and developer site** at https://shankar-sachin.github.io/arriving-tomorrow/, built with VitePress from `docs/` and deployed to GitHub Pages. It reuses the wiki, plan, changelog and contributing guide, so nothing is written twice.
+- The wiki source, the plan and the brand assets moved out of `docs/` to `wiki/`, `PLAN.md` and `brand/`, so `docs/` is just the site.
 - `scripts/generate_photos.py --unapproved --reroll N` regenerates only the photos review rejected, with fresh seeds. Prompts for skirts, cargo pants and the tricorne hat are tighter, since those were the systemic rejects.
 - Vitest skips `.claude/` so agent worktrees don't double the test run.
 
