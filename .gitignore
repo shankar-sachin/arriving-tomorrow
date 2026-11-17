@@ -27,3 +27,7 @@ docs/guide/faq.md
 
 # MediaPipe pose model + wasm (fetched by scripts/fetch-pose-model.ts)
 public/models/
+
+# Agent notes stay local.
+CLAUDE.md
+.claude/CLAUDE.md 
